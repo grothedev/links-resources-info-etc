@@ -1,3 +1,5 @@
 https://eol.org/  
 
+research papers and preprints and the like:
 https://arxiv.org/pdf/2308.00676.pdf
+https://iopscience.iop.org/article/10.1088/0953-2048/26/11/113001/pdf
