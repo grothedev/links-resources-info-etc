@@ -1,0 +1,30 @@
+- kernel. with review of OS
+    - process sync, mutex, semaphore, monitor
+		- understand the fundamentals of the linux kernel
+	- RISC-V architecture
+		- what is it, why is it,
+	- GPU architecture
+	- graphics. vulkan.
+	- mobile, android,
+    broadcasts, receivers, providers: https://developer.android.com/guide/components/broadcasts
+    https://developer.android.com/guide/components/activities/recents
+    good root android app related to managing apps: https://github.com/MuntashirAkon/AppManager
+		https://source.android.com/docs/core/graphics/architecture
+		https://source.android.com/docs/core/architecture/kernel
+    https://android.googlesource.com/platform/frameworks/base/+/refs/tags/android-10.0.0_r2/packages/SystemUI/src/com/android/systemui/statusbar/phone/NavigationModeController.java#355
+		https://www.linux.com/news/garretts-linuxcon-talk-emphasizes-lessons-learned-androidkernel-saga/
+		https://www.forbes.com/sites/quora/2013/05/13/what-are-the-major-changes-that-android-made-to-the-linux-kernel/?sh=6f6b72227bb6
+	- enterprise networking
+		https://wiki.theory.org/BitTorrentSpecification
+		https://www.bittorrent.org/beps/bep_0003.html
+	- GPG, encryption,
+        - review operating system stuff. process sync, monitors, threads, mutex, semaphore.
+
+	CPU stuff:
+		- # mem channels
+		max # PCI express lanes
+		AVX-512 vector neural network instruction set.
+		intel speedstep
+		AES new instructions trusted
+		instr set extensions: sse4.2, avx2, avx-512
+	GPU:
