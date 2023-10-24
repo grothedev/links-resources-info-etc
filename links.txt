@@ -3,3 +3,23 @@ https://eol.org/
 research papers and preprints and the like:
 https://arxiv.org/pdf/2308.00676.pdf
 https://iopscience.iop.org/article/10.1088/0953-2048/26/11/113001/pdf
+
+modern CS curriculum: https://functionalcs.github.io/curriculum/
+cool ML tool for generating images: https://github.com/deforum-art/deforum-stable-diffusion/tree/main
+
+smart home:
+  https://esphome.io/
+  https://cloudfree.shop/product/aqara-door-and-window-sensors/
+  https://www.shelly.com/en-us/products/shop/shelly-door-window-2
+
+wave function collapse stuff: https://pirateweather.net/
+probably good weather: http://pirateweather.net/en/latest/
+
+games to learn algorithms: https://www.redblobgames.com/
+
+edu LSTM: https://wiki.pathmind.com/lstm
+training LLM: 
+  https://huggingface.co/blog/how-to-train   
+  https://huggingface.co/docs/transformers/run_scripts
+  https://colab.research.google.com/github/neelnanda-io/Easy-Transformer/blob/clean-transformer-demo/Clean_Transformer_Demo_Template.ipynb#scrollTo=mva6DQ7mCUdO
+what is a transformer: https://www.youtube.com/watch?v=bOYE6E8JrtU
