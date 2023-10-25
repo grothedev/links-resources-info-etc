@@ -29,3 +29,5 @@ tap water contamination: https://www.ewg.org/tapwater/system.php?pws=VA6059501
 GPT in 60 lines of numpy: https://jaykmody.com/blog/gpt-from-scratch/
 
 jabroni brawl server guide: https://steamcommunity.com/sharedfiles/filedetails/?id=1527732439
+
+use this to store links with tags maybe: https://wallabag.org/
