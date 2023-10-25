@@ -1,3 +1,5 @@
 ssh brute force attempts: grep sshd.\*Failed /var/log/auth.log
 ssh failed connections: grep sshd.*Did /var/log/auth.log
 use fail2ban to monitor and act on malicious network activity: https://github.com/fail2ban/fail2ban/blob/master/config/fail2ban.conf
+
+firewalld and https://wiki.debian.org/nftables
