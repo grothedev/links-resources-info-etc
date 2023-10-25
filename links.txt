@@ -23,3 +23,9 @@ training LLM:
   https://huggingface.co/docs/transformers/run_scripts
   https://colab.research.google.com/github/neelnanda-io/Easy-Transformer/blob/clean-transformer-demo/Clean_Transformer_Demo_Template.ipynb#scrollTo=mva6DQ7mCUdO
 what is a transformer: https://www.youtube.com/watch?v=bOYE6E8JrtU
+
+http://www.keyboard-layout-editor.com/#/
+tap water contamination: https://www.ewg.org/tapwater/system.php?pws=VA6059501
+GPT in 60 lines of numpy: https://jaykmody.com/blog/gpt-from-scratch/
+
+jabroni brawl server guide: https://steamcommunity.com/sharedfiles/filedetails/?id=1527732439
