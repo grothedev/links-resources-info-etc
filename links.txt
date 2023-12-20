@@ -1,8 +1,10 @@
-https://eol.org/  
+https://eol.org/
 
 research papers and preprints and the like:
 https://arxiv.org/pdf/2308.00676.pdf
 https://iopscience.iop.org/article/10.1088/0953-2048/26/11/113001/pdf
+
+https://www.youtube.com/watch?v=r73C0N8FDek
 
 modern CS curriculum: https://functionalcs.github.io/curriculum/
 cool ML tool for generating images: https://github.com/deforum-art/deforum-stable-diffusion/tree/main
@@ -18,11 +20,14 @@ probably good weather: http://pirateweather.net/en/latest/
 games to learn algorithms: https://www.redblobgames.com/
 
 edu LSTM: https://wiki.pathmind.com/lstm
-training LLM: 
-  https://huggingface.co/blog/how-to-train   
+training LLM:
+  https://huggingface.co/blog/how-to-train
   https://huggingface.co/docs/transformers/run_scripts
   https://colab.research.google.com/github/neelnanda-io/Easy-Transformer/blob/clean-transformer-demo/Clean_Transformer_Demo_Template.ipynb#scrollTo=mva6DQ7mCUdO
 what is a transformer: https://www.youtube.com/watch?v=bOYE6E8JrtU
+ML course: https://karpathy.ai/zero-to-hero.html
+
+https://towardsdatascience.com/the-mostly-complete-chart-of-neural-networks-explained-3fb6f2367464
 
 http://www.keyboard-layout-editor.com/#/
 tap water contamination: https://www.ewg.org/tapwater/system.php?pws=VA6059501
@@ -31,3 +36,21 @@ GPT in 60 lines of numpy: https://jaykmody.com/blog/gpt-from-scratch/
 jabroni brawl server guide: https://steamcommunity.com/sharedfiles/filedetails/?id=1527732439
 
 use this to store links with tags maybe: https://wallabag.org/
+
+operating systems 3 easy pieces: https://pages.cs.wisc.edu/~remzi/OSTEP/
+
+https://www.reddit.com/r/DataHoarder/wiki/backups
+
+https://kidger.site/thoughts/just-know-stuff/
+
+some interesting stuff: https://mcluhansnewsciences.com/mcluhan/2018/01/mcluhans-new-sciences-only-the-authority-of-knowledge/
+
+https://www.webdesignmuseum.org/
+
+herb info: https://thepracticalherbalist.com/
+
+RISC-V working group mail list: https://riscv.org/using-the-working-groups-portal/
+
+android cuttlefish: https://source.android.com/docs/setup/create/cuttlefish-use
+
+https://pitchfork.com/features/lists-and-guides/the-33-best-industrial-albums-of-all-time/

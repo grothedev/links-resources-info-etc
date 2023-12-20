@@ -1,0 +1,15 @@
+ML stuff:
+running llama locally: https://zhimin-wen.medium.com/exploring-llama2-on-cpu-only-vm-836866d832bd
+	use llama.cpp (probably with quantization). convert models into proper file format first.
+	https://old.reddit.com/r/LocalLLaMA/
+
+https://ggml.ai/
+  optimized for apple silicon! https://github.com/ggerganov/llama.cpp
+
+training LLM:
+  https://huggingface.co/blog/how-to-train
+  https://huggingface.co/docs/transformers/run_scripts
+  https://colab.research.google.com/github/neelnanda-io/Easy-Transformer/blob/clean-transformer-demo/Clean_Transformer_Demo_Template.ipynb#scrollTo=mva6DQ7mCUdO
+
+
+what is stablecode all about? https://huggingface.co/stabilityai/stablecode-completion-alpha-3b-4k

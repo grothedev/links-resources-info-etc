@@ -6,6 +6,7 @@
 	- GPU architecture
 	- graphics. vulkan.
 	- mobile, android,
+        - linux vs unix vs bsd etc.
     broadcasts, receivers, providers: https://developer.android.com/guide/components/broadcasts
     https://developer.android.com/guide/components/activities/recents
     good root android app related to managing apps: https://github.com/MuntashirAkon/AppManager
