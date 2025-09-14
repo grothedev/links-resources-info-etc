@@ -24,25 +24,54 @@ For context, here is my usecase: I have a collection of URLs to useful websites 
             4. notify user when the operation is complete and everything is written to the database. provide the user with a cleaned up and nicely-formatted version a the file, showing each URL with its metadata and the dead URLs listed at the bottom. 
         - Files in folders:
             1. the user has the option to associate each folder with a category. scan through each folder for valid files (known document formats like pdf, txt, docx, ppt, md, tex, html. maybe it would be easier to instead blacklist binary files, hidden files, anything obviously not a "document-for-human" file). 
-            2. for each file, check if already exists in database (via md5 hash) 
+            2. for each file, check if already exists in database (via md5 hash), if not, check via filename. 
+                2a. if file with same hash exists, let the user know and proceed with normal metadata modification
+                2b. if filename already exists but the hash is different, ask the user what to do, telling them the file, hashes, filesizes, and modified/creation times of the files.
+                2c. if neither hash nor same-named file exist in the DB, proceed with adding the file to the DB
+            3. ask the user to provide the appropriate metadata for the file (title, author, description, categories). category can already be filled in if the user specified that this folder is for some category.
+            4. 
+
+                
+
 #### Systems, Modules, Considerations 
     * user can interface with the system via command line, website, or REST API
     * there needs to be a process by which data is kept synchonized among the datastorages. 
-    *   
+        * multiple mirrored postgres DBs, multiple sqlite DB files, multiple JSON files, different endpoints
+        * remote DBs could be interfaced with via RPC API. look into existing distribute data management solutions. (consul? bittorrent? )
+        * how to handle remote sqlite and json files? ssh? again research existing solutions. 
+    * how to handle multiple users adding resources? we should allow for multiple users to add resources. so we'll have to keep track of who uploaded/added what. 
+    * for now we will store URLs as 1 string, but in the future it might prove useful to separate out into domain, path, query args, etc. 
+    * there is an API for client CRUD applications //TODO more detail 
+
 #### Database Schema
+    (assume default fields id, created & modified timestamp)
+    * URL
+        *title:string
+        *value:string
+        *description:string #nullable
+    * Tag #or Category
+        *label:string
+        *description:string #nullable
+        *refs:int #how many objects have this tag associated with them
+    * File
+        *filename:string
+        *path:string
+        *title:string
+        *description:string #nullable
+        *md5:string
+        *author:string #nullable
+    * Pivot Tables
+        * tag to url
+        * tag to file
+
 #### User Experience
+    * option to use a website, CLI tool, or mobile app
+    * //TODO continue here
 
 
-- there can be some number of duplicated postgres DBs
-- there are mirrors which store the resource identifiers via sqlite and json
-- there is an API for client CRUD applications
-    - the API webserver interfaces with any or all of postgres, sqlite, json file. 
-    - an API webserver doesn't have to know about the other APIs. however, it can so that it can notify others of requests or any data modification. the other will compare hash or ID of request to check if they also got it and respond accordingly. 
-    - use soft delete before actual delete after long time of no access
-    - the API webserve is managed by a systemd service. it might be beneficial to have it be able to do some other things in addition to simply starting/restarting the webserver
-- there is a website, CLI tool, and mobile app
+------ below this line is early rough draft which i am consolidating and clarifying and putting into the official spec ------------------
+
 - in the future, will tie other datatypes in as well
-    - 
 
 
 
