@@ -7,9 +7,11 @@ https://ggml.ai/
   optimized for apple silicon! https://github.com/ggerganov/llama.cpp
 
 training LLM:
+  https://github.com/huggingface/blog/blob/main/how-to-train.md
   https://huggingface.co/blog/how-to-train
   https://huggingface.co/docs/transformers/run_scripts
   https://colab.research.google.com/github/neelnanda-io/Easy-Transformer/blob/clean-transformer-demo/Clean_Transformer_Demo_Template.ipynb#scrollTo=mva6DQ7mCUdO
 
+https://github.com/KindXiaomi+++ng/pykan
 
-what is stablecode all about? https://huggingface.co/stabilityai/stablecode-completion-alpha-3b-4k
+https://rentry.org/LocalModelsLinks

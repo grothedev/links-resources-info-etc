@@ -1,0 +1,382 @@
+[
+  {
+    "url": "https://chyrplite.net/#screenshots",
+    "label": "Chyrp Lite",
+    "tags": [],
+    "description": "Chyrp Lite is an ultra-lightweight blogging engine, written in PHP."
+  },
+  {
+    "url": "https://github.com/mataroa-blog/mataroa",
+    "label": "GitHub - mataroa-blog/mataroa: Naked blogging platform",
+    "tags": [],
+    "description": "Naked blogging platform. Contribute to mataroa-blog/mataroa development by creating an account on GitHub."
+  },
+  {
+    "url": "https://thebookofshaders.com/",
+    "label": "The Book of Shaders",
+    "tags": [],
+    "description": "book of shaders"
+  },
+  {
+    "url": "https://bbycroft.net/llm",
+    "label": "LLM Visualization",
+    "tags": [],
+    "description": "A 3D animated visualization of an LLM with a walkthrough."
+  },
+  {
+    "url": "https://screening-tools.com/about",
+    "label": "About — Data + Screening Tools",
+    "tags": [],
+    "description": ""
+  },
+  {
+    "url": "https://eotarchive.org/data/data-2020/",
+    "label": "End of Term 2020 Dataset | End of Term Web Archive",
+    "tags": [],
+    "description": "The End of Term Web Archive is a collaborative initiative that collects, preserves, and makes accessible United States Government websites at the end of presidential administrations."
+  },
+  {
+    "url": "https://freegovinfo.info/node/14744/#comment-68185",
+    "label": "Federal information scrubbing has begun. Please support the End of Term Archive and Environmental Data Governance Initiative (EDGI) - Free Government Information (FGI)",
+    "tags": [],
+    "description": "It seems that the scrubbing of public information and communication from Federal government websites has begun."
+  },
+  {
+    "url": "https://mundraub.org/map#z=11&lat=50.10274427610123&lng=10.25779724121094",
+    "label": "mundraub.org Karte | mundraub.org",
+    "tags": [],
+    "description": ""
+  },
+  {
+    "url": "https://www.freecodecamp.org/news/laravel-reverb-realtime-chat-app/",
+    "label": "How to Build a Real-Time Chat App with Laravel Reverb",
+    "tags": [],
+    "description": "In March of 2024, Laravel 11 was released. And with it arrived a new tool in the Laravel ecosystem: Laravel Reverb. Reverb is a separate open-source package that's a first-party WebSocket server for Laravel applications. It helps facilitate real-time..."
+  },
+  {
+    "url": "https://eol.org/",
+    "label": "eol.org",
+    "tags": [
+      "edu",
+      "bio"
+    ],
+    "description": ""
+  },
+  {
+    "url": "https://dynamicland.org/",
+    "label": "Dynamicland front shelf",
+    "tags": [
+      "edu",
+      "bio"
+    ],
+    "description": "Incubating a humane dynamic medium."
+  },
+  {
+    "url": "https://graphql.guide/understanding-graphql/",
+    "label": "Contents - 1. Understanding GraphQL Through REST - The GraphQL Guide",
+    "tags": [
+      "dev"
+    ],
+    "description": "Table of contents for Chapter 1"
+  },
+  {
+    "url": "https://www.bathsheba.com/",
+    "label": "Bathsheba Sculpture - Bathsheba Sculpture LLC",
+    "tags": [
+      "dev"
+    ],
+    "description": "..."
+  },
+  {
+    "url": "https://planetscale.com/blog/btrees-and-database-indexes",
+    "label": "B-trees and database indexes â PlanetScale",
+    "tags": [
+      "dev"
+    ],
+    "description": "B-trees are used by many modern DBMSs. Learn how they work, how databases use them, and how your choice of primary key can affect index performance."
+  },
+  {
+    "url": "https://www.zhou-xian.com/",
+    "label": "Home | Zhou Xian",
+    "tags": [
+      "dev"
+    ],
+    "description": ": research, robotics, simulation,"
+  },
+  {
+    "url": "https://arxiv.org/pdf/2308.00676.pdf",
+    "label": "arxiv.org",
+    "tags": [
+      "dev"
+    ],
+    "description": ""
+  },
+  {
+    "url": "https://iopscience.iop.org/article/10.1088/0953-2048/26/11/113001/pdf",
+    "label": "Radware Bot Manager Captcha",
+    "tags": [
+      "engr"
+    ],
+    "description": "To ensure we keep this website safe, please can you confirm you are a human by ticking the box below...."
+  },
+  {
+	"label": "classic sylesheets",
+    "url": "https://nielssp.github.io/classic-stylesheets/?theme=winxp&skin=olive-green",
+    "tags": [
+      "engr"
+    ],
+    "description": "Source on GitHub..."
+  },
+  {
+    "url": "https://jdan.github.io/98.css/",
+    "label": "98.css - A design system for building faithful recreations of old UIs",
+    "tags": [
+      "engr"
+    ],
+    "description": "A design system for building faithful recreations of old UIs...."
+  },
+  {
+    "url": "https://github.com/OAI/OpenAPI-Specification/tree/main",
+    "label": "GitHub - OAI/OpenAPI-Specification: The OpenAPI Specification Repository",
+    "tags": [
+      "engr"
+    ],
+    "description": "The OpenAPI Specification Repository. Contribute to OAI/OpenAPI-Specification development by creating an account on GitHub."
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=r73C0N8FDek",
+    "label": "Frozen Food Reviews:Eugenio's Four-Cheese Pizza - YouTube",
+    "tags": [
+      "kek"
+    ],
+    "description": "Eugenio's Four-Cheese Pizza is a \"buy\". Be sure to check out my otherchannel, Leonard's Outfit of the Day."
+  },
+  {
+    "url": "https://functionalcs.github.io/curriculum/",
+    "label": "A 2024 Computer Science Curriculum",
+    "tags": [
+      "kek"
+    ],
+    "description": "modern CS curriculum:"
+  },
+  {
+    "url": "https://github.com/deforum-art/deforum-stable-diffusion/tree/main",
+    "label": "GitHub - deforum-art/deforum-stable-diffusion",
+    "tags": [
+      "kek"
+    ],
+    "description": "cool ML tool for generating images:"
+  },
+  {
+    "url": "https://gitlab.com/lockie/cl-fast-ecs/-/wikis/tutorial-1",
+    "label": "Gamedev in Lisp. Part 1: ECS and Metalinguistic Abstraction · Wiki · Andrew Kravchuk / cl-fast-ecs · GitLab",
+    "tags": [
+      "kek"
+    ],
+    "description": "Blazingly fast Entity-Component-System microframework ⚡📦 https://awkravchuk.itch.io/cl-fast-ecs"
+  },
+  {
+    "url": "https://esphome.io/",
+    "label": "ESPHome — ESPHome",
+    "tags": [
+      "kek"
+    ],
+    "description": "ESPHome Homepage - Reimagining DIY Home Automation. ESPHome is a framework that tries to provide the best possible use experience for using IoT microcontrollers for Home Automation."
+  },
+  {
+    "url": "https://cloudfree.shop/product/aqara-door-and-window-sensors/",
+    "label": "Aqara Door and Window Sensors - CloudFree",
+    "tags": [
+      "kek"
+    ],
+    "description": "Aqara’s newer T1 door sensor is Zigbee 3.0 Certified, and may experience fewer connection issues than the original model. User Manual Zigbee2MQTT Documentat"
+  },
+  {
+    "url": "https://www.shelly.com/en-us/products/shop/shelly-door-window-2",
+    "label": "All Products\n      \n – Shelly Europe",
+    "tags": [
+      "kek"
+    ],
+    "description": "Buy all products online with high quality from a proven brand - Shelly ⭐ Shop innovative smart products at a great price."
+  },
+  {
+    "url": "https://pirate-weather.apiable.io/",
+    "label": "API Portal",
+    "tags": [
+      "weather"
+    ],
+    "description": "data"
+  },
+  {
+    "url": "https://hypermedia.systems/book/contents/",
+    "label": "Contents",
+    "tags": [
+      "weather"
+    ],
+    "description": "htmx book:"
+  },
+  {
+    "url": "https://www.redblobgames.com/",
+    "label": "Red Blob Games",
+    "tags": [
+      "edu"
+    ],
+    "description": "games to learn algorithms:"
+  },
+  {
+    "url": "https://wiki.pathmind.com/lstm",
+    "label": "A Beginner's Guide to LSTMs and Recurrent Neural Networks | Pathmind",
+    "tags": [
+      "edu"
+    ],
+    "description": "edu LSTM:  ml"
+  },
+  {
+    "url": "https://huggingface",
+    "label": "huggingface",
+    "tags": [
+      "ml"
+    ],
+    "description": ".co/blog/how-to-train"
+  },
+  {
+    "url": "https://colab.research.google.com/github/neelnanda-io/Easy-Transformer/blob/clean-transformer-demo/Clean_Transformer_Demo_Template.ipynb#scrollTo=mva6DQ7mCUdO",
+    "label": "Google Colab",
+    "tags": [
+      "ml"
+    ],
+    "description": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=bOYE6E8JrtU",
+    "label": "What is a Transformer? (Transformer Walkthrough Part 1/2) - YouTube",
+    "tags": [
+      "ml"
+    ],
+    "description": "what is a transformer:"
+  },
+  {
+    "url": "https://karpathy.ai/zero-to-hero.html",
+    "label": "Neural Networks: Zero To Hero",
+    "tags": [
+      "edu"
+    ],
+    "description": "ML course:"
+  },
+  {
+    "url": "https://wonger.dev/posts/monospace-dump#web",
+    "label": "Notes on monospace, fonts, ascii, unicode",
+    "tags": [
+      "edu"
+    ],
+    "description": "monospace web"
+  },
+  {
+    "url": "http://www.keyboard-layout-editor.com/#/",
+    "label": "Keyboard Layout Editor",
+    "tags": [
+      "tool"
+    ],
+    "description": "dev"
+  },
+  {
+    "url": "https://www.ewg.org/tapwater/system.php?pws=VA6059501",
+    "label": "EWG Tap Water Database | Fairfax County Water Authority",
+    "tags": [
+      "data"
+    ],
+    "description": "tap water contamination:   water"
+  },
+  {
+    "url": "https://jaykmody.com/blog/gpt-from-scratch/",
+    "label": "GPT in 60 Lines of NumPy | Jay Mody",
+    "tags": [
+      "dev"
+    ],
+    "description": "GPT in 60 lines of numpy:"
+  },
+  {
+    "url": "https://www.reddit.com/r/DataHoarder/wiki/backups",
+    "label": "Reddit - Dive into anything",
+    "tags": [
+      "dev"
+    ],
+    "description": "files"
+  },
+  {
+    "url": "https://www.webdesignmuseum.org/",
+    "label": "Web Design Museum - Discover old websites, apps and software",
+    "tags": [
+      "dev"
+    ],
+    "description": "web"
+  },
+  {
+    "url": "https://thepracticalherbalist.com/",
+    "label": "Practical Herbal News and Information | The Practical Herbalist",
+    "tags": [
+      "dev"
+    ],
+    "description": "herb info:"
+  },
+  {
+    "url": "https://source.android.com/docs/setup/create/cuttlefish-use",
+    "label": "Get started  |  Android Open Source Project",
+    "tags": [
+      "dev"
+    ],
+    "description": "android cuttlefish:"
+  },
+  {
+    "url": "https://pitchfork.com/features/lists-and-guides/the-33-best-industrial-albums-of-all-time/",
+    "label": "The 33 Best Industrial Albums of All Time | Pitchfork",
+    "tags": [
+      "dev"
+    ],
+    "description": "Throbbing Gristle, Nine Inch Nails, Skinny Puppy: These bands brought the heat"
+  },
+  {
+    "url": "https://ryanis.cool/cosmos",
+    "label": "Cosmos Keyboard",
+    "tags": [
+      "dev"
+    ],
+    "description": "Custom-Build A Keyboard Fit To You..."
+  },
+  {
+    "url": "https://selfh.st/apps/",
+    "label": "Self-Hosted Software and Apps",
+    "tags": [
+      "dev"
+    ],
+    "description": "A directory of self-hosted software and applications for easy browsing and discovery"
+  },
+  {
+    "url": "http://taotajima.jp/works/the-9d-project/",
+    "label": "THE 9D PROJECT -Experience Innovation- | TAO TAJIMA | Filmmaker",
+    "tags": [
+      "dev"
+    ],
+    "description": "Directed this concept video for docomo. This work shows the new entertainment experiences that are brought to us by next-generation communication technology."
+  },
+  {
+    "url": "https://physicsbaseddeeplearning.org/intro-teaser.html",
+    "label": "A Teaser Example — Physics-based Deep Learning",
+    "tags": [
+      "dev"
+    ],
+    "description": "Introduction..."
+  },{
+	"url": "https://www.piskelapp.com/p/create/sprite",
+    "label": "pixel art gif maker",
+    "tags": [
+      "dev"
+    ],
+    "description": ""
+  },
+  {
+	"url": "https://www.10000yearclock.net/learnmore.html",
+	"label": "10000 year clock",
+	"description": ""
+  }
+]

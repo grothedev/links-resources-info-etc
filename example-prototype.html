@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links Collection</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsrender/1.0.12/jsrender.min.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+        }
+        
+        .controls {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        .search-box {
+            flex: 1;
+            min-width: 250px;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+        
+        .tag-filter {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        
+        .tag-button {
+            padding: 6px 12px;
+            background: #e9ecef;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+        
+        .tag-button.active {
+            background: #007bff;
+            color: white;
+        }
+        
+        .tag-button:hover {
+            background: #007bff;
+            color: white;
+        }
+        
+        .stats {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        /* List-based layout */
+        .resource-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .resource-item {
+            border-bottom: 1px solid #eee;
+            padding: 16px 0;
+            transition: background-color 0.2s;
+        }
+        
+        .resource-item:hover {
+            background-color: #f8f9fa;
+            margin: 0 -20px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        
+        .resource-item:last-child {
+            border-bottom: none;
+        }
+        
+        .resource-link {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 16px;
+            display: block;
+            margin-bottom: 4px;
+        }
+        
+        .resource-link:hover {
+            text-decoration: underline;
+        }
+        
+        .resource-link:visited {
+            color: #6f42c1;
+        }
+        
+        .resource-url {
+            font-size: 13px;
+            color: #666;
+            font-family: monospace;
+            margin-bottom: 8px;
+            word-break: break-all;
+        }
+        
+        .resource-description {
+            color: #555;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        
+        .resource-tags {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+        
+        .tag {
+            background: #f8f9fa;
+            color: #495057;
+            padding: 2px 6px;
+            border-radius: 10px;
+            font-size: 11px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .no-results {
+            text-align: center;
+            color: #666;
+            font-style: italic;
+            margin: 40px 0;
+            padding: 40px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        
+        .clear-filters {
+            background: #dc3545;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        .clear-filters:hover {
+            background: #c82333;
+        }
+
+        /* External link indicator */
+        .resource-link::after {
+            content: " ↗";
+            font-size: 12px;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 Links Collection</h1>
+            <div class="stats" id="stats"></div>
+        </div>
+        
+        <div class="controls">
+            <input type="text" class="search-box" id="searchBox" placeholder="Search resources by title, description, or URL...">
+            <div class="tag-filter" id="tagFilter"></div>
+            <button class="clear-filters" id="clearFilters">Clear Filters</button>
+        </div>
+        
+        <div id="resourceContainer"></div>
+    </div>
+
+    <!-- JSRender Templates -->
+    <script id="resourceTemplate" type="text/x-jsrender">
+        <ul class="resource-list">
+            {{for resources}}
+                <li class="resource-item">
+                    <a href="{{:url}}" target="_blank" class="resource-link">{{:label}}</a>
+                    <div class="resource-url">{{:url}}</div>
+                    {{if description}}
+                        <div class="resource-description">{{:description}}</div>
+                    {{/if}}
+                    {{if tags && tags.length}}
+                        <div class="resource-tags">
+                            {{for tags}}
+                                <span class="tag">{{:#data}}</span>
+                            {{/for}}
+                        </div>
+                    {{/if}}
+                </li>
+            {{/for}}
+        </ul>
+    </script>
+
+    <script id="tagFilterTemplate" type="text/x-jsrender">
+        {{for tags}}
+            <button class="tag-button" data-tag="{{:#data}}">{{:#data}} ({{:~getTagCount(#data)}})</button>
+        {{/for}}
+    </script>
+
+    <script id="noResultsTemplate" type="text/x-jsrender">
+        <div class="no-results">
+            <h3>No resources found</h3>
+            <p>Try adjusting your search terms or clearing the filters.</p>
+        </div>
+    </script>
+
+    <script>
+        // Your links data (embedded directly)
+        const linksData = [
+            {
+                "url": "https://chyrplite.net/#screenshots",
+                "label": "Chyrp Lite",
+                "tags": [],
+                "description": "Chyrp Lite is an ultra-lightweight blogging engine, written in PHP."
+            },
+            {
+                "url": "https://github.com/mataroa-blog/mataroa",
+                "label": "GitHub - mataroa-blog/mataroa: Naked blogging platform",
+                "tags": [],
+                "description": "Naked blogging platform. Contribute to mataroa-blog/mataroa development by creating an account on GitHub."
+            },
+            {
+                "url": "https://thebookofshaders.com/",
+                "label": "The Book of Shaders",
+                "tags": [],
+                "description": "book of shaders"
+            },
+            {
+                "url": "https://bbycroft.net/llm",
+                "label": "LLM Visualization",
+                "tags": [],
+                "description": "A 3D animated visualization of an LLM with a walkthrough."
+            },
+            {
+                "url": "https://eol.org/",
+                "label": "eol.org",
+                "tags": ["edu", "bio"],
+                "description": ""
+            },
+            {
+                "url": "https://dynamicland.org/",
+                "label": "Dynamicland front shelf",
+                "tags": ["edu", "bio"],
+                "description": "Incubating a humane dynamic medium."
+            },
+            {
+                "url": "https://graphql.guide/understanding-graphql/",
+                "label": "Contents - 1. Understanding GraphQL Through REST - The GraphQL Guide",
+                "tags": ["dev"],
+                "description": "Table of contents for Chapter 1"
+            },
+            {
+                "url": "https://www.bathsheba.com/",
+                "label": "Bathsheba Sculpture - Bathsheba Sculpture LLC",
+                "tags": ["dev"],
+                "description": "..."
+            },
+            {
+                "url": "https://planetscale.com/blog/btrees-and-database-indexes",
+                "label": "B-trees and database indexes â PlanetScale",
+                "tags": ["dev"],
+                "description": "B-trees are used by many modern DBMSs. Learn how they work, how databases use them, and how your choice of primary key can affect index performance."
+            },
+            {
+                "url": "https://jdan.github.io/98.css/",
+                "label": "98.css - A design system for building faithful recreations of old UIs",
+                "tags": ["engr"],
+                "description": "A design system for building faithful recreations of old UIs...."
+            },
+            {
+                "url": "https://www.youtube.com/watch?v=r73C0N8FDek",
+                "label": "Frozen Food Reviews:Eugenio's Four-Cheese Pizza - YouTube",
+                "tags": ["kek"],
+                "description": "Eugenio's Four-Cheese Pizza is a \"buy\". Be sure to check out my otherchannel, Leonard's Outfit of the Day."
+            },
+            {
+                "url": "https://functionalcs.github.io/curriculum/",
+                "label": "A 2024 Computer Science Curriculum",
+                "tags": ["kek"],
+                "description": "modern CS curriculum:"
+            },
+            {
+                "url": "https://pirate-weather.apiable.io/",
+                "label": "API Portal",
+                "tags": ["weather"],
+                "description": "data"
+            },
+            {
+                "url": "https://hypermedia.systems/book/contents/",
+                "label": "Contents",
+                "tags": ["weather"],
+                "description": "htmx book:"
+            },
+            {
+                "url": "https://www.redblobgames.com/",
+                "label": "Red Blob Games",
+                "tags": ["edu"],
+                "description": "games to learn algorithms:"
+            },
+            {
+                "url": "https://huggingface",
+                "label": "huggingface",
+                "tags": ["ml"],
+                "description": ".co/blog/how-to-train"
+            },
+            {
+                "url": "https://colab.research.google.com/github/neelnanda-io/Easy-Transformer/blob/clean-transformer-demo/Clean_Transformer_Demo_Template.ipynb#scrollTo=mva6DQ7mCUdO",
+                "label": "Google Colab",
+                "tags": ["ml"],
+                "description": ""
+            },
+            {
+                "url": "https://www.youtube.com/watch?v=bOYE6E8JrtU",
+                "label": "What is a Transformer? (Transformer Walkthrough Part 1/2) - YouTube",
+                "tags": ["ml"],
+                "description": "what is a transformer:"
+            },
+            {
+                "url": "https://karpathy.ai/zero-to-hero.html",
+                "label": "Neural Networks: Zero To Hero",
+                "tags": ["edu"],
+                "description": "ML course:"
+            },
+            {
+                "url": "http://www.keyboard-layout-editor.com/#/",
+                "label": "Keyboard Layout Editor",
+                "tags": ["tool"],
+                "description": "dev"
+            },
+            {
+                "url": "https://jaykmody.com/blog/gpt-from-scratch/",
+                "label": "GPT in 60 Lines of NumPy | Jay Mody",
+                "tags": ["dev"],
+                "description": "GPT in 60 lines of numpy:"
+            },
+            {
+                "url": "https://www.piskelapp.com/p/create/sprite",
+                "label": "pixel art gif maker",
+                "tags": ["dev"],
+                "description": ""
+            },
+            {
+                "url": "https://www.10000yearclock.net/learnmore.html",
+                "label": "10000 year clock",
+                "tags": [],
+                "description": ""
+            }
+        ];
+
+        let filteredData = linksData;
+        let activeFilters = {
+            search: '',
+            tags: []
+        };
+
+        // Helper functions for JSRender
+        $.views.helpers({
+            getTagCount: function(tag) {
+                return linksData.filter(item => item.tags && item.tags.includes(tag)).length;
+            }
+        });
+
+        // Get all unique tags
+        function getAllTags() {
+            const tags = new Set();
+            linksData.forEach(item => {
+                if (item.tags){
+                    item.tags.forEach(tag => tags.add(tag));
+                }
+            });
+            return Array.from(tags).sort();
+        }
+
+        // Filter data based on search and tag filters
+        function filterData() {
+            filteredData = linksData.filter(item => {
+                // Search filter
+                const searchTerm = activeFilters.search.toLowerCase();
+                const matchesSearch = !searchTerm || 
+                    item.label.toLowerCase().includes(searchTerm) ||
+                    item.description.toLowerCase().includes(searchTerm) ||
+                    item.url.toLowerCase().includes(searchTerm) ||
+                    (item.tags && item.tags.some(tag => tag.toLowerCase().includes(searchTerm)));
+
+                // Tag filter
+                const matchesTags = activeFilters.tags.length === 0 ||
+                    (item.tags && activeFilters.tags.some(tag => item.tags.includes(tag)));
+
+                return matchesSearch && matchesTags;
+            });
+
+            renderResources();
+            updateStats();
+        }
+
+        // Render resources using JSRender
+        function renderResources() {
+            const template = $.templates("#resourceTemplate");
+            const html = filteredData.length > 0 
+                ? template.render({ resources: filteredData })
+                : $.templates("#noResultsTemplate").render();
+            
+            $("#resourceContainer").html(html);
+        }
+
+        // Render tag filter buttons
+        function renderTagFilters() {
+            const tags = getAllTags();
+            const template = $.templates("#tagFilterTemplate");
+            const html = template.render({ tags: tags });
+            $("#tagFilter").html(html);
+        }
+
+        // Update statistics
+        function updateStats() {
+            const total = linksData.length;
+            const showing = filteredData.length;
+            const totalTags = getAllTags().length;
+            
+            let statsText = `Showing ${showing} of ${total} resources`;
+            if (activeFilters.tags.length > 0) {
+                statsText += ` • Filtered by: ${activeFilters.tags.join(', ')}`;
+            }
+            statsText += ` • ${totalTags} tags available`;
+            
+            $("#stats").text(statsText);
+        }
+
+        // Event handlers
+        function bindEvents() {
+            // Search input
+            $("#searchBox").on('input', function() {
+                activeFilters.search = $(this).val();
+                filterData();
+            });
+
+            // Tag filter buttons
+            $(document).on('click', '.tag-button', function() {
+                const tag = $(this).data('tag');
+                const index = activeFilters.tags.indexOf(tag);
+                
+                if (index > -1) {
+                    activeFilters.tags.splice(index, 1);
+                    $(this).removeClass('active');
+                } else {
+                    activeFilters.tags.push(tag);
+                    $(this).addClass('active');
+                }
+                
+                filterData();
+            });
+
+            // Clear filters
+            $("#clearFilters").on('click', function() {
+                activeFilters.search = '';
+                activeFilters.tags = [];
+                $("#searchBox").val('');
+                $(".tag-button").removeClass('active');
+                filterData();
+            });
+        }
+
+        // Initialize the application
+        function init() {
+            renderTagFilters();
+            renderResources();
+            updateStats();
+            bindEvents();
+        }
+
+        // Start the application when document is ready
+        $(document).ready(function() {
+            init();
+        });
+    </script>
+</body>
+</html>

@@ -1,56 +1,100 @@
-https://eol.org/
+https://www.technologyreview.com/2025/05/20/1116327/ai-energy-usage-climate-footprint-big-tech/
+https://www.pbr-book.org/4ed/Introduction
+https://lisyarus.github.io/blog/
+https://rentry.co/samplers
+https://pytorch-dev-podcast.simplecast.com/episodes
+https://raytracing.github.io/
+https://www.scratchapixel.com/
+https://hynek.me/talks/design-pressure/
+https://www.heiko-sieger.info/running-windows-10-on-linux-using-kvm-with-vga-passthrough/
+https://www.reddit.com/r/linux_gaming/comments/teffuv/windows_vm_for_gaming/
+https://lisyarus.github.io/blog/posts/particle-life-simulation-in-browser-using-webgpu.html
+https://google-research.github.io/self-organising-systems/particle-lenia/
+https://strudel.cc/
+https://chyrplite.net/#screenshots
+https://github.com/mataroa-blog/mataroa
+
+book of shaders https://thebookofshaders.com/
+
+https://archive.org/details/IsaacAsimovAudioBookCollection
+
+https://bbycroft.net/llm
+
+https://screening-tools.com/about
+https://eotarchive.org/data/data-2020/
+https://freegovinfo.info/node/14744/#comment-68185
+
+https://mundraub.org/map#z=11&lat=50.10274427610123&lng=10.25779724121094
+https://www.freecodecamp.org/news/laravel-reverb-realtime-chat-app/
+http://puzzlepiece.org/
+
+https://eol.org/ :edu, :bio
+https://dynamicland.org/
+https://graphql.guide/understanding-graphql/ :dev,
+https://www.bathsheba.com/
+
+https://planetscale.com/blog/btrees-and-database-indexes
+
+https://www.zhou-xian.com/  : research, robotics, simulation,
 
 research papers and preprints and the like:
 https://arxiv.org/pdf/2308.00676.pdf
-https://iopscience.iop.org/article/10.1088/0953-2048/26/11/113001/pdf
+https://iopscience.iop.org/article/10.1088/0953-2048/26/11/113001/pdf  :engr
 
-https://www.youtube.com/watch?v=r73C0N8FDek
+https://nielssp.github.io/classic-stylesheets/?theme=winxp&skin=olive-green
+https://jdan.github.io/98.css/
+
+https://github.com/OAI/OpenAPI-Specification/tree/main
+
+https://www.youtube.com/watch?v=r73C0N8FDek :kek
 
 modern CS curriculum: https://functionalcs.github.io/curriculum/
 cool ML tool for generating images: https://github.com/deforum-art/deforum-stable-diffusion/tree/main
+
+https://gitlab.com/lockie/cl-fast-ecs/-/wikis/tutorial-1
 
 smart home:
   https://esphome.io/
   https://cloudfree.shop/product/aqara-door-and-window-sensors/
   https://www.shelly.com/en-us/products/shop/shelly-door-window-2
 
-wave function collapse stuff: https://pirateweather.net/
-probably good weather: http://pirateweather.net/en/latest/
+https://pirate-weather.apiable.io/ :weather, data
 
-games to learn algorithms: https://www.redblobgames.com/
+htmx book: https://hypermedia.systems/book/contents/
 
-edu LSTM: https://wiki.pathmind.com/lstm
+games to learn algorithms: https://www.redblobgames.com/ :edu
+
+edu LSTM: https://wiki.pathmind.com/lstm :edu, ml
 training LLM:
-  https://huggingface.co/blog/how-to-train
-  https://huggingface.co/docs/transformers/run_scripts
+  https://huggingface .co/blog/how-to-train :ml
   https://colab.research.google.com/github/neelnanda-io/Easy-Transformer/blob/clean-transformer-demo/Clean_Transformer_Demo_Template.ipynb#scrollTo=mva6DQ7mCUdO
 what is a transformer: https://www.youtube.com/watch?v=bOYE6E8JrtU
-ML course: https://karpathy.ai/zero-to-hero.html
+ML course: https://karpathy.ai/zero-to-hero.html :edu
 
-https://towardsdatascience.com/the-mostly-complete-chart-of-neural-networks-explained-3fb6f2367464
+monospace web https://wonger.dev/posts/monospace-dump#web
 
-http://www.keyboard-layout-editor.com/#/
-tap water contamination: https://www.ewg.org/tapwater/system.php?pws=VA6059501
-GPT in 60 lines of numpy: https://jaykmody.com/blog/gpt-from-scratch/
+http://www.keyboard-layout-editor.com/#/ :tool, dev
+tap water contamination: https://www.ewg.org/tapwater/system.php?pws=VA6059501  :data, water
+GPT in 60 lines of numpy: https://jaykmody.com/blog/gpt-from-scratch/ :dev
 
-jabroni brawl server guide: https://steamcommunity.com/sharedfiles/filedetails/?id=1527732439
+https://www.reddit.com/r/DataHoarder/wiki/backups :dev, files
 
-use this to store links with tags maybe: https://wallabag.org/
-
-operating systems 3 easy pieces: https://pages.cs.wisc.edu/~remzi/OSTEP/
-
-https://www.reddit.com/r/DataHoarder/wiki/backups
-
-https://kidger.site/thoughts/just-know-stuff/
-
-some interesting stuff: https://mcluhansnewsciences.com/mcluhan/2018/01/mcluhans-new-sciences-only-the-authority-of-knowledge/
-
-https://www.webdesignmuseum.org/
+https://www.webdesignmuseum.org/ :dev, web
 
 herb info: https://thepracticalherbalist.com/
-
-RISC-V working group mail list: https://riscv.org/using-the-working-groups-portal/
 
 android cuttlefish: https://source.android.com/docs/setup/create/cuttlefish-use
 
 https://pitchfork.com/features/lists-and-guides/the-33-best-industrial-albums-of-all-time/
+
+https://ryanis.cool/cosmos
+
+https://selfh.st/apps/
+
+http://taotajima.jp/works/the-9d-project/
+
+https://physicsbaseddeeplearning.org/intro-teaser.html
+
+https://cs231n.github.io/assignments2025/assignment1/
+
+https://dosmaps.com/posters
