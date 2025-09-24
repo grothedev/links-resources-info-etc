@@ -42,6 +42,7 @@ For context, here is my usecase: I have a collection of URLs to useful websites 
     * how to handle multiple users adding resources? we should allow for multiple users to add resources. so we'll have to keep track of who uploaded/added what. 
     * for now we will store URLs as 1 string, but in the future it might prove useful to separate out into domain, path, query args, etc. 
     * there is an API for client CRUD applications //TODO more detail 
+    * the program is "local first", so that it can be used to update the user's local DB if his primary service node is unreachable
 
 #### Database Schema
     (assume default fields id, created & modified timestamp)
