@@ -101,3 +101,8 @@ https://dosmaps.com/posters
 
 https://0b5vr.com/
 https://terminaltrove.com/explore/
+
+https://www.acs.psu.edu/drussell/demos.html
+
+https://github.com/awesome-foss/awesome-sysadmin
+https://github.com/awesome-selfhosted/awesome-selfhosted

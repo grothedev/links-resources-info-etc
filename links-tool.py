@@ -68,6 +68,7 @@ def parseArgs():
 def main():
     args = parseArgs()
     cmd = args.command
+    load_data()
     if cmd == 'add':
         add(args.url, args.title, args.tag, args.description)
     elif cmd == 'delete':
@@ -84,9 +85,18 @@ def add(url, title, tags, description):
     #notify that new resource has been added (so that the sync daemon can handle)
     #???
 
-def delete(id, url, title
+def deleteByID(id):
+    return
+
+def deleteByURL(url):
+    return
+        
 def start_repl():
     print('TODO')
+
+def load_data(): 
+    ''' get the links from localdb or whatever config '''
+    #TODO
 
 if __name__ == '__main__':
     main()
