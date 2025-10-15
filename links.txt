@@ -111,3 +111,7 @@ https://wiki.archiveteam.org/
 
 https://ikrima.dev/dev-notes/linux/linux-modern-tools/
 https://jvns.ca/blog/2022/04/12/a-list-of-new-ish--command-line-tools/
+
+https://grep.app
+
+https://roadmap.sh/
