@@ -27,7 +27,7 @@
     "url": "https://screening-tools.com/about",
     "label": "About — Data + Screening Tools",
     "tags": [],
-    "description": ""
+    "description": "The Public Environmental Data Partners are committed to preserving and providing public access to federal environmental data. We are a volunteer coalition of several environmental, justice and policy organizations, researchers across several universities, archivists, and students who rely on federal datasets and tools to support critical research, advocacy, policy, and litigation work. To gather insights on what data to preserve, we reached out to our networks, which consist largely of environme"
   },
   {
     "url": "https://eotarchive.org/data/data-2020/",
@@ -120,7 +120,7 @@
     "description": "To ensure we keep this website safe, please can you confirm you are a human by ticking the box below...."
   },
   {
-	"label": "classic sylesheets",
+    "label": "classic sylesheets",
     "url": "https://nielssp.github.io/classic-stylesheets/?theme=winxp&skin=olive-green",
     "tags": [
       "engr"
@@ -366,17 +366,234 @@
       "dev"
     ],
     "description": "Introduction..."
-  },{
-	"url": "https://www.piskelapp.com/p/create/sprite",
+  },
+  {
+    "url": "https://www.piskelapp.com/p/create/sprite",
     "label": "pixel art gif maker",
     "tags": [
       "dev"
     ],
+    "description": "Piskel, free online sprite editor. A simple web-based tool for Spriting and Pixel art. Create pixel art, game sprites and animated GIFs. Free and open-source."
+  },
+  {
+    "url": "https://www.10000yearclock.net/learnmore.html",
+    "label": "10000 year clock",
+    "description": "We are building a 10,000 Year Clock. It's a special Clock, designed to be a symbol, an icon for long term thinking."
+  },
+  {
+    "url": "https://www.technologyreview.com/2025/05/20/1116327/ai-energy-usage-climate-footprint-big-tech/",
+    "label": "We did the math on AI’s energy footprint. Here’s the story you haven’t heard. | MIT Technology Review",
+    "tags": [],
+    "description": "The emissions from individual AI text, image, and video queries seem small—until you add up what the industry isn’t tracking and consider where it’s heading next."
+  },
+  {
+    "url": "https://www.pbr-book.org/4ed/Introduction",
+    "label": "Introduction",
+    "tags": [],
     "description": ""
   },
   {
-	"url": "https://www.10000yearclock.net/learnmore.html",
-	"label": "10000 year clock",
-	"description": ""
+    "url": "https://lisyarus.github.io/blog/",
+    "label": "lisyarus blog",
+    "tags": [],
+    "description": ""
+  },
+  {
+    "url": "https://rentry.co/samplers",
+    "label": "Dummy's Guide to Modern Samplers",
+    "tags": [],
+    "description": "An idiot's comprehensive guide to modern sampling"
+  },
+  {
+    "url": "https://pytorch-dev-podcast.simplecast.com/episodes",
+    "label": "pytorch-dev-podcast.simplecast.com",
+    "tags": [],
+    "description": ""
+  },
+  {
+    "url": "https://raytracing.github.io/",
+    "label": "Ray Tracing in One Weekend Series",
+    "tags": [],
+    "description": "The Ray Tracing in One Weekend series of books are available to the public for free online. They are\n  released under the CC0\n  license. This means that they are as close to public domain as we can get. (While that also frees you from the\n  requirement of providing attribution, it would help the overall project if you could point back to this web site as a\n  service to other users.)\n  \n  Hit any of the book cover images above to begin reading. These books are formatted for printing directly from"
+  },
+  {
+    "url": "https://www.scratchapixel.com/",
+    "label": "https://www.scratchapixel.com/",
+    "tags": [],
+    "description": ""
+  },
+  {
+    "url": "https://hynek.me/talks/design-pressure/",
+    "label": "Design Pressure",
+    "tags": [],
+    "description": "Hynek Schlawack: Pythonista, Gopher, blogger, speaker, and YouTuber from Berlin / Germany."
+  },
+  {
+    "url": "https://www.heiko-sieger.info/running-windows-10-on-linux-using-kvm-with-vga-passthrough/",
+    "label": "https://www.heiko-sieger.info/running-windows-10-on-linux-using-kvm-with-vga-passthrough/",
+    "tags": [],
+    "description": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/linux_gaming/comments/teffuv/windows_vm_for_gaming/",
+    "label": "Reddit - The heart of the internet",
+    "tags": [],
+    "description": "So, I'm sick and tired of windows, but I still need it to play a lot of games since linux doesn't have native compatibility and proton doesn't work with all games."
+  },
+  {
+    "url": "https://lisyarus.github.io/blog/posts/particle-life-simulation-in-browser-using-webgpu.html",
+    "label": "Particle Life simulation in browser using WebGPU | lisyarus blog",
+    "tags": [],
+    "description": "If you don't care about the explanation and want a direct link to the simulation, here you go."
+  },
+  {
+    "url": "https://google-research.github.io/self-organising-systems/particle-lenia/",
+    "label": "Particle Lenia and the energy-based formulation",
+    "tags": [],
+    "description": "Simple particle-based artificial life-form"
+  },
+  {
+    "url": "https://strudel.cc/",
+    "label": "Strudel REPL",
+    "tags": [],
+    "description": "Strudel is a music live coding environment for the browser, porting the TidalCycles pattern language to JavaScript."
+  },
+  {
+    "url": "https://archive.org/details/IsaacAsimovAudioBookCollection",
+    "label": "Isaac Asimov Audio Book Collection : Free Download, Borrow, and Streaming : Internet Archive",
+    "tags": [],
+    "description": "Isaac Asimov Audio Book Collection"
+  },
+  {
+    "url": "https://wholeearth.info/",
+    "label": "Whole Earth Index",
+    "tags": [],
+    "description": "Here lies a nearly-complete archive of Whole Earth publications, a series of journals and magazines descended from the Whole Earth Catalog, published by Stewart Brand and the POINT Foundation between 1968 and 2002."
+  },
+  {
+    "url": "http://puzzlepiece.org/",
+    "label": "Puzzle Piece!",
+    "tags": [],
+    "description": "A web site dedicated to inexpensive \nand effective but underexplored solutions to important problems."
+  },
+  {
+    "url": "https://cs231n.github.io/assignments2025/assignment1/",
+    "label": "Assignment 1",
+    "tags": [],
+    "description": "Course materials and notes for Stanford class CS231n: Deep Learning for Computer Vision."
+  },
+  {
+    "url": "https://dosmaps.com/posters",
+    "label": "Domain of Science",
+    "tags": [],
+    "description": ""
+  },
+  {
+    "url": "https://0b5vr.com/",
+    "label": "0b5vr",
+    "tags": [],
+    "description": "0b5vr"
+  },
+  {
+    "url": "https://terminaltrove.com/explore/",
+    "label": "Search and Explore Terminal Tools - Terminal Trove",
+    "tags": [],
+    "description": "Explore our comprehensive collection of terminal tools with advanced search and filters."
+  },
+  {
+    "url": "https://www.acs.psu.edu/drussell/demos.html",
+    "label": "Dan Russell's Acoustics and Vibration Animations",
+    "tags": [],
+    "description": "This work by \n\t\n      Daniel A. Russell\n     \n    is licensed under a \n    \n      Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License\n    .\n    Based on a work at \n    \n      http://www.acs.psu.edu/drussell/demos.html\n    \n    . Additional information about using this content is available at \n    \n      http://www.acs.psu.edu/drussell/Demos/copyright.html\n    ."
+  },
+  {
+    "url": "https://github.com/awesome-foss/awesome-sysadmin",
+    "label": "GitHub - awesome-foss/awesome-sysadmin: A curated list of amazingly awesome open-source sysadmin resources.",
+    "tags": [],
+    "description": "A curated list of amazingly awesome open-source sysadmin resources. - awesome-foss/awesome-sysadmin"
+  },
+  {
+    "url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
+    "label": "GitHub - awesome-selfhosted/awesome-selfhosted: A list of Free Software network services and web applications which can be hosted on your own servers",
+    "tags": [],
+    "description": "A list of Free Software network services and web applications which can be hosted on your own servers - awesome-selfhosted/awesome-selfhosted"
+  },
+  {
+    "url": "https://wiki.archiveteam.org/",
+    "label": "Archiveteam",
+    "tags": [],
+    "description": "And we've been trashing our history"
+  },
+  {
+    "url": "https://ikrima.dev/dev-notes/linux/linux-modern-tools/",
+    "label": "Modern Linux Tools - Gamedev Guide",
+    "tags": [],
+    "description": "Programming notes for Unreal Engine, Houdini, Game Development, Math, & Graphics"
+  },
+  {
+    "url": "https://jvns.ca/blog/2022/04/12/a-list-of-new-ish--command-line-tools/",
+    "label": "A list of new(ish) command line tools",
+    "tags": [],
+    "description": "A list of new(ish) command line tools"
+  },
+  {
+    "url": "https://grep.app",
+    "label": "Code Search | Grep by Vercel",
+    "tags": [],
+    "description": "Effortlessly search for code, files, and paths across a million GitHub repositories."
+  },
+  {
+    "url": "https://roadmap.sh/",
+    "label": "Developer Roadmaps - roadmap.sh",
+    "tags": [],
+    "description": "Community driven roadmaps, articles and guides for developers to grow in their career."
+  },
+  {
+    "url": "https://systemsarchitect.io/",
+    "label": "SystemsArchitect.io | Cloud Architecture Best Practices",
+    "tags": [],
+    "description": "Master cloud architecture with AI-powered best practices guides for AWS, Azure, and GCP. Interactive study cards, expert recommendations, and practical implementation guides for cloud engineers."
+  },
+  {
+    "url": "https://www.gijskaerts.com/wordpress/?p=112",
+    "label": "Musings on cross-platform graphics engine architectures – Part 2 – Will push pixels for food",
+    "tags": [],
+    "description": "This is part 2 of a series on graphics engine architecture. You can read part 1 here. Part 2 – Multi-threaded command recording and submission When we take a closer look at any contemporary P…"
+  },
+  {
+    "url": "https://alain.xyz/blog/raw-webgpu#adapter",
+    "label": "Raw WebGPU",
+    "tags": [],
+    "description": "An overview on how to write a WebGPU application. Learn what key data structures and types are needed to draw in WebGPU."
+  },
+  {
+    "url": "https://openrouter.ai/rankings",
+    "label": "LLM Rankings | OpenRouter",
+    "tags": [],
+    "description": "Language models ranked and analyzed by usage across apps"
+  },
+  {
+    "url": "https://github.com/perkeep/perkeep/tree/master/",
+    "label": "GitHub - perkeep/perkeep: Perkeep (née Camlistore) is your personal storage system for life: a way of storing, syncing, sharing, modelling and backing up content.",
+    "tags": [],
+    "description": "Perkeep (née Camlistore) is your personal storage system for life: a way of storing, syncing, sharing, modelling and backing up content. - perkeep/perkeep"
+  },
+  {
+    "url": "https://theinternetisshit.xyz/",
+    "label": "TheInternetIsShit.xyz - Find Cool Stuff",
+    "tags": [],
+    "description": "In a world of infinite scroll and algorithmic feeds, sometimes you just need a button that says 'show me something cool' and actually delivers."
+  },
+  {
+    "url": "https://pagedout.institute/",
+    "label": "Paged Out!",
+    "tags": [],
+    "description": "Deeply technical zine. And it's free."
+  },
+  {
+    "url": "https://conwaylife.com/book/",
+    "label": "https://conwaylife.com/book/",
+    "tags": [],
+    "description": ""
   }
 ]
