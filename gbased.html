@@ -1,0 +1,1678 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>/g/'s Based Sites</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .js {
+            display: none;
+        }
+    </style>
+    <script>
+        const el = document.createElement('style');
+        el.type = 'text/css';
+        el.innerText = `.js { display: initial !important}`;
+        document.head.appendChild(el);
+    </script>
+    <script src="waifugenerator.js"></script>
+    <script src="main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Approved websites by and for users of 4chan's /g/ board.">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+</head>
+
+<body theme="light">
+    <div class="js">
+        <img id="waifu"></img>
+    </div>
+    <div class="container">
+        <div class="glitch" data-text="/g/'s based sites">/g/'s based sites</div>
+        <div class="news">
+            <b class="update">Last update: June 19, 2024</b>
+            <br>
+            <br>
+            /g/'s Good sites is back, sort of, again.
+            <br>
+            <br>
+            I decided to take this dead project and make something of it.
+            <br>
+            I fixed a couple of things and the weird bloat that archive.org had injected into the website.
+            <br>
+            <br>
+            Not sure where this website will go towards but atleast it won't die like the other one did.
+            <br>
+            current link count:<b> 764</b>
+        </div>
+        <div class="js">
+            <details id="changeWidget" class="change hidden collapsed">
+                <summary class="cat">Changes</summary>
+                <input id="timeslider" type="range" value="1" min="0" max="1" step="1">
+                <h3 class="cat" id="changeTime"></h3>
+                <div class="summary">
+                    <div>
+                        <h3 class="cat green">Added</h3>
+                        <div class="listing" id="added"></div>
+                    </div>
+                    <div>
+                        <h3 class="cat red">Removed</h3>
+                        <div class="listing" id="removed"></div>
+                    </div>
+                </div>
+            </details>
+        </div>
+
+        <div class="links">
+            <div class="js">
+                <div class="controls">
+                    <input type="text" id="search" onkeyup="search();" autocomplete="off" placeholder="Search">
+                    <div class="flex-spacer"></div>
+                    <button class="random" onclick="openStuff();">Random</button>
+                </div>
+            </div>
+
+            <div id="sites">
+                <h3 class="sticky cat">Alternative search engines:</h3>
+                <span><a title=" search  find  retro  interest " href="https://wiby.me/" target="_blank">wiby.me</a> -
+                    A search engine for older style pages.</span>
+                <span><a title=" search  find  old " href="http://theoldnet.com/" target="_blank">theoldnet.com</a> -
+                    A retro search engine for retro websites.</span>
+                <span><a title=" Anime  image  Anime " href="https://trace.moe/" target="_blank">trace.moe</a> -
+                    A search engine for anime screenshots. Won't work with crops. It will give episode and timestamp of a good screenshot.</span>
+                <span><a title=" search  find  download " href="https://filelisting.com/" target="_blank">filelisting.com</a> -
+                    FileListing (pretty good at searching for torrents)</span>
+                <span><a title=" search  find  download " href="https://www.dedigger.com/" target="_blank">dedigger.com</a> -
+                    dedigger (search for public files on Google Drive)</span>
+                <span><a title=" find  open  directory  directories  od  index  search  open  directories  search  open  directory  find  index  wget  youtube-dl  ebooks  music  audio  movie  movies  video  mp3  avi  m4a  mkv  mp4  wbm  flac  wav " href="https://www.eyeofjustice.com/od/" target="_blank">eyeofjustice.com/od</a> -
+                    Open Directory Search Portal</span>
+                <span><a title=" find  Mamont " href="https://www.mmnt.ru/int/" target="_blank">mmnt.ru/int</a> -
+                    Mamont FTP search engine</span>
+                <span><a title=" find " href="https://search.mibbit.com/" target="_blank">search.mibbit.com</a> -
+                    search engine for IRC</span>
+                <span><a title=" find " href="https://www.searchftps.net/" target="_blank">searchftps.net</a> -
+                    NAPALM FTP search engine</span>
+                <span><a title=" find  FilePursuit  files  download  search " href="https://filepursuit.com/" target="_blank">filepursuit.com</a> -
+                    FilePursuit</span>
+                <span><a title=" find  HTML  CSS  XML  JavaScript " href="https://lumpysoft.com/" target="_blank">lumpysoft.com</a> -
+                    Google Index Search</span>
+                <span><a title=" technology " href="https://searx.space/" target="_blank">searx.space</a> -
+                    Online and offline Searx instances</span>
+                <span><a title=" find  mp3  wma  wav  search+mp3  search+music " href="http://musgle.com/" target="_blank">musgle.com</a> -
+                    Search music files through google</span>
+                <span><a title=" find  search  open  directories  directory " href="https://opendirsearch.abifog.com/" target="_blank">opendirsearch.abifog.com</a> -
+                    Open Directory Search Portal</span>
+                <span><a title=" find  Open  Directory  Search  tool " href="http://palined.com/search/" target="_blank">palined.com/search</a> -
+                    Google Open Directory Search</span>
+                <span><a title=" find  torrent  aggregator  search  public  torrent  indexes " href="https://snowfl.com/" target="_blank">snowfl.com</a> -
+                    snowfl (searches various public torrent indexes)</span>
+                <span><a title=" find  open  source  packages  search " href="https://libraries.io/" target="_blank">libraries.io</a> -
+                    Search open source packages, frameworks and tools...</span>
+                <span><a title=" find  gif  archive " href="https://gifcities.org/" target="_blank">gifcities.org</a> -
+                    The GeoCities Animated GIF Search Engine</span>
+                <span><a title=" find  search  Internet  of  Things  Security  Buildings  the  Web  Webcams  Refrigerators  Power  Plants " href="https://www.shodan.io/" target="_blank">shodan.io</a> -
+                    Search engine for IoT devices, you can access ones with no pw set</span>
+                <span><a title=" find  search  accounts  website  login  password " href="http://bugmenot.com/" target="_blank">bugmenot.com</a> -
+                    Find and share logins instead of registering an account for something you don't care about.</span>
+                <span><a title=" find  search  engine  videos  archive  audio  ebooks  open  directory " href="https://www.filechef.com/" target="_blank">filechef.com</a> -
+                    File finder using google dorks.</span>
+                <span><a title=" find  search  engine  open  directory   " href="https://odcrawler.xyz/" target="_blank">odcrawler.xyz</a> -
+                    Open directory crawler.</span>
+                <span><a title="" href="https://www.alltheinternet.com/" target="_blank">alltheinternet.com</a> -
+                    private, customizable alternative to Google.</span>
+                <span><a title="" href="https://all-io.net/" target="_blank">all-io.net</a> -
+                    All major search engines in one.</span>
+                <span><a title="" href="https://www.faganfinder.com/" target="_blank">faganfinder.com</a> -
+                    Quick pick search engine changer.</span>
+                <h3 class="sticky cat">Miscellaneous Interesting sites:</h3>
+                <span><a title=" open  directory  archive  the-eye  the-eye.eu  datahoarder  download " href="https://the-eye.eu/public" target="_blank">the-eye.eu/public</a> -
+                    An archive of random files.</span>
+                <span><a title=" joke  test  hdd  ssd " href="http://www.filldisk.com/" target="_blank">filldisk.com</a> -
+                    Fill your hardrive with cats</span>
+                <span><a title=" opentopia  webcam  webcams  webcamera  cameras  security  cams " href="http://www.opentopia.com/" target="_blank">opentopia.com</a> -
+                    Random open webcams</span>
+                <span><a title=" old  retro " href="http://info.cern.ch/" target="_blank">info.cern.ch</a> -
+                    The first ever website.</span>
+                <span><a title=" obscure  Riddles  Puzzle  hardest  puzzle " href="http://notpron.org/notpron" target="_blank">notpron.org/notpron</a> -
+                    A riddle site.</span>
+                <span><a title=" printer  retro  old " href="https://www.hp9845.net/9845/software/screenart/9845cdemo" target="_blank">hp9845.net/9845/software/screenart/9845cdemo</a> -
+                    Gallery of screen art with an HP 9845C</span>
+                <span><a title=" stats  map  simulation  die  born " href="https://worldbirthsanddeaths.com/" target="_blank">worldbirthsanddeaths.com</a> -
+                    Births and deaths simulator.</span>
+                <span><a title=" community  weblog  interesting " href="https://www.metafilter.com/" target="_blank">metafilter.com</a> -
+                    A sort of shared blog / news site</span>
+                <span><a title=" research  climate  population " href="https://degrowth.org/" target="_blank">degrowth.org</a> -
+                    reversing the damage we do to our world</span>
+                <span><a title=" history " href="https://en.m.wikipedia.org/wiki/Portal:Current_events" target="_blank">en.m.wikipedia.org/wiki/Portal:Current_events</a> -
+                    Documents timeline of world events all the way back from the 20th century</span>
+                <span><a title=" privacy  botnet " href="https://usemumble.neocities.org/" target="_blank">usemumble.neocities.org</a> -
+                    Why mumble is a Chad and Discord is a virgin.</span>
+                <span><a title=" &#x2F;g&#x2F; " href="https://digdeeper.neocities.org/" target="_blank">digdeeper.neocities.org</a> -
+                    Seems like Anon's blog, if he wants a better explaination he can provide a description.</span>
+                <span><a title=" self  improvement " href="https://greaterwrong.com/" target="_blank">greaterwrong.com</a> -
+                    Posts about how to think.</span>
+                <span><a title=" MGTOW  misogyny  MRA  opposite  of  misogyny  PUA " href="https://www.singularity2050.com/2010/01/the-misandry-bubble.html" target="_blank">singularity2050.com/2010/01/the-misandry-bubble</a> -
+                    The Misandry Bubble (posted in 2010)</span>
+                <span><a title=" old  retro " href="https://resobscura.blogspot.com/" target="_blank">resobscura.blogspot.com</a> -
+                    Catalog of obscure things.</span>
+                <span><a title=" tech  computer " href="https://lobste.rs/" target="_blank">lobste.rs</a> -
+                    Lobsters is a computing-focused community centered around link aggregation and discussion.</span>
+                <span><a title=" sine  waves  draw  animation " href="http://www.jezzamon.com/fourier/index.html" target="_blank">jezzamon.com/fourier/index</a> -
+                    Fourier Transforms</span>
+                <span><a title=" complex  system  complexity  theory  self-organization  attractors  artificial  life  cellular  automata  fractals  genetic  algorithm  neural  network  emergence  coevolution  phase  space  dynamic  adaptive  agent  connectivity  fitness  landscape  surrealism  transient  perturbation " href="http://calresco.org/" target="_blank">calresco.org</a> -
+                    The Complexity &amp; Artificial Life Research Concept (90s complexity stuff)</span>
+                <span><a title=" cybernetics  evolution  philosophy  world  view  Principia  Cybernetica  PCP  systems  theory  project  principles  metasystems " href="http://pespmc1.vub.ac.be/" target="_blank">pespmc1.vub.ac.be</a> -
+                    Principia Cybernetica Web (90s system theory stuff)</span>
+                <span><a title=" handfeel  hand  feel  measuring  softness  paired  comparison  handfeel  panel " href="http://www.certifiedsoftness.com/" target="_blank">certifiedsoftness.com</a> -
+                    Certified Softness Measurement</span>
+                <span><a title=" Daggermag  Dagger  Magazine  pulp  comics  culture  art  comics  comicbooks  movies  horror  Sam  Hyde  MDE " href="http://daggermag.com/" target="_blank">daggermag.com</a> -
+                    Dagger Magazine</span>
+                <span><a title=" programming  encyclopedia  progopedia  languages  GNU  encyclopedia " href="http://progopedia.com/" target="_blank">progopedia.com</a> -
+                    Progopedia</span>
+                <span><a title=" unix  computer  community " href="http://tilde.club/" target="_blank">tilde.club</a> -
+                    tilde club</span>
+                <span><a title=" Web  Links  sites  &#x2F;g&#x2F; " href="https://soda.privatevoid.net/num/links/" target="_blank">soda.privatevoid.net/num/links</a> -
+                    a cool link list</span>
+                <span><a title=" Linux  kernal  source  code " href="https://www.vidarholen.net/contents/wordcount/" target="_blank">vidarholen.net/contents/wordcount</a> -
+                    counts and graphs various kinds of words found within the source of the linux kernel</span>
+                <span><a title=" lolwut  2000s  nostalgia  computers  internet  web  video  games  gaming  television  tv " href="https://lolwut.neocities.org/" target="_blank">lolwut.neocities.org</a> -
+                    oldschool anon's blog</span>
+                <span><a title=" Antarctica  Antarctic  Deception  Island  volcanoe  volcanoes  volcanic  activity  whaling  station  Deception  Island  Management  Group  Deception  Island  Management  Plan  South  Shetland  Islands  Mount  Pond  Kroner  Lake  Baily  Head  Neptunes  Bellows  Port  Foster  caldera  Antarctic  pearlwort  Colobanthus  quitensis  Antarctic  Specially  Protected  Area " href="http://www.deceptionisland.aq/" target="_blank">deceptionisland.aq</a> -
+                    an island with an active volcano in the middle that doesn't look like it has one</span>
+                <span><a title=" webshit  weekly  blog  news  hacker " href="http://n-gate.com/" target="_blank">n-gate.com</a> -
+                    webshit weekly of "hacker" "news"</span>
+                <span><a title=" steam  tunnels " href="https://beneathvt.com/" target="_blank">beneathvt.com</a> -
+                    virginia tech's steam tunnels</span>
+                <span><a title=" Virginia  Tech " href="https://tools.ietf.org/html/rfc1855" target="_blank">tools.ietf.org/html/rfc1855</a> -
+                    a set of guidelines made in 1995 on how to behave in a conversation on the internet</span>
+                <span><a title=" fonts  old  retro " href="https://int10h.org/oldschool-pc-fonts/" target="_blank">int10h.org/oldschool-pc-fonts</a> -
+                    old PC fonts</span>
+                <span><a title=" restored  visual  gallery  archived  Geocities  sites, " href="https://geocities.restorativland.org/" target="_blank">geocities.restorativland.org</a> -
+                    the gallery of geocities sites</span>
+                <span><a title=" random  random  webpages  bored  unique  sites  interesting  websites  something  to  do  online " href="https://stumblingon.com/" target="_blank">stumblingon.com</a> -
+                    StumblingOn shows you a random webpage whenever you click the STUMBLE button.</span>
+                <span><a title=" archive  cartoons  banned  racism  funny  old  retro " href="https://web.archive.org/web/20170823090710/http://www.rotten.com/library/culture/banned-cartoons/" target="_blank">web.archive.org/web/20170823090710/http://www.rotten.com/library/culture/banned-cartoons</a> -
+                    Banned Cartoons</span>
+                <span><a title=" archive " href="https://web.archive.org/web/20170829074032/rotten.com/library" target="_blank">web.archive.org/web/20170829074032/rotten.com/library</a> -
+                    The Rotten Library (archived)</span>
+                <span><a title=" Class  Real  ClassReal  mindfuck  mindfuck  movie  mindfuck  movies  movie  movies  film  films  causal  loop  critical  thinking  determinism  existentialism  externalism  internalism  logic  metaphysics  math  paradox  personal  identity  postmodernism  pythagoreanism  radical  deception  relativism  surreal  surrealism  totalitarianism  time  travel " href="http://www.classreal.com/shorts.php" target="_blank">classreal.com/shorts</a> -
+                    list of shorts and movies one would call a "mindfuck"</span>
+                <span><a title=" zoomquilt  infinite  zoom  painting  artwork " href="http://zoomquilt.org/" target="_blank">zoomquilt.org</a> -
+                    infinitely zooming painting</span>
+                <span><a title=" zoomquilt  infinite  zoom  painting  artwork " href="http://zoomquilt2.com/" target="_blank">zoomquilt2.com</a> -
+                    another infinite painting</span>
+                <span><a title=" wordseye  text-to-3d  language-to-3d  text  to  scene  text-to-scene  art  3d  art  3d  scene  3d  artist  3d  models  3d  graphics  graphic  artist  art  community  picture  image  greeting  cards  comics  cartoons  digital  art " href="https://www.wordseye.com/" target="_blank">wordseye.com</a> -
+                    1000 words is a picture</span>
+                <span><a title=" Create  Public  Datasets " href="https://www.kaggle.com/datasets" target="_blank">kaggle.com/datasets</a> -
+                    Open datasets of projects</span>
+                <span><a title=" forum  blog  bbs  old  retro " href="https://newtotse.com/" target="_blank">newtotse.com/oldtotse</a> -
+                    the Temple of the Screaming Electron</span>
+                <span><a title=" painter  doom  gallery  old  retro " href="https://www.bamsoftware.com/hacks/" target="_blank">bamsoftware.com/hacks</a> -
+                    some interesting projects</span>
+                <span><a title=" European  Canadian  Anglo  Canadian  French  Canadian  White  Canadian " href="https://www.eurocanadian.ca/2018/04/the-myth-of-homosexuality-in-ancient-greece.html" target="_blank">eurocanadian.ca/2018/04/the-myth-of-homosexuality-in-ancient-greece</a> -
+                    Greeks weren't always bent</span>
+                <span><a title=" game  js  tools  toys  experiments " href="https://orteil.dashnet.org/" target="_blank">orteil.dashnet.org</a> -
+                    Some cool stuff made from javascript</span>
+                <span><a title=" Logic  gates  modules  vectors  combinational  blocks  electronics " href="https://hdlbits.01xz.net/wiki/Main_Page" target="_blank">orteil.01xz.net/wiki/Main_Page</a> -
+                    HDLBits is a collection of small circuit design exercises for practicing digital hardware design(HDL).</span>
+                <span><a title=" kernel  microkernel  OS " href="https://sel4.systems/" target="_blank">sel4.systems/ </a> -
+                    The seL4® Microkernel</span>
+                <span><a title="" href="https://www.cia.gov//readingroom/collection/stargate" target="_blank">cia.gov/readingroom/collection/stargate</a> -
+                    CIA declassified Stargate program files, reads like real life SCP at times</span>
+                <span><a title=" visual  illusion  illuson  visual  illusions  optical  illusions  optische  Täuschungen  optische  Illusionen  Gestalt  art  science  psychology  perception  sensation  ilusiones  opticas " href="https://michaelbach.de/ot/" target="_blank">michaelbach.de/ot</a> -
+                    142 optical illusions</span>
+                <span><a title=" memes  memetics  Dawkins  cultural  evolution  replicators  spread  selection  communication  transmission  mind  virus " href="http://pespmc1.vub.ac.be/MEMES.html" target="_blank">pespmc1.vub.ac.be/MEMES</a> -
+                    Memetics</span>
+                <span><a title=" Mystery  Photos  news  links  ascension  transition " href="https://www.angelfire.com/oh2/peterr/links/links.html" target="_blank">angelfire.com/oh2/peterr/links/links</a> -
+                    Some old weird angelfire link list</span>
+                <span><a title=" space  science  scale " href="https://joshworth.com/dev/pixelspace/pixelspace_solarsystem.html" target="_blank">joshworth.com/dev/pixelspace/pixelspace_solarsystem</a> -
+                    The solar system with accurate spacing if the moon were only one pixel</span>
+                <span><a title=" latex " href="https://binfalse.de/2016/02/08/create-an-unscanable-letter/" target="_blank">binfalse.de/2016/02/08/create-an-unscanable-letter</a> -
+                    Create an unscannable letter</span>
+                <span><a title=" only  fans  e-whore  thots " href="https://www.xsrus.com/writing/explain/onlyfans/" target="_blank">xsrus.com/writing/explain/onlyfans</a> -
+                    Explaining OnlyFans</span>
+                <span><a title=" fake  news  lies  wiki  beg " href="https://larrysanger.org/2020/05/wikipedia-is-badly-biased/" target="_blank">larrysanger.org/2020/05/wikipedia-is-badly-biased</a> -
+                    How wikipedia is biased</span>
+                <span><a title=" japan  weeb " href="https://furaba-animeseichi.blog.jp/" target="_blank">furaba-animeseichi.blog.jp</a> -
+                    Real life locations compared to same scenes found in anime</span>
+                <span><a title=" map  country " href="https://thetruesize.com/" target="_blank">thetruesize.com</a> -
+                    the true size of countries</span>
+                <span><a title="" href="https://spacehey.com/" target="_blank">spacehey.com</a> -
+                    is a myspace clone that's fully functional!</span>
+                <span><a title=" clock  reindeer " href="http://klockren.se/" target="_blank">klockren.se</a> -
+                    shows the time on a reindeer</span>
+                <span><a title=" archive  censorship  activism " href="https://wiki.archiveteam.org/" target="_blank">wiki.archiveteam.org</a> -
+                    They save sites and data from the memory hole</span>
+                <span><a title=" random  video  memes  funny " href="https://disc0rd.xyz/" target="_blank">disc0rd.xyz</a> -
+                    Shows you a random video everytime you refresh</span>
+                <span><a title=" Jumper  settings " href="https://ipfs.io/ipfs/Qmd6wXYYzqeS8CikCXBK4PFfmFyBZnF9nxiwSdjAHqG9rC/" target="_blank">ipfs.io/ipfs/QmSxqrrwUc5hQbyEtMSeF8FKfsWDuvcyUdFEeHXtjxhQgL</a> -
+                    Total Hardware 1999</span>
+                <span><a title=" random  blog  technology " href="https://eclectic4un.me/" target="_blank">eclectic4un.me</a> -
+                    Blog about anything and everything</span>
+                <span><a title=" random  blog  lingvistics  russian  sociology " href="https://ceesjhay.org/" target="_blank">ceesjhay.org</a> -
+                    a blog about life and death, politics and sociology. Russian and English</span>
+                <h3 class="sticky cat">Useful sites:</h3>
+                <span><a title=" webdesign  ui  ux  ui  kit  gradients  backdrop  sketch  photoshop  freebie  free  web  webdev  css3  css  colors  animation  psd  palette  colour  background " href="https://webgradients.com/" target="_blank">webgradients.com</a> -
+                    Web gradients.</span>
+                <span><a title=" proxy  list  daily  proxies  free  proxy  list  daily  proxy  list  fresh  proxies  fresh  proxy  list  socks4  proxy  list  socks5  proxy  list  http  proxy  list  https  proxy  list " href="https://openproxy.space/list" target="_blank">openproxy.space/list</a> -
+                    good source for proxies.</span>
+                <span><a title=" translate  translator " href="https://www.deepl.com/en/translator" target="_blank">deepl.com/en/translator</a> -
+                    A translator better than Google Translate.</span>
+                <span><a title=" Image  Resolution  Anime  Art  Deep  Convolutional  Neural  Networks  photo " href="http://waifu2x.udp.jp/" target="_blank">waifu2x.udp.jp</a> -
+                    A site to scale images without the loss of quality and remove jpeg artifacts.</span>
+                <span><a title=" LCD  monitor  test  diplay  calibrate " href="http://www.lagom.nl/lcd-test/clock_phase.php" target="_blank">lagom.nl/lcd-test/clock_phase</a> -
+                    Misc tests to check if your monitor sucks or not.</span>
+                <span><a title=" file  share " href="https://filebin.net/" target="_blank">filebin.net</a> -
+                    an alright anonymous file host, but it's been really fucking slow lately and it tends to get full very quickly.</span>
+                <span><a title=" gofile  download  upload  free  host  storage  share  big  file  video  image  audio " href="https://gofile.io/" target="_blank">gofile.io</a> -
+                    Another anonymous file host.</span>
+                <span><a title=" math  LaTeX  productivity  typesetting  science  machine  learning  PhD " href="http://detexify.kirelabs.org/classify.html" target="_blank">detexify.kirelabs.org/classify</a> -
+                    Symbol finder for LaTeX.</span>
+                <span><a title=" piracy  pirate  files " href="https://piracy.now.sh/" target="_blank">piracy.now.sh</a> -
+                    A great collection of piracy related links.</span>
+                <span><a title="" href="https://github.com/Igglybuff/awesome-piracy/blob/master/readme.md" target="_blank">github.com/Igglybuff/awesome-piracy/blob/master/readme.md</a> -
+                    More very useful links with a focus on piracy.</span>
+                <span><a title="" href="https://cssauthor.com/" target="_blank">cssauthor.com</a> -
+                    Templates and such.</span>
+                <span><a title="" href="https://forum.mobilism.org/index.php" target="_blank">forum.mobilism.org/index</a> -
+                    Books, android/iOS apps and more.</span>
+                <span><a title="" href="https://v5.nomie.app/" target="_blank">v5.nomie.app</a> -
+                    Life tracker but private.</span>
+                <span><a title="" href="https://sleepyti.me/" target="_blank">sleepyti.me</a> -
+                    Bed time calculator.</span>
+                <span><a title=" portable  freeware  portable  software  software  for  usb  drive " href="https://www.portablefreeware.com/" target="_blank">portablefreeware.com</a> -
+                    Portable freeware</span>
+                <span><a title="" href="https://gpldl.com/" target="_blank">gpldl.com</a> -
+                    Free premium wordpress stuff</span>
+                <span><a title="" href="https://osintframework.com/" target="_blank">osintframework.com</a> -
+                    OSINT framework focused on gathering information from free tools or resources.</span>
+                <span><a title="" href="https://github.com/awesome-selfhosted/awesome-selfhosted" target="_blank">github.com/awesome-selfhosted/awesome-selfhosted</a> -
+                    A list of Free Software network services and web apps which can be self hosted</span>
+                <span><a title="" href="https://github.com/Hack-with-Github/Awesome-Hacking/blob/master/README.md" target="_blank">github.com/Hack-with-Github/Awesome-Hacking/blob/master/README.md</a> -
+                    pentesting resources.</span>
+                <span><a title="" href="https://wq.apnic.net/static/search.html" target="_blank">wq.apnic.net/static/search</a> -
+                    Jim Browning's recommendation for lookups</span>
+                <span><a title="" href="https://invidious.snopyta.org/" target="_blank">invidious.snopyta.org</a> -
+                    </span>
+                <span><a title="" href="https://cq.cx/ladder.pl" target="_blank">cq.cx/ladder.pl</a> -
+                    A compiler that starts with a ladder diagram and generates native PIC16 or AVR code.</span>
+                <span><a title="" href="https://www.nirsoft.net/" target="_blank">nirsoft.net</a> -
+                    NirSoft web site provides a unique collection of small and useful freeware utilities.</span>
+                <span><a title="" href="https://pinetools.com/" target="_blank">pinetools.com</a> -
+                    A lot of useful tools, such as timers, calculators, randomizers, etc</span>
+                <span><a title="" href="https://teddit.net/" target="_blank">teddit.net</a> -
+                    Very minimal Reddit front end site</span>
+                <span><a title="" href="https://nitter.net/" target="_blank">nitter.net</a> -
+                    Very minimal Twitter front end site</span>
+                <span><a title="" href="https://www.trendsmap.com/" target="_blank">trendsmap.com</a> -
+                    Twitter trends on map</span>
+                <span><a title="" href="http://www.dot.tk/en/index.html" target="_blank">dot.tk/en/index</a> -
+                    Free domains</span>
+                <span><a title="" href="https://bios-pw.org/" target="_blank">bios-pw.org</a> -
+                    BIOS Password Recovery for Laptops</span>
+                <span><a title="" href="https://w3i.org/" target="_blank">w3i.org</a> -
+                    old style but very well organised link list</span>
+                <span><a title="" href="https://ianli.github.io/so-you-need-a-typeface/" target="_blank">ianli.github.io/so-you-need-a-typeface</a> -
+                    A place to find a typeface</span>
+                <span><a title="" href="https://smmry.com/" target="_blank">smmry.com</a> -
+                    Makes tl;dr with a very simple algo. Works best on news than technical texts.</span>
+                <span><a title="" href="https://catalog.neet.tv/harlequin.html" target="_blank">catalog.neet.tv/harlequin</a> -
+                    thread wordcloud</span>
+                <span><a title="" href="https://certbot.eff.org/" target="_blank">certbot.eff.org</a> -
+                    Free SSL certificates</span>
+                <span><a title="" href="https://catbox.moe/" target="_blank">catbox.moe</a> -
+                    a cute file uploading site</span>
+                <span><a title="" href="https://palettegenerator.com/" target="_blank">palettegenerator.com</a> -
+                    Palette Generator</span>
+                <span><a title="" href="https://xdcc2.jav.pw/" target="_blank">xdcc2.jav.pw</a> -
+                    XDCC packlist</span>
+                <span><a title=" base64  hex  decode  encode  encrypt  decrypt  compress  decompress  regex  regular  expressions  hash  crypt  hexadecimal  user  agent  url  certificate  x.509  parser  JSON  gzip  md5  sha1  aes  des  blowfish  xor " href="https://gchq.github.io/CyberChef/" target="_blank">gchq.github.io/CyberChef</a> -
+                    Tool for encoding/decoding/hashing and much more.</span>
+                <span><a title="" href="https://github.com/fonic/ipfilter" target="_blank">github.com/fonic/ipfilter</a> -
+                    IP Filter Updater &amp; Generator</span>
+                <span><a title="" href="https://blocklistproject.github.io/Lists/" target="_blank">blocklistproject.github.io/Lists</a> -
+                    Filter lists for adblock etc.</span>
+                <span><a title=" store  template  restaurant  generator  gas  fake " href="http://www.fakereceipt.us/sales_receipt.php" target="_blank">fakereceipt.us/sales_receipt</a> -
+                    Make your own fake reciepts</span>
+                <span><a title="" href="https://filterlists.com/" target="_blank">filterlists.com</a> -
+                    Filter lists for adblock etc.</span>
+                <span><a title=" Radiation  and  Nuclear  Chemistry  Tools  And  Equipment  Electronic  &amp;amp;  Electrical  General  Science  General  Interest  Neodymium  Magnets  Gift  Certificates  Area  51  Restricted  to  UPS  Only  Element  Samples  High  Voltage  Solar  Power  Scales  Chemistry  physics  biology  radioactive " href="https://unitednuclear.com/" target="_blank">unitednuclear.com</a> -
+                    US shop for nuclear and chemical supplies. They sell uranium ore</span>
+                <span><a title="" href="https://html5up.net/" target="_blank">html5up.net</a> -
+                    Great website templates in HTML5 &amp; CSS3</span>
+                <span><a title="" href="https://spidr.today/" target="_blank">spidr.today</a> -
+                    A good news aggregator</span>
+                <span><a title=" free  temporary  email  disposable  mail  email  address " href="http://10minutemail.com/" target="_blank">10minutemail.com</a> -
+                    Temporary email addresses</span>
+                <span><a title=" free  temporary  email  disposable  mail  email  address " href="https://smailpro.com/" target="_blank">smailpro.com</a> -
+                    Temporary email addresses</span>
+                <span><a title=" free  temporary  email  disposable  mail  email  address " href="https://temp-mail.org/en/" target="_blank">temp-mail.org/en</a> -
+                    free temp email w/ constant stream of new domains</span>
+                <span><a title="" href="https://cock.li/" target="_blank">cock.li</a> -
+                    The best secondary email provider.</span>
+                <span><a title=" Scripts  PHP  Javascript  Games  Programs  Free  Programs  Forum  Chat  Deep  Web  Illuminati " href="https://blackhost.xyz/" target="_blank">blackhost.xyz</a> -
+                    tor email provider</span>
+                <span><a title="" href="https://alternativeto.net/" target="_blank">alternativeto.net</a> -
+                    Site where you can write the name of the software and get alternatives for it</span>
+                <span><a title="" href="https://forum.xda-developers.com/" target="_blank">forum.xda-developers.com</a> -
+                    The place to go for all of your Android needs. (roms, mods, tweaks etc.)</span>
+                <span><a title="" href="https://filehostlist.miraheze.org/wiki/Free_Premium_Leeches" target="_blank">filehostlist.miraheze.org/wiki/Free_Premium_Leeches</a> -
+                    leech wiki</span>
+                <span><a title="" href="https://terminal.sexy/" target="_blank">terminal.sexy</a> -
+                    Terminal color scheme designer</span>
+                <span><a title="" href="https://unanimated.github.io/guides.htm" target="_blank">unanimated.github.io/guides</a> -
+                    Fansub guides</span>
+                <span><a title="" href="https://www.isp-in-area.com/" target="_blank">isp-in-area.com</a> -
+                    An ISP directory for the USA</span>
+                <span><a title=" tumblr " href="https://www.tumbex.com/" target="_blank">tumbex.com</a> -
+                    A tumblr front end site</span>
+                <span><a title=" piracy  pirate  files  download " href="https://downloadly.ir/" target="_blank">downloadly.ir</a> -
+                    Persian piracy</span>
+                <span><a title=" virus  scan  files  security " href="https://www.virustotal.com/" target="_blank">virustotal.com</a> -
+                    Analyze suspicious files, domains, IPs and URLs to detect malware and other breaches, automatically share them with the security community</span>
+                <span><a title=" xmpp  jabber  chat " href="https://creep.im/" target="_blank">creep.im</a> -
+                    A free privacy and security focused XMPP server in a jurisdiction of France</span>
+                <span><a title=" money " href="https://cheapskatesguide.org/" target="_blank">cheapskatesguide.org</a> -
+                    Learn how to save money on computers and internet services</span>
+                <span><a title="" href="https://coolors.co/" target="_blank">coolors.co</a> -
+                    A fun color palette generation tool</span>
+                <span><a title=" paywall  bypass  addon  extension " href="https://gitlab.com/magnolia1234/bypass-paywalls-chrome-clean" target="_blank">Bypass-Paywalls-Chrome</a> -
+                    Bypass subscription-based paywalls on news websites/magazine/blogs/etc. There's a Firefox version in that link as well.</span>
+                <span><a title=" proxy  image  image viewer " href="https://cubari.moe/" target="_blank">cubari.moe</a> -
+                    Image proxy/viewer that displays pictures from numerous sites in comic book form.</span>
+                <span><a title=" proxy  frontend " href="https://libredirect.github.io/" target="_blank">libredirect.github.io</a> -
+                    List for different front-ends and proxies to popular websites.</span>
+                <h3 class="sticky cat">Science &#x2F; math sites:</h3>
+                <span><a title="" href="https://worldwidescience.org/" target="_blank">worldwidescience.org</a> -
+                    </span>
+                <span><a title=" Meteors  Meteor  scatter  Live  radio  meteors  Geminid  Leonid  Perseid  Meteor  showers  meteor  pings  meteor  echoes " href="http://www.livemeteors.com/" target="_blank">livemeteors.com</a> -
+                    Listen live to VHF signals bouncing off of ionised trails of meteors</span>
+                <span><a title="" href="https://www.catalogueoflife.org/data/search/" target="_blank">catalogueoflife.org/data/search</a> -
+                    The most complete authoritative list of the world's species</span>
+                <span><a title=" bacteriology  bacteria  microbes  microbiology  procaryotes  prokaryotes  bacteriophage  bacterial  structure  bacterial  growth  procaryotic  metabolism  microbial  diversity  regulation  of  metabolism " href="http://www.textbookofbacteriology.net/index.html" target="_blank">textbookofbacteriology.net/index</a> -
+                    Online textbook of bacteriology</span>
+                <span><a title="" href="https://earthquake.usgs.gov/earthquakes/map" target="_blank">earthquake.usgs.gov/earthquakes/map</a> -
+                    Latest earthquakes</span>
+                <span><a title="" href="http://www.projectrho.com/public_html/rocket/" target="_blank">projectrho.com/public_html/rocket</a> -
+                    Helping sci-fi writers get their facts right.</span>
+                <span><a title="" href="https://x6ud.github.io/#/" target="_blank">x6ud.github.io/#</a> -
+                    Manipulate a 3D model of an animal skull and get reference photos of animals facing same direction as mode</span>
+                <span><a title="" href="http://rosettacode.org/" target="_blank">rosettacode.org</a> -
+                    Well-known problems and algorithms in several languages</span>
+                <span><a title="" href="https://www.nayuki.io/" target="_blank">nayuki.io</a> -
+                    programming/math</span>
+                <span><a title="" href="https://betterexplained.com/" target="_blank">betterexplained.com</a> -
+                    Clear, intuitive lessons about imaginary numbers, exponents, and more.</span>
+                <span><a title="" href="https://darksitefinder.com/maps/world.html" target="_blank">darksitefinder.com/maps/world</a> -
+                    Map of light pollution, for stargazers.</span>
+                <span><a title=" Windyty  Windytv  windy  app  wind  map  windfinder  windguru  wind  forecast  weather  forecast  GFS  ECMWF  NEMS  METAR  TAF " href="https://www.windy.com/" target="_blank">windy.com</a> -
+                    See the wind</span>
+                <span><a title="" href="https://aladin.u-strasbg.fr/AladinLite/" target="_blank">aladin.u-strasbg.fr/AladinLite</a> -
+                    Displays an open-source "panorama" of nasa's pictures of space.</span>
+                <span><a title="" href="https://mathwithbaddrawings.com/" target="_blank">mathwithbaddrawings.com</a> -
+                    Math with bad drawings</span>
+                <span><a title=" mathematics  math  help  Mathematics  language  data  dictionary  fun  problem  solving  puzzles  manifesto  mathematics  education " href="https://www.cut-the-knot.org/manifesto/index.shtml" target="_blank">cut-the-knot.org/manifesto/index</a> -
+                    Mathematics</span>
+                <span><a title="" href="https://en.wikipedia.org/wiki/Lists_of_astronomical_objects" target="_blank">en.wikipedia.org/wiki/Lists_of_astronomical_objects</a> -
+                    Lists of astronomical objects</span>
+                <span><a title=" maths " href="https://www.wolframalpha.com/" target="_blank">wolframalpha.com</a> -
+                    Not only for math.</span>
+                <span><a title=" radio " href="http://www.websdr.org/" target="_blank">websdr.org</a> -
+                    Receivers of Frequencies in various locations here, you can listen to airplanes, to police radios, to various satellites.</span>
+                <span><a title="" href="https://rammb-slider.cira.colostate.edu/" target="_blank">rammb-slider.cira.colostate.edu</a> -
+                    Live weather satellite viewer from GOES-16 &amp; 17, Meteosat 8 &amp; 11, Himawari-8 and JPSS.</span>
+                <span><a title="" href="http://wttr.in/" target="_blank">wttr.in</a> -
+                    terminal weather</span>
+                <span><a title=" science  radio " href="http://websdr.ewi.utwente.nl/" target="_blank">websdr.ewi.utwente.nl:8901</a> -
+                    Listen and control a short-wave receiver located at the amateur radio club ETGD at the University of Twente.</span>
+                <span><a title=" mathematics  maths " href="https://www.falstad.com/mathphysics.html" target="_blank">falstad.com/mathphysics</a> -
+                    Several applets for math, physics, and EE</span>
+                <span><a title=" mathematics  maths " href="https://www.angio.net/pi/" target="_blank">angio.net/pi</a> -
+                    You enter a number and get a place in PI where it occurs</span>
+                <span><a title=" mathematics  maths " href="https://www.numberempire.com/" target="_blank">numberempire.com</a> -
+                    Collection of math tools</span>
+                <span><a title=" mathematics  maths  number  theory  prime  numbers  divisors  patterns  parabolas " href="http://divisorplot.com/" target="_blank">divisorplot.com</a> -
+                    Explore composite number patterns</span>
+                <span><a title=" mathematics  maths " href="https://www.symbolab.com/" target="_blank">symbolab.com</a> -
+                    Wolframalpha with less functionalities but allows you to check at least some steps for free</span>
+                <span><a title=" mathematics  maths " href="https://www.integral-calculator.com/" target="_blank">integral-calculator.com</a> -
+                    Calculate integrals online with steps and graphing!</span>
+                <span><a title=" mathematics  maths " href="https://www.derivative-calculator.net/" target="_blank">derivative-calculator.net</a> -
+                    Just to calculate integrals and derrivatives but those sites allow you to check ALL the steps for FREE</span>
+                <span><a title=" mathematics  maths " href="https://www.omnicalculator.com/" target="_blank">Omni Calculator</a> -
+                    Calculate things for everything</span>
+                <h3 class="sticky cat">Tech sites:</h3>
+                <span><a title=" technology " href="https://gtfobins.github.io/" target="_blank">gtfobins.github.io</a> -
+                    GTFOBins is a curated list of Unix binaries that can used to bypass local security restrictions in misconfigured systems.</span>
+                <span><a title=" c++  pure  c  c  development  gnu  gpl  open  source  enthusiasm  old  school  native  api  foss  fsf  rms " href="https://www.henrypp.org/" target="_blank">henrypp.org</a> -
+                    Home of the great SimpleWall open source firewall for Windows, and more</span>
+                <span><a title=" technology " href="https://codesandbox.io/s" target="_blank">codesandbox.io/s</a> -
+                    An instantly ready, full-featured online IDE for web development on any device with a browser.</span>
+                <span><a title=" technology " href="https://untools.co/" target="_blank">untools.co</a> -
+                    Collection of thinking tools and frameworks to help you solve problems, make decisions and understand systems.</span>
+                <span><a title=" technology " href="https://g.sicp.me/" target="_blank">g.sicp.me</a> -
+                    Gentoomen Community Pages</span>
+                <span><a title=" technology " href="https://wiki.installgentoo.com/wiki/Main_Page" target="_blank">wiki.installgentoo.com/wiki/Main_Page</a> -
+                    Install Gentoo</span>
+                <span><a title=" technology " href="http://gerigeri.uw.hu/DawnOS/index.html" target="_blank">gerigeri.uw.hu/DawnOS/index</a> -
+                    DAWN operating system (SUBLEQ arch)</span>
+                <span><a title=" BEAM  robotics " href="http://solarbotics.net/library/circuits/bot.html" target="_blank">solarbotics.net/library/circuits/bot</a> -
+                    BEAMbot circuits and bestiary</span>
+                <span><a title=" technology " href="http://solarbotics.net/library.html" target="_blank">solarbotics.net/library</a> -
+                    BEAMbot overview, links and bestiary w/pics</span>
+                <span><a title=" technology " href="https://hackaday.com/" target="_blank">hackaday.com</a> -
+                    Maker and hacker content</span>
+                <span><a title=" technology " href="https://eldritchdata.neocities.org/" target="_blank">eldritchdata.neocities.org</a> -
+                    A neat (as in tidy) website about Linux and stuff</span>
+                <span><a title=" technology " href="https://sysinfo.io/" target="_blank">sysinfo.io</a> -
+                    Linux/security blog</span>
+                <span><a title=" technology " href="http://elm-chan.org/cc_e.html" target="_blank">elm-chan.org/cc_e</a> -
+                    a bunch of technical notes about a bunch of hardware and software things.</span>
+                <span><a title=" technology " href="https://github.com/GitSquared/edex-ui" target="_blank">github.com/GitSquared/edex-ui</a> -
+                    a fullscreen, cross-platform terminal emulator and system monitor with a sci-fi aesthetic</span>
+                <span><a title=" technology " href="https://lightcommands.com/" target="_blank">lightcommands.com</a> -
+                    neat hardware hack explained.</span>
+                <span><a title=" technology " href="https://stallman.org/" target="_blank">stallman.org</a> -
+                    Scholars are yet to determine the meaning of this website.</span>
+                <span><a title=" technology " href="http://rx.linkfanel.net/" target="_blank">rx.linkfanel.net</a> -
+                    A map applied to a shit ton of user run HF receivers.</span>
+                <span><a title=" technology " href="http://www.catb.org/~esr/halloween/index.html" target="_blank">catb.org/~esr/halloween/index</a> -
+                    The Halloween Documents (leaked mircosoft memorandum)</span>
+                <span><a title=" technology " href="https://vetusware.com/" target="_blank">vetusware.com</a> -
+                    Lotsa old abandonware.</span>
+                <span><a title=" technology " href="https://fabiensanglard.net/" target="_blank">fabiensanglard.net</a> -
+                    This guy has an interesting blog about computer graphics</span>
+                <span><a title=" technology " href="http://www.phrack.org/" target="_blank">phrack.org</a> -
+                    Underground hacker ezine running since 1985, cybersecurity and (old school) hacker culture</span>
+                <span><a title=" technology " href="https://urbit.org/" target="_blank">urbit.org</a> -
+                    Urbit is a clean-slate OS and network for the 21st century.</span>
+                <span><a title=" shadertoy  shader  toy  quilez  inigo  jeremias  pol  fractals  demoscene  computer  graphics  mathematics  rendering  demo  3D  realtime  shader  raytracing  raymarching  webgl  glsl " href="https://www.shadertoy.com/" target="_blank">shadertoy.com</a> -
+                    browse webgl shaders and create your own</span>
+                <span><a title=" web  browser  compatibility  support  html  css  svg  html5  css3  opera  chrome  firefox  safari  internet  explorer " href="https://caniuse.com/" target="_blank">caniuse.com</a> -
+                    web feature compatibility</span>
+                <span><a title=" blind  anonymous  tech  compensation  salary  layoffs  career  interview  h1b  premium  processing  leetcode " href="https://www.teamblind.com/" target="_blank">teamblind.com</a> -
+                    Kind of like reddit but focused on careers, the tech industry, software engineering, finance, etc.</span>
+                <span><a title=" technology " href="https://wiki.c2.com/" target="_blank">wiki.c2.com</a> -
+                    The Original Wiki. Focuses way more on tech and programming than the general purpose Wikipedia.</span>
+                <span><a title=" technology " href="https://www.ghacks.net/" target="_blank">ghacks.net</a> -
+                    A tech blog that reviews software, apps and offers tips and tricks about Windows, Android, and other systems.</span>
+                <span><a title=" technology " href="https://onehack.us/" target="_blank">onehack.us</a> -
+                    Piracy, Exploits and stuff. (Hi Sam)</span>
+                <span><a title=" technology " href="http://hw-museum.cz/" target="_blank">hw-museum.cz</a> -
+                    Hardware Museum</span>
+                <span><a title=" technology " href="http://helloworldcollection.de/" target="_blank">helloworldcollection.de</a> -
+                    The Hello World Collection</span>
+                <span><a title=" technology " href="https://1mb.club/" target="_blank">1mb.club</a> -
+                    sites less than 1mb</span>
+                <span><a title=" technology " href="https://www.404pagefound.com/" target="_blank">404pagefound.com</a> -
+                    Active vintage websites</span>
+                <span><a title=" technology " href="http://www.quantumplayground.net/#/playground/5643440998055936" target="_blank">quantumplayground.net/#/playground/5643440998055936</a> -
+                    Quantum computing programming concepts</span>
+                <span><a title=" technology " href="https://github.com/Michael0x2a/curated-programming-resources/blob/master/resources.md" target="_blank">github.com/Michael0x2a/curated-programming-resources/blob/master/resources.md</a> -
+                    List of good resources.</span>
+                <span><a title=" technology " href="https://www.commandlinefu.com/commands/browse" target="_blank">commandlinefu.com/commands/browse</a> -
+                    A place to record those command-line gems that you return to again and again.</span>
+                <span><a title=" technology " href="https://sevenforums.com/" target="_blank">sevenforums.com</a> -
+                    Windows 7 forum</span>
+                <span><a title=" technology " href="https://forum.legacydev.org/" target="_blank">legacydev.org</a> -
+                    forum specially made for legacy operating systems hardware etc</span>
+                <span><a title=" technology " href="https://win32subsystem.live/supermium/" target="_blank">win32subsystem.live/supermium</a> -
+                    Supermium is an chromium fork made for Windows 7 and lower</span>
+                <span><a title=" technology " href="https://marknelson.us/" target="_blank">marknelson.us</a> -
+                    Mark Nelson's website</span>
+                <span><a title=" technology " href="https://cbloomrants.blogspot.com/" target="_blank">cbloomrants.blogspot.com</a> -
+                    cbloom rants (Charles Bloom's blog)</span>
+                <span><a title=" technology " href="http://open-std.org/" target="_blank">open-std.org</a> -
+                    Open Standards</span>
+                <span><a title=" technology " href="http://www.wall.org/~larry/" target="_blank">wall.org/~larry</a> -
+                    the page of Larry Wall, the guy behind the Perl programming language</span>
+                <span><a title=" technology " href="http://www.wtfpl.net/" target="_blank">wtfpl.net</a> -
+                    do what the fuck you want public license</span>
+                <span><a title=" technology " href="https://awesomekling.github.io/" target="_blank">awesomekling.github.io</a> -
+                    the blog of Andreas Kling, the dude behind SerenityOS</span>
+                <span><a title=" technology " href="https://www.exploratorium.edu/origins/cern/index.html" target="_blank">exploratorium.edu/origins/cern/index</a> -
+                    Old CERN website, i think?</span>
+                <span><a title=" technology " href="https://gemini.circumlunar.space/" target="_blank">gemini.circumlunar.space</a> -
+                    Home of the http mirror of the gemini project for neat small sites with limited features.</span>
+                <span><a title=" technology " href="http://sed.sourceforge.net/sed1line.txt" target="_blank">sed.sourceforge.net/sed1line.txt</a> -
+                    Useful one-line scripts for sed</span>
+                <span><a title=" technology " href="https://kkovacs.eu/cool-but-obscure-unix-tools" target="_blank">kkovacs.eu/cool-but-obscure-unix-tools</a> -
+                    A little collection of cool unix terminal/console/curses tools</span>
+                <span><a title=" technology " href="https://cyber.dabamos.de/unix/x11/" target="_blank">cyber.dabamos.de/unix/x11</a> -
+                    A small collection of tools for the X Window System.</span>
+                <span><a title=" technology " href="https://lolbas-project.github.io/" target="_blank">lolbas-project.github.io</a> -
+                    Windows binaries, scripts, libraries</span>
+                <span><a title=" technology " href="https://www.dcode.fr/en" target="_blank">dcode.fr/en</a> -
+                    Math, cryptography, IT, game theory and other tools</span>
+                <span><a title=" technology  hide " href="http://pc-help.org/obscure.htm" target="_blank">%70%43%2d%68%45%6c%50%2e%6f%52%67/obscure</a> -
+                    obfuscate urls</span>
+                <span><a title=" technology  vtuber  catgirl " href="https://cyannyan.com/" target="_blank">cyannyan.com</a> -
+                    Hacker Neko Waifu EN/CN VTuber</span>
+                <span><a title=" ad  ads  youtube  addon  extension " href="https://github.com/ajayyy/SponsorBlock" target="_blank">SponsorBlock</a> -
+                    Browser add-on that skips intros, recaps, in-video ads etc</span>
+                <h3 class="sticky cat">Privacy &#x2F; Security related sites:</h3>
+                <span><a title=" privacy  security " href="https://search.illicit.services/" target="_blank">search.illicit.services</a> -
+                    A search engine that aggregates private information from multiple leaked databases</span>
+                <span><a title=" privacy  security " href="https://restoreprivacy.com/" target="_blank">restoreprivacy.com</a> -
+                    Privacy blog/website</span>
+                <span><a title=" privacy  security " href="https://prism-break.org/en/" target="_blank">prism-break.org/en</a> -
+                    Anti-NSA and tracking site w/tools</span>
+                <span><a title=" privacy  security " href="https://privacyguides.org/" target="_blank">privacyguides.org</a> -
+                    Privacy and security list/site</span>
+                <span><a title=" privacy  security " href="https://www.eff.org/" target="_blank">eff.org</a> -
+                    The leading nonprofit defending digital privacy, free speech, and innovation</span>
+                <span><a title=" privacy  security " href="https://digitalfreedom.neocities.org/" target="_blank">digitalfreedom.neocities.org</a> -
+                    How the internet is being used to steal your privacy</span>
+                <span><a title=" privacy  security " href="https://disroot.org/en" target="_blank">disroot.org/en</a> -
+                    Another collection of privacy-respecting online services such as email, pastebin, and cloud storage.</span>
+                <span><a title=" privacy  security " href="https://snopyta.org/" target="_blank">snopyta.org</a> -
+                    Collection of FOSS and privacy-respecting online services, such as DNS, Searx, Invidious, etc.</span>
+                <span><a title=" privacy  security " href="https://retroshare.cc/" target="_blank">retroshare.cc</a> -
+                    Retroshare is a free and open-source peer-to-peer communication and file sharing app built on GNU Privacy Guard.</span>
+                <span><a title=" privacy  security " href="https://iknowwhatyoudownload.com/en/peer/" target="_blank">iknowwhatyoudownload.com/en/peer</a> -
+                    Check to see what torrents associated with your public IP</span>
+                <span><a title=" privacy  security " href="https://www.google.com/webmasters/tools/removals" target="_blank">google.com/webmasters/tools/removals</a> -
+                    Google URL removal tool (useful for offline sites and cleaning tracks)</span>
+                <span><a title=" privacy  security " href="https://backgroundchecks.org/justdeleteme/" target="_blank">backgroundchecks.org/justdeleteme</a> -
+                    List of sites with logins and how easy it is to delete your account</span>
+                <span><a title=" privacy  security " href="https://0xacab.org/jvoisin/mat2" target="_blank">0xacab.org/jvoisin/mat2</a> -
+                    Metadata removal tool</span>
+                <span><a title=" privacy  security " href="https://freenetproject.org/" target="_blank">freenetproject.org</a> -
+                    Freenet Network</span>
+                <span><a title=" privacy  security " href="https://geti2p.net/en/" target="_blank">geti2p.net/en</a> -
+                    I2P network</span>
+                <span><a title=" privacy  security " href="https://qtox.github.io/" target="_blank">qtox.github.io</a> -
+                    qTox (might be a meme) anonymous IM</span>
+                <span><a title=" privacy  security " href="https://github.com/ricochet-im/Ricochet" target="_blank">github.com/ricochet-im/Ricochet</a> -
+                    Ricochet IM anonymous messenger</span>
+                <span><a title="" href="https://tox.chat/" target="_blank">tox.chat</a> -
+                    Tox protocol</span>
+                <span><a title=" privacy  security " href="https://www.torproject.org/" target="_blank">torproject.org</a> -
+                    TOR anonymous network/router</span>
+                <span><a title=" privacy  security " href="https://zeronet.io/" target="_blank">zeronet.io</a> -
+                    ZeroNet decentralized network (not anonymous, use with TOR or VPN)</span>
+                <span><a title=" privacy  security " href="https://spyware.neocities.org/" target="_blank">spyware.neocities.org</a> -
+                    Classification of spyware programs, so that users can be more aware that they are installing spyware</span>
+                <span><a title=" privacy  security " href="https://www.safetydetectives.com/best-vpns/" target="_blank">safetydetectives.com/best-vpns</a> -
+                    A pretty comprehensive VPN Comparison</span>
+                <span><a title=" privacy  security " href="https://www.security.org/how-secure-is-my-password/" target="_blank">security.org/how-secure-is-my-password</a> -
+                    A website that calculates how long it would take for your password to be cracked</span>
+                <span><a title=" privacy  security " href="https://defensivecomputingchecklist.com/" target="_blank">defensivecomputingchecklist.com</a> -
+                    great site for good security habits.</span>
+                <span><a title=" privacy  security " href="https://www.curtiswallen.com/pgp/" target="_blank">curtiswallen.com/pgp</a> -
+                    Good PGP guide</span>
+                <span><a title=" privacy  speed  security " href="https://quad9.net/" target="_blank">9.9.9.9</a> -
+                    A better DNS than your ISP</span>
+                <span><a title=" privacy  security  links " href="https://sizeof.cat/links/" target="_blank">sizeof.cat/links</a> -
+                    A long list of links from a security oriented site</span>
+                <h3 class="sticky cat">Learning sites:</h3>
+                <span><a title=" learn " href="https://javascript.info/" target="_blank">javascript.info</a> -
+                    The Modern JavaScript Tutorial</span>
+                <span><a title=" learn " href="https://github.com/jwasham/coding-interview-university" target="_blank">github.com/jwasham/coding-interview-university</a> -
+                    A step by step guide to becoming a software engineer</span>
+                <span><a title=" learn  hack  hacking  challenge  solution  exercice  hacking  challenge  hack  challenge  exercice  hack  exercice  hacking  capture  the  flag  CTF  security  sécurité  Network  Cryptography  Forums  About  the  project  Challenges  Challenges  Docs  Tools  Information  Community  Web  -  Server  Web  -  Client  Steganography  Realist  Cracking  Programming  Cryptanalysis  Online  Tools  ShoutBox  Rankings  The  foundation  Legal  Disclaimer  Partners  Hacks  Contribute  Members  Network  Capture  The  Flag  App  -  Script  IRC  channel  CTF  all  the  day  Calendar  Sponsors  App  -  System  Forensic  Web  System  Forensic  Reverse  Engineering  Capture  The  Flag " href="https://www.root-me.org/?lang=en" target="_blank">root-me.org/?lang=en</a> -
+                    </span>
+                <span><a title=" animelon  anime  Japanese  language  learning  linguistics  Kanji " href="https://animelon.com/" target="_blank">animelon.com</a> -
+                    Learn moonrunes while you watch your Chinese cartoons</span>
+                <span><a title=" learn " href="https://deadlockempire.github.io/" target="_blank">deadlockempire.github.io</a> -
+                    fun game for the cooders among you who want to learn a bit about multithreading.</span>
+                <span><a title=" learn " href="https://overthewire.org/wargames/" target="_blank">overthewire.org/wargames</a> -
+                    Learn and practice security concepts in the form of fun-filled games.</span>
+                <span><a title=" learn " href="http://xahlee.info/" target="_blank">xahlee.info</a> -
+                    Math and Programing, tutorials and essays. There are 3.7 thousand articles.</span>
+                <span><a title=" learn " href="https://vim-adventures.com/" target="_blank">vim-adventures.com</a> -
+                    Learn VIM while playing a game</span>
+                <span><a title=" learn " href="https://choosealicense.com/" target="_blank">choosealicense.com</a> -
+                    A guide and, if you dig a bit, a comprehensive list of open source licenses for software.</span>
+                <span><a title=" learn " href="https://ncase.me/" target="_blank">ncase.me</a> -
+                    Cool educational browser games.</span>
+                <span><a title=" learn " href="https://newarcitea.neocities.org/" target="_blank">newarcitea.neocities.org</a> -
+                    A guide to self-improvement.</span>
+                <span><a title=" learn " href="https://projecteuler.net/" target="_blank">projecteuler.net</a> -
+                    actually fun and challenging programming puzzles</span>
+                <span><a title=" learn " href="https://www.wanikani.com/" target="_blank">wanikani.com</a> -
+                    Good tool to grind and learn kanji</span>
+                <span><a title=" learn " href="https://learnxinyminutes.com/" target="_blank">learnxinyminutes.com</a> -
+                    Language resources for programming</span>
+                <span><a title=" learn " href="https://nandgame.com/" target="_blank">nandgame.com</a> -
+                    learning game about gates and components.</span>
+                <span><a title=" learn " href="https://usesthis.com/" target="_blank">usesthis.com</a> -
+                    A collection of nerdy interviews asking people from all walks of life what they use to get the job done.</span>
+                <span><a title=" learn " href="https://coderprog.com/" target="_blank">coderprog.com</a> -
+                    Programming books, courses.</span>
+                <span><a title=" learn " href="https://jlcollinsnh.com/manifesto" target="_blank">jlcollinsnh.com/manifesto</a> -
+                    Best financial advice ever: (actually)</span>
+                <span><a title=" learn " href="https://teachyourselfcs.com/" target="_blank">teachyourselfcs.com</a> -
+                    teach yourself computer science</span>
+                <span><a title=" learn  javascript  userscripts  greasemonkey  tampermonkey  violentmonkey " href="https://simply-how.com/enhance-and-fine-tune-any-web-page-the-complete-user-scripts-guide" target="_blank">simply-how.com/userscripts</a> -
+                    Learn how to write userscripts</span>
+                <span><a title=" learn  home  esp  mcu  microcontroller " href="https://esphome.io/" target="_blank">ESPHome.io</a> -
+                    Extensive diy-home automation 101</span>
+                <span><a title=" learn  language  anime  Japanese  learning  linguistics  Kanji " href="https://itazuraneko.neocities.org/" target="_blank">itazuraneko.neocities.org</a> -
+                    Japanese learning site created by /djt/</span>
+                <h3 class="sticky cat">Image (editors, generators etc.) sites:</h3>
+                <span><a title=" image  picture " href="https://www.photopea.com/" target="_blank">photopea.com</a> -
+                    Basically photoshop but online.</span>
+                <span><a title=" image  picture " href="https://www.makewordart.com/" target="_blank">makewordart.com</a> -
+                    Classic Wordart generator.</span>
+                <span><a title=" image  picture " href="https://jspaint.app/" target="_blank">jspaint.app</a> -
+                    Classic paint with some intresting features added.</span>
+                <span><a title=" image  picture " href="https://snorpey.github.io/jpg-glitch" target="_blank">snorpey.github.io/jpg-glitch</a> -
+                    Glitch your images.</span>
+                <span><a title=" image  picture " href="https://app.monopro.org/pixel/?lang=en" target="_blank">app.monopro.org/pixel/?lang=en</a> -
+                    Pixelart Converter</span>
+                <span><a title=" image  picture " href="https://photomosh.com/" target="_blank">photomosh.com</a> -
+                    Glitch your images some more.</span>
+                <span><a title=" image  picture " href="https://thisxdoesnotexist.com/" target="_blank">thisxdoesnotexist.com</a> -
+                    A collection of things that don't exist.</span>
+                <span><a title=" image  picture " href="https://nsfwai.com/" target="_blank">nsfwai.com</a> -
+                    Basically 'this porn does not exist' NSFW.</span>
+                <span><a title=" image  picture " href="https://trimage.org/" target="_blank">trimage.org</a> -
+                    Tool to optimize images.</span>
+                <span><a title=" image  picture " href="https://postimages.org/" target="_blank">postimages.org</a> -
+                    Just a good site to upload images.</span>
+                <span><a title=" image  picture " href="https://www.cockos.com/licecap" target="_blank">cockos.com/licecap</a> -
+                    Tool to capture gifs.</span>
+                <span><a title=" image  picture " href="https://ezgif.com/" target="_blank">ezgif.com</a> -
+                    gif editor and maker, super useful.</span>
+                <span><a title=" image  picture " href="https://drive.google.com/drive/folders/0B_VmbVyD4eT3N1VUbGN4Wjd5OVE" target="_blank">drive.google.com/drive/folders/0B_VmbVyD4eT3N1VUbGN4Wjd5OVE</a> -
+                    Old Gdrive with anime vectors</span>
+                <span><a title=" image  picture " href="https://www10.flamingtext.com/" target="_blank">https://www10.flamingtext.com</a> -
+                    Free logo Design &amp; Name Generator</span>
+                <span><a title=" image  picture " href="https://www.remove.bg/" target="_blank">remove.bg</a> -
+                    Automagically remove backgrounds from images. Not 100% but shockingly good</span>
+                <span><a title=" image  picture " href="https://waifu.lofiu.com/" target="_blank">waifu.lofiu.com</a> -
+                    Convert your selfie to waifu</span>
+                <span><a title=" image  picture " href="https://imgops.com/" target="_blank">imgops.com</a> -
+                    Image tools</span>
+                <span><a title=" 4chan  4scrape  scraper  wallpapers  images  anime  desktop  hd  widescreen  archive  imageboard  7chan  8chan  2ch " href="https://nik.bot.nu/" target="_blank">nik.bot.nu</a> -
+                    Imageboard scraper, great for wallpapers</span>
+                <span><a title=" image  picture " href="https://embeddedsw.net/OpenPuff_Steganography_Home.html" target="_blank">embeddedsw.net/OpenPuff_Steganography_Home</a> -
+                    OpenPuff Steganography software, hide messages in images</span>
+                <span><a title=" openPuff  steganography  watermarking  cryptography  safe  open  source  deniable  aes  anubis  camellia  cast256  clefia  frog  hierocrypt3  idea-nxt  mars  rc6  safer+  sc2000  serpent  speed  twofish  unicorn-a  images  video  audio  pdf  swf  flv  bmp  jpg  png  pcx  tga  mp3  mp4  wav  mpg  vob  3gp " href="http://babelia.libraryofbabel.info/" target="_blank">babelia.libraryofbabel.info</a> -
+                    Babel image archives</span>
+                <span><a title=" image  picture " href="https://petalica-paint.pixiv.dev/index_en.html" target="_blank">petalica-paint.pixiv.dev/index_en</a> -
+                    Paints-chainer, apparently part of pixiv now</span>
+                <span><a title=" image  picture " href="https://scanlate.io/" target="_blank">scanlate.io</a> -
+                    fast MTL scanlation</span>
+                <span><a title=" ImageMagick  scripts  image  processing  image  processing  scripts  bash  scripts  2colorthresh  3Dbox  3Dcover  3Dreflection  3Drotate  3Dtext  accentedges  adaptivegamma  adaptivegamma2 " href="http://www.fmwconcepts.com/imagemagick/index.php" target="_blank">fmwconcepts.com/imagemagick</a> -
+                    Imagemagick scripts</span>
+                <span><a title="" href="https://pixlr.com/" target="_blank">pixlr.com</a> -
+                    Kinda like PS online</span>
+                <span><a title="" href="https://www.befunky.com/" target="_blank">befunky.com</a> -
+                    Easy to use online image editors</span>
+                <span><a title="" href="https://fotoflexer.com/" target="_blank">fotoflexer.com</a> -
+                    Photo editor</span>
+                <h3 class="sticky cat">Aesthetic &#x2F; cool sites:</h3>
+                <span><a title="" href="https://www.windows93.net/" target="_blank">windows93.net</a> -
+                    A fun OS made in JS with some actually fun stuff to do.</span>
+                <span><a title="" href="https://initiate.space/" target="_blank">initiate.space</a> -
+                    Aesthetic site which wants your soul and hosts an imageboard, posting it seems to attract its users.</span>
+                <span><a title="" href="https://angusnicneven.com/" target="_blank">angusnicneven.com</a> -
+                    I don't even.</span>
+                <span><a title="" href="https://fauux.neocities.org/" target="_blank">fauux.neocities.org</a> -
+                    I don't even.</span>
+                <span><a title=" Cameron&#39;s  World  Camerons  World  geocities  wayback  archive  gifs  animated  gifs " href="https://www.cameronsworld.net/" target="_blank">cameronsworld.net</a> -
+                    A love letter to the Internet of old.</span>
+                <span><a title="" href="https://acko.net/" target="_blank">acko.net</a> -
+                    Asthetic and generally cool af.</span>
+                <span><a title="" href="https://poolside.fm/" target="_blank">poolside.fm</a> -
+                    like if an operating system was designed by a woman in her 40s</span>
+                <span><a title="" href="https://soma.cx/" target="_blank">soma.cx</a> -
+                    This is something cool.</span>
+                <span><a title="" href="https://chadnet.org/" target="_blank">chadnet.org</a> -
+                    Interesting place on the internet.</span>
+                <span><a title="" href="https://akham.netlify.app/" target="_blank">akham.netlify.app</a> -
+                    a simple home page that supports keyboard shortcuts made by Anon</span>
+                <span><a title="" href="https://peelopaalu.neocities.org/" target="_blank">peelopaalu.neocities.org</a> -
+                    A collection of sites lovingly put together by Anon.</span>
+                <span><a title="" href="https://pea.moe/" target="_blank">pea.moe</a> -
+                    Some guy's site with a terminal and Kyouko.</span>
+                <span><a title="" href="https://kemono.su/" target="_blank">kemono.su</a> -
+                    A paywall archive made by a tripfag</span>
+                <span><a title=" Nippon  Japan  color  tradition  webkit  safari  chrome  css3  preserve-3d " href="https://nipponcolors.com/" target="_blank">nipponcolors.com</a> -
+                    a nice css endeavor</span>
+                <span><a title=" virtual  machine  retro  old " href="http://copy.sh/v86/" target="_blank">copy.sh/v86</a> -
+                    x86 machine images emulated with webassembly</span>
+                <span><a title=" retro  old  art " href="https://2bit.neocities.org/" target="_blank">2bit.neocities.org</a> -
+                    Cool site about 2bit graphics</span>
+                <span><a title=" virtual  tamagotchi " href="https://exo.pet/" target="_blank">exo.pet</a> -
+                    Retro/weird site about neopets and alt versions of that</span>
+                <span><a title=" patrick  woodroffe  writer  artist  fantasy  sci-fi  links  link  pals  friends " href="http://www.patrickwoodroffe-world.com/archive/" target="_blank">patrickwoodroffe-world.com/archive</a> -
+                    Oldskool webpage. Full of soul.</span>
+                <span><a title="" href="https://mebious.neocities.org/" target="_blank">mebious.neocities.org</a> -
+                    Cool Lain worshipper site.</span>
+                <span><a title=" &#x2F;g&#x2F;  chans  privacy  linux  anime  culture " href="https://digilord.neocities.org/" target="_blank">digilord.neocities.org</a> -
+                    A better version of this site, under construction.</span>
+                <span><a title=" Amiga  Workbench  Apple  II  Mac  OS  7  Mac  OS  9  Mac  OS  10  Openstep  Rhapsody  Rhapsody  DR2  MS  OS&#x2F;2  Warp  QNX  Windows  1  Windows  3  Windows  95  Windows  98  Windows  Me  Windows  2000  Windows  XP  restart  emulation  restarting  restart  os  old  Operational  systems  old  OS  offf  offf  2011  restart  simulation  os  simulation  os  emulation  complete  restart " href="http://www.therestartpage.com/" target="_blank">therestartpage.com</a> -
+                    nostalgic startup and shutdown from old OSes</span>
+                <span><a title=" Japan  trains  3d  live " href="https://minitokyo3d.com/" target="_blank">minitokyo3d.com</a> -
+                    a very cool visualization of real-time nippon transportation.</span>
+                <span><a title="" href="https://town.neocities.org/" target="_blank">town.neocities.org</a> -
+                    just a little walk through a town at night, really neat use of JSS.</span>
+                <span><a title="" href="https://simone.computer/#/webdesktops" target="_blank">simone.computer/#/webdesktops</a> -
+                    collection of desktop webapps</span>
+                <span><a title="" href="http://computernewb.com/collab-vm/" target="_blank">computernewb.com/collab-vm</a> -
+                    Control Collaborative Virtual Machines!</span>
+                <h3 class="sticky cat">Book sites:</h3>
+                <span><a title=" books " href="http://libgen.rs/" target="_blank">libgen.rs</a> -
+                    It's a massive book, scientific journal and all their articles, comics etc. site.</span>
+                <span><a title=" PDF  nature  science  sciencedirect  springer  ieee  jstor  papers  fulltext  full  text  open  access  proxy " href="https://sci-hub.se/" target="_blank">sci-hub.se</a> -
+                    Like above with a more pure focus on scientific research papers.</span>
+                <span><a title=" books " href="http://gen.lib.rus.ec/" target="_blank">gen.lib.rus.ec</a> -
+                    Get that book for free</span>
+                <span><a title=" books " href="https://www.pdfdrive.com/" target="_blank">pdfdrive.com</a> -
+                    Get that book for free</span>
+                <span><a title=" books " href="https://z-lib.is/" target="_blank">z-lib.is</a> -
+                    Get that book for free</span>
+                <span><a title=" books " href="https://standardebooks.org/" target="_blank">standardebooks.org</a> -
+                    This is like gutenberg but the ebooks have been formatted nicely and proofed for typos.</span>
+                <span><a title=" books  e-books  ebooks  ebook  book  free  books  free  eBooks  free  ebooks  free  sacred  texts  ancient  knowledge  ancient  books  old  books  fiction  books  non-fiction  books  library  philosophy  books  philosophy  ebook  science  books  science  eBooks  history  books  esoteric  classics " href="https://www.forgottenbooks.com/en" target="_blank">forgottenbooks.com/en</a> -
+                    Website of a London-based book publisher specialising in restoring old books</span>
+                <span><a title=" library  of  babel  Jorge  Luis  Borges  universal  library  literature  conceptual  art  aleatoric  literary  theory " href="http://libraryofbabel.info/" target="_blank">libraryofbabel.info</a> -
+                    Every single possible book that could be written, in any language using the latin alphabet.</span>
+                <span><a title=" books  ebooks  free  kindle  android  iphone  ipad " href="https://www.gutenberg.org/" target="_blank">gutenberg.org</a> -
+                    Largers public domain book library</span>
+                <span><a title=" books " href="https://www.deadseascrolls.org.il/?locale=en_US" target="_blank">deadseascrolls.org.il/?locale=en_US</a> -
+                    Dead Sea Scrolls digital library</span>
+                <span><a title=" books " href="https://alwaysjudgeabookbyitscover.com/" target="_blank">alwaysjudgeabookbyitscover.com</a> -
+                    weird book covers</span>
+                <span><a title=" books " href="https://lampbylit.com/" target="_blank">lampbylit.com</a> -
+                    Zine by some anon in /lit/, 2 editions so far.</span>
+                <span><a title=" books " href="http://survivorbb.rapeutation.com/" target="_blank">survivorbb.rapeutation.com</a> -
+                    Big archive of books/documents hosted on a phpBB forum</span>
+                <span><a title=" books " href="https://risingtidefoundation.net/" target="_blank">risingtidefoundation.net</a> -
+                    Digital Library of Alexandria</span>
+                <span><a title=" books " href="https://lainzine.org/" target="_blank">lainzine.org</a> -
+                    Lainzine</span>
+                <span><a title=" MangaDex  Manga  Dex  Manga  Read  Manga  Manga  Online  Read  Manga  Free  Manga  Scans  Free  Manga  Read  Manga  Online " href="https://mangadex.org/" target="_blank">mangadex.org</a> -
+                    reading manga online (directly from scanlators)</span>
+                <span><a title=" books " href="https://mangasee123.com/" target="_blank">mangasee123.com</a> -
+                    reading manga online (official releases)</span>
+                <span><a title=" Read  high  quality  comics  online  read  comics  online  comics  online  comics  html5  comics  mobile " href="https://readcomiconline.to/" target="_blank">readcomiconline.to</a> -
+                    reading comics online</span>
+                <span><a title=" books " href="https://getcomics.info/" target="_blank">getcomics.info</a> -
+                    downloading comics</span>
+                <span><a title=" books " href="https://www.asurascans.com/" target="_blank">asurascans.com</a> -
+                    reading manhwa online from scan group Asurascans</span>
+                <span><a title=" books  non-fiction " href="https://annas-archive.org/" target="_blank">Anna's Archive</a> -
+                    Continuation of scihub for Scientific papers.</span>
+                <h3 class="sticky cat">Humour &#x2F; fun &#x2F; Random sites:</h3>
+                <span><a title="" href="https://github.com/iTODDLERS-BTFO/iToddlers-BTFO" target="_blank">github.com/iTODDLERS-BTFO/iToddlers-BTFO</a> -
+                    iToddlers btfo</span>
+                <span><a title=" funny  moanmyip  moan  my  ip  ip  player  audio  ip  whatismyip  find  my  ip  ip  viewer  ipaddress " href="https://www.moanmyip.com/" target="_blank">moanmyip.com</a> -
+                    Moans your IP</span>
+                <span><a title="" href="https://play.aidungeon.io/" target="_blank">play.aidungeon.io</a> -
+                    Very cool text adventure game that lets you act out very odd scenarios.</span>
+                <span><a title="" href="https://alexnisnevich.github.io/untrusted" target="_blank">alexnisnevich.github.io/untrusted</a> -
+                    Some kind of game that people seem to like.</span>
+                <span><a title=" BBC  Dragons&#39;  Den.  Best  lease  car  deals!  Ling  bites!  WAH! " href="https://www.lingscars.com/" target="_blank">lingscars.com</a> -
+                    If you ever need to rent a car in the UK from a Chinese lady, do it here.</span>
+                <span><a title=" 404  flash  videos  dagobah  z0r  4chan  7chan  chan  swf " href="https://thebest404pageeverredux.com/" target="_blank">thebest404pageeverredux.com</a> -
+                    Random flash videos.</span>
+                <span><a title=" imageboard  politics  current  events  debate  politically  incorrect " href="http://autists.net/" target="_blank">autists.net</a> -
+                    Link to a collection of autists.</span>
+                <span><a title="" href="http://burymewithmymoney.com/" target="_blank">burymewithmymoney.com</a> -
+                    single serving site.</span>
+                <span><a title=" funny " href="http://loli.dance/" target="_blank">loli.dance</a> -
+                    single serving loli dance site.</span>
+                <span><a title=" funny " href="https://openings.moe/" target="_blank">openings.moe</a> -
+                    Anime openings.</span>
+                <span><a title=" funny " href="https://yyyyyyy.info/" target="_blank">yyyyyyy.info</a> -
+                    A site with no discernible purpose but randum XD</span>
+                <span><a title=" funny " href="http://sod.jodi.org/" target="_blank">sod.jodi.org</a> -
+                    A site with no discernible purpose but randum XD</span>
+                <span><a title=" funny " href="http://geogoo.net/" target="_blank">geogoo.net</a> -
+                    A site with no discernible purpose but randum XD</span>
+                <span><a title=" funny " href="https://g33con.com/" target="_blank">g33con.com</a> -
+                    A site with no discernible purpose but randum XD</span>
+                <span><a title=" funny " href="http://sanger.dk/" target="_blank">sanger.dk</a> -
+                    Flash doggo licking your monitor</span>
+                <span><a title=" funny " href="https://z0r.de/" target="_blank">z0r.de</a> -
+                    Random flash videos</span>
+                <span><a title=" funny " href="http://vore.is-best.net/" target="_blank">vore.is-best.net</a> -
+                    A site Anon made with no discernible purpose</span>
+                <span><a title=" funny " href="http://motherfuckingwebsite.com/" target="_blank">motherfuckingwebsite.com</a> -
+                    A basic but rude website. What you see is what you get.</span>
+                <span><a title=" stop  the  boats  game  tony  abbott  asylum  seekers  simulator  joe  hockey  budget " href="http://www.abbottsimulator.com/" target="_blank">abbottsimulator.com</a> -
+                    Mini web game where you play as former Australian PM Tony Abbott and stop the boats from reaching the country.</span>
+                <span><a title="" href="http://zombo.com/" target="_blank">zombo.com</a> -
+                    Just a useless website for fun.</span>
+                <span><a title="" href="https://theuselessweb.com/" target="_blank">theuselessweb.com</a> -
+                    Site that directs to other random websites/pages.</span>
+                <span><a title=" linux  gnu  FOSS  free  software  gnu&#x2F;linux  gnu  plus  linux " href="https://gnupluslinux.com/" target="_blank">gnupluslinux.com</a> -
+                    Plays a video about why GNU/Linux is good. Source is 'Mawaru Penguindrum'. Also has a Satania image directory.</span>
+                <span><a title="" href="https://kokoro.pyonpyon.moe/" target="_blank">kokoro.pyonpyon.moe</a> -
+                    Plays the S1 intro of GochiUsa/GochiUzbekistan</span>
+                <span><a title="" href="https://wwwwwwwww.jodi.org/" target="_blank">w.jodi.org</a> -
+                    I don't even</span>
+                <span><a title="" href="https://computerhistory.org/" target="_blank">computerhistory.org</a> -
+                    Computer history</span>
+                <span><a title="" href="https://nogf.club/" target="_blank">nogf.club</a> -
+                    tfw no gf</span>
+                <span><a title="" href="https://blm-egis.maps.arcgis.com/apps/webappviewer/index.html?id=6f0da4c7931440a8a80bfe20eddd7550" target="_blank">blm-egis.maps.arcgis.com/apps/webappviewer/index.html?id=6f0da4c7931440a8a80bfe20eddd7550</a> -
+                    BLM maps</span>
+                <span><a title="" href="https://www.howmanypeopleareinspacerightnow.com/" target="_blank">howmanypeopleareinspacerightnow.com</a> -
+                    Tells you how many people are in space right now.</span>
+                <span><a title="" href="https://f0ck.me/" target="_blank">f0ck.me</a> -
+                    Appears to collect images linked in some IRC channel.</span>
+                <span><a title=" tanami  imageboard  textboard  overscript  un-ascii  9ch  9-ch  bbs  mr_vile  programming  9ch.in  9chin " href="https://tanami.org/" target="_blank">tanami.org</a> -
+                    Anon's own website</span>
+                <span><a title=" tanami  imageboard  textboard  overscript  un-ascii  9ch  9-ch  bbs  mr_vile  programming  9ch.in  9chin " href="https://tanami.org/archive" target="_blank">tanami.org/archive</a> -
+                    It's secret archive</span>
+                <span><a title="" href="https://userinyerface.com/" target="_blank">userinyerface.com</a> -
+                    A worst-practice UI experiment.</span>
+                <span><a title="" href="http://pinch.com/" target="_blank">pinch.com</a> -
+                    A man with a good domain refuses to budge.</span>
+                <span><a title="" href="https://biggulpsupreme.neocities.org/" target="_blank">biggulpsupreme.neocities.org</a> -
+                    a masterful shitpost site.</span>
+                <span><a title="" href="https://makefrontendshitagain.party/" target="_blank">makefrontendshitagain.party</a> -
+                    make frontend shit again</span>
+                <span><a title=" spoiler  random  story " href="https://gogetspoiled.com/" target="_blank">gogetspoiled.com</a> -
+                    site which spoils movies</span>
+                <span><a title="" href="https://www.gotoquiz.com/what_azumanga_daioh_character_are_you_1" target="_blank">gotoquiz.com/what_azumanga_daioh_character_are_you_1</a> -
+                    which azumanga daioh character are you?</span>
+                <span><a title=" racial  slurs  racism  ethnic  slang  dictionary  stereotype  pejorative  bigotry  prejudice  hate  oppression  ignorance " href="http://www.rsdb.org/full" target="_blank">rsdb.org/full</a> -
+                    the racial slur database</span>
+                <span><a title="" href="https://downloadmorerem.com/" target="_blank">downloadmorerem.com</a> -
+                    A place to get more Rem</span>
+                <span><a title="" href="http://www.drivemeinsane.com/" target="_blank">drivemeinsane.com</a> -
+                    This site allows you to use home automation to have fun at someone else's expense</span>
+                <span><a title="" href="https://rms.sexy/" target="_blank">rms.sexy</a> -
+                    A slideshow of (sexy) RMS</span>
+                <span><a title=" mordor  weather  the  mordor  weather  sauron  eye  black  country " href="http://mordorweather.illus.ru/" target="_blank">mordorweather.illus.ru</a> -
+                    Weather of Mordor</span>
+                <span><a title=" nice  the  nicest  place  the  nicest  place  on  the  internet  hugs  happy  sad  need  a  hug  i  need  a  hug  i&#39;m  sad  i  am  sad  bad  day  suicide  kill " href="https://thenicestplace.net/" target="_blank">thenicestplace.net</a> -
+                    free hugs</span>
+                <span><a title=" Gabriel  Dropout  Satania  Satanichia  Kurumizawa  McDowell  demon  angel  moe  waifu  gabriel  raphiel  vignette  cute  anime  manga  daiakuma " href="https://satania.moe/" target="_blank">satania.moe</a> -
+                    Why Satania is best waifu</span>
+                <span><a title="" href="https://www.angelfire.com/planet/tpirman1982/" target="_blank">angelfire.com/planet/tpirman1982</a> -
+                    Angelfire street lighting gallery, all the streetlamps you ever wanted and more</span>
+                <span><a title="" href="http://iiada.serotoninphobia.info/" target="_blank">iiada.serotoninphobia.info</a> -
+                    i cant describe</span>
+                <span><a title="" href="http://www.memeatlas.com/" target="_blank">memeatlas.com</a> -
+                    Hosting Memes from Reddit and 4chan</span>
+                <span><a title="" href="https://cheapcsg.neocities.org/" target="_blank">cheapcsg.neocities.org</a> -
+                    /csg/ ranomizer by some anon</span>
+                <span><a title="" href="http://www.nyan.cat/" target="_blank">nyan.cat</a> -
+                    Several Nyan Cat song and animation variations</span>
+                <span><a title="" href="https://objection.lol/" target="_blank">objection.lol</a> -
+                    Select your character and pose, submit your objection then surprise your friends with your irrefutable evidence!</span>
+                <span><a title="" href="https://boyter.org/2016/04/collection-orly-book-covers/" target="_blank">boyter.org/2016/04/collection-orly-book-covers</a> -
+                    Site collecting o'reilly book covers parodies</span>
+                <span><a title=" software  development  engineering  rails  javascript  ruby " href="https://dev.to/rly" target="_blank">dev.to/rly</a> -
+                    Site for generating o'reilly book covers parodies</span>
+                <span><a title="" href="https://crymyip.com/" target="_blank">crymyip.com</a> -
+                    Cries your IP.</span>
+                <span><a title=" test  private  methods  oo  object  oriented  tdd " href="http://shoulditestprivatemethods.com/" target="_blank">shoulditestprivatemethods.com</a> -
+                    If you're not sure if you should test private methods.</span>
+                <span><a title="" href="https://nyanpass.com/" target="_blank">nyanpass.com</a> -
+                    にゃんぱすーをシェアできる全く新しい画期的なWEBサービス.</span>
+                <span><a title="" href="https://tylervigen.com/spurious-correlations" target="_blank">tylervigen.com/spurious-correlations</a> -
+                    Stuff that is correlated but has nothing to do with each other.</span>
+                <span><a title="" href="http://durgasoft.com/" target="_blank">durgasoft.com</a> -
+                    Pajeet dev services</span>
+                <span><a title=" computer  pranks  software  free  jokes  gags  joke  free  prank  fake  windows  gag  humor  humour  fools  entertainment  april  fools  day  fun  funny  fool  old  retro  insults  company  motley  amusing  humorous  comic  witty  pun  jester  irk " href="http://rjlpranks.com/" target="_blank">rjlpranks.com</a> -
+                    "Old skool" computer pranks</span>
+                <span><a title="" href="http://nazi.moe/" target="_blank">nazi.moe</a> -
+                    Basically exactly what you expect from the url.</span>
+                <span><a title="" href="http://norristology.com/flash/" target="_blank">norristology.com/flash</a> -
+                    Old flash games, music etc. from 2006</span>
+                <span><a title="" href="https://lobba.miraheze.org/wiki/The_List" target="_blank">lobba.miraheze.org/wiki/The_List</a> -
+                    eternal loli wiki</span>
+                <span><a title="" href="http://www.staggeringbeauty.com/" target="_blank">staggeringbeauty.com</a> -
+                    Psychedelic worm themed time waster.</span>
+                <span><a title=" funny  kawaii  moe  cute  cs  code " href="https://github.com/laynH/Anime-Girls-Holding-Programming-Books" target="_blank">github.com/laynH/Anime-Girls-Holding-Programming-Books</a> -
+                    Anime girls holding programming books.</span>
+                <span><a title=" games  browser  cool " href="https://www.gamedesign.jp/" target="_blank">GameDesign</a> -
+                    Collection of browser games, has a really nice offline Mahjong vs bots for practice.</span>
+                <span><a title=" funny  kawaii  moe  audio  video " href="https://naniso.re/" target="_blank">naniso.re</a> -
+                    A Sporty 'O parody of Nonon, plus other stuff</span>
+                <span><a title=" funny  gay  fun " href="https://gaysexgaming.com/" target="_blank">neseos.com & gaysexgaming.com</a> -
+                    An alternative universe made by gay lords!</span>
+                <h3 class="sticky cat">Audio &#x2F; music &#x2F; sound sites:</h3>
+                <span><a title="" href="https://touhou.kuukunen.net/" target="_blank">touhou.kuukunen.net</a> -
+                    Weeb music</span>
+                <span><a title=" games  doujin  doujinsoft  touhou  music  comiket  reitaisai  m3  discord  music  dojin  touhou  touhou  music  touhou  music  download " href="https://doujinstyle.com/?p=tlmc" target="_blank">doujinstyle.com/?p=tlmc</a> -
+                    Weeb music but in big collections you can download.</span>
+                <span><a title=" remix  music  song  audio  mp3 " href="https://the.wubmachine.com/" target="_blank">the.wubmachine.com</a> -
+                    This will remix any audio file you upload with sometimes pleasing results.</span>
+                <span><a title="" href="https://www.szynalski.com/tone-generator" target="_blank">szynalski.com/tone-generator</a> -
+                    Tone generator.</span>
+                <span><a title=" music " href="https://vo.codes/" target="_blank">vo.codes</a> -
+                    Cool text to speech with lots of character voices</span>
+                <span><a title=" music " href="http://everynoise.com/" target="_blank">everynoise.com</a> -
+                    Bottom line best site to find new music.</span>
+                <span><a title=" music " href="https://asoftmurmur.com/" target="_blank">asoftmurmur.com</a> -
+                    Comfy noise generator.</span>
+                <span><a title=" music " href="https://fusion-world-30.blogspot.com/" target="_blank">fusion-world-30.blogspot.com</a> -
+                    A blog with Chinese music.</span>
+                <span><a title=" music " href="https://texttospeech.ca/" target="_blank">texttospeech.ca</a> -
+                    A great TTS site made with love by another /g/ Anon.</span>
+                <span><a title=" music " href="http://drdicksdubshack.com/" target="_blank">drdicksdubshack.com</a> -
+                    Some kind of radio station, I think.</span>
+                <span><a title=" music " href="https://audioz.download/" target="_blank">audioz.download</a> -
+                    Audio warez, courses, etc.</span>
+                <span><a title=" music " href="https://listenbox.app/" target="_blank">listenbox.app</a> -
+                    Lets you listen to youtube links in the background on your phone</span>
+                <span><a title=" music " href="http://www7.iplusfree.org/" target="_blank">iplusfree.org</a> -
+                    Free iTunes Plus M4A</span>
+                <span><a title=" music " href="https://podbay.fm/" target="_blank">podbay.fm</a> -
+                    Podcasts.</span>
+                <span><a title=" music " href="https://420.moe/" target="_blank">420.moe</a> -
+                    Anime420girls with some songs and visualizers.</span>
+                <span><a title=" music " href="https://nodata.tv/" target="_blank">nodata.tv</a> -
+                    music leaks</span>
+                <span><a title=" music " href="https://rave.dj/" target="_blank">rave.dj</a> -
+                    Allows you to create mashups of youtube songs</span>
+                <span><a title=" music " href="https://melobytes.com/en" target="_blank">melobytes.com/en</a> -
+                    AI that does music from images and other stuff</span>
+                <span><a title=" music " href="http://findflac.com/" target="_blank">findflac.com</a> -
+                    .flac music finder</span>
+                <span><a title=" voice  record  online  sound  upload  send  share " href="https://vocaroo.com/" target="_blank">vocaroo.com</a> -
+                    Vocaroo is a quick and easy way to share voice messages over the interwebs.</span>
+                <span><a title="" href="https://web.archive.org/web/20190518001139/http://soundboards.1apps.com/archiesounds/" target="_blank">web.archive.org/web/20190518001139/http://soundboards.1apps.com/archiesounds</a> -
+                    ArchieLuxury soundboard</span>
+                <span><a title=" free  sound  effects  wav  aiff  au  mp3 " href="https://www.findsounds.com/" target="_blank">findsounds.com</a> -
+                    Find the sound effects you need for your project</span>
+                <span><a title="" href="http://longmontpotioncastle.com/" target="_blank">longmontpotioncastle.com</a> -
+                    Longmont Potion Castle's prank calls</span>
+                <span><a title="" href="http://illusionaryscore.web.fc2.com/score.html" target="_blank">illusionaryscore.web.fc2.com/score</a> -
+                    A compilation of Piano Scores of the Touhou Series.</span>
+                <span><a title="" href="https://gamebanana.com/projects/35179" target="_blank">gamebanana.com/projects/35179</a> -
+                    MIDI collection - Touhou Project</span>
+                <span><a title="" href="https://music.ishkur.com/" target="_blank">music.ishkur.com</a> -
+                    Ishkur's Guide to Electronic Music.</span>
+                <span><a title="" href="https://www.acrcloud.com/identify-songs-music-recognition-online" target="_blank">acrcloud.com/identify-songs-music-recognition-online</a> -
+                    Upload a webm and get the title of the song playing</span>
+                <span><a title=" keygen  music  keygenmusic  chiptune  chiptunes  chip  tune  MOD  XM  s3m  IT  stream  MOS  6581  MOS  8580  intro  music " href="http://keygenmusic.tk/" target="_blank">keygenmusic.tk</a> -
+                    Music from keygens.</span>
+                <span><a title="" href="https://aidn.jp/contents" target="_blank">aidn.jp/contents</a> -
+                    Weeb music minigames from the creator of nyan cat.</span>
+                <span><a title=" bringing  aesthetics  and  dream-like  music  to  your  device  wherever  you  have  Internet  connectivity. " href="https://plaza.one/" target="_blank">plaza.one</a> -
+                    vaporwave radio &amp; a cool website.</span>
+                <span><a title=" noise  ambient  noises  noise  machine  sleeping  machine  sleeping  aid  sleeping  device  noise  device  baby  tinnitus  sound  healing  noise  masking  noise  therapy  sound  therapy  hearing  thresholds " href="https://mynoise.net/" target="_blank">mynoise.net</a> -
+                    Creates beautiful noises to mask the noises you don’t want to hear</span>
+                <span><a title="" href="https://www.musicgenretree.org/" target="_blank">musicgenretree.org</a> -
+                    Music genre evolution tree and interactive '1111 Essential Recordings of Music' chart made by a /mu/ poster</span>
+                <span><a title="" href="https://rabanetecomquiabo.blogspot.com/" target="_blank">rabanetecomquiabo.blogspot.com</a> -
+                    Get classical music</span>
+                <span><a title=" binaural  beat  binaural-beat  WinAural  Bret  Logan  relaxation  meditation  OBE  Monroe  Institute  Jane  Roberts  Seth " href="http://gnaural.sourceforge.net/" target="_blank">gnaural.sourceforge.net</a> -
+                    An opensource binaural-beat generator</span>
+                <span><a title="" href="http://packet.city/" target="_blank">packet.city</a> -
+                    Loud website. Warning: loud</span>
+                <span><a title="" href="https://modarchive.org/" target="_blank">modarchive.org</a> -
+                    Large archive of tracked music.</span>
+                <span><a title=" Game  Music  Mods  Mids  Modules  Midi  MOD  IT  S3M  XM  IT  OST  OSV  VGM  Mirsoft  Video  Game  Music  Soundtracks  Game  rips  Amiga  PC  C64  Spectrum  Game  Music  Downloads " href="http://www.mirsoft.info/" target="_blank">mirsoft.info</a> -
+                    Archive dedicated to tracked and midi music from games.</span>
+                <span><a title=" audio  spectrogram  creator " href="https://convert.ing-now.com/audio-spectrogram-creator/" target="_blank">convert.ing-now.com/audio-spectrogram-creator</a> -
+                    lets you upload an mp3 file and creates a spectogram image from it</span>
+                <span><a title="" href="https://www.muri.se/misc/soundfx.html" target="_blank">muri.se/misc/soundfx.html</a> -
+                    Japanese sound effects and what they mean</span>
+                <span><a title="" href="https://15.ai/" target="_blank">15.ai</a> -
+                    Deep-learning TTS (text-to-speech) tool for generating voices of various characters.</span>
+                <span><a title="" href="https://r-a-d.io/" target="_blank">r-a-d.io</a> -
+                    /a/ radio</span>
+                <span><a title=" music " href="https://flacattack.net/" target="_blank">flacattack.net</a> -
+                    flac downloads</span>
+                <span><a title=" music " href="https://24flac.net/" target="_blank">24flac.net</a> -
+                    flac downloads</span>
+                <span><a title=" music " href="https://lossless-music.org/" target="_blank">lossless-music.org</a> -
+                    flac downloads</span>
+                <span><a title="" href="http://radio.garden/" target="_blank">radio.garden</a> -
+                    Radio station overlayed on earth.</span>
+                <span><a title=" music  find  search " href="https://www.aha-music.com/identify-songs-music-recognition-online" target="_blank">aha-music.com</a> -
+                    Uses Youtube's ID system to identify songs</span>
+                <h3 class="sticky cat">Coomer stuff:</h3>
+                <span><a title=" porn  sites  adult  tubes  cams  tumblrs  blogs  list  links " href="https://www.tblop.com/" target="_blank">tblop.com</a> -
+                    List of porn sites.</span>
+                <span><a title=" porn  sex " href="https://www.asenheim.org/" target="_blank">asenheim.org</a> -
+                    Coomer games, I think.</span>
+                <span><a title=" porn  sex " href="https://www.%E3%81%B6%E3%81%A3%E3%81%8B%E3%81%91%E6%9D%BF.net/" target="_blank">ぶっかけ板.net</a> -
+                    Moonspeak coomer chan.</span>
+                <span><a title=" porn  sex " href="https://f95zone.to/" target="_blank">f95zone.to</a> -
+                    Coomer games.</span>
+                <span><a title=" magazine  japanese  porn " href="https://www.mikocon.com/forum.php?mod=forumdisplay&amp;fid=46" target="_blank">mikocon.com/forum.php?mod=forumdisplay&amp;fid;=46</a> -
+                    Hentai</span>
+                <span><a title=" porn  sex " href="http://kagero.g-serve.net/jewel/index.xml" target="_blank">kagero.g-serve.net/jewel/index.xml</a> -
+                    Like.. sex dolls and figurines.</span>
+                <span><a title=" pedal  pumping  car  stuck  videos  pedal  pumping  videos  sexy  feet  pictures  sexy  young  girls  girl " href="http://carstuckgirls.com/" target="_blank">carstuckgirls.com</a> -
+                    Images of slutty looking women with their cars "stuck". A fetish for the strange ones.</span>
+                <span><a title=" sex  stories  erotic  fiction  adult  free  sexy  literotica  literotic  chat  storys  wifeslut  erotica  sexual  real  audio  xxx  porno  porn  romance  text  fantasies  poetry " href="https://www.literotica.com/" target="_blank">literotica.com</a> -
+                    Everybody probably knows it already but posting just in case. Text porn.</span>
+                <span><a title=" porn  sex " href="https://nifty.org/" target="_blank">nifty.org</a> -
+                    The leading Web 1.0 LGBT text porn site.</span>
+                <span><a title=" porn  sex " href="https://www.tgstorytime.com/" target="_blank">tgstorytime.com</a> -
+                    Gender-bender stories. Porn and technically not porn.</span>
+                <span><a title=" porn  sex " href="https://jqgraves.com/" target="_blank">jqgraves.com</a> -
+                    Spanking stories.</span>
+                <span><a title=" porn  sex " href="https://findtubes.com/" target="_blank">findtubes.com</a> -
+                    Find Tubes - Free Porn Tube Search Engine.</span>
+                <span><a title=" zooskool  videos  art  of  zoo  videos  de  zoofilia  chicas  penetradas  zoo  womans  zoogay  animal  porn " href="https://www.zooskoolvideos.com/" target="_blank">zooskoolvideos.com</a> -
+                    literal beastality</span>
+                <span><a title=" porn  sex " href="https://www.141jav.com/" target="_blank">141jav.com</a> -
+                    JAV</span>
+                <span><a title=" Adult  Video  Magnet  Links  Online  Adult  Video  Magnet  Links  Sharing  JAV  ID  Search  Japanese  Adult  Video " href="https://www.javbus.com/en" target="_blank">javbus.com/en</a> -
+                    JAV</span>
+                <span><a title=" video  collection  share  thoughts " href="https://www.javlibrary.com/en/" target="_blank">javlibrary.com/en</a> -
+                    JAV</span>
+                <span><a title=" porn  sex " href="https://onejav.com/" target="_blank">onejav.com</a> -
+                    JAV</span>
+                <span><a title=" cosplay  jav  download  japan  adult  video " href="https://cosplay.jav.pw/" target="_blank">cosplay.jav.pw</a> -
+                    JAV Cosplay</span>
+                <span><a title=" porn  sex " href="http://85.17.187.83/saff/index.php" target="_blank">85.17.187.83/saff/index</a> -
+                    Extensive porn forum</span>
+                <span><a title=" porn  saff  sex  fun  forum  sexandfunforum  sexandfun  sex  fun  fetish  fetish  pw  fetish  passwords  fetish  sites  porn  sites  porn  passes  fetish  pass  fun  sex  community  passes  passwords  VIP  download " href="http://www.pornbb.org/" target="_blank">pornbb.org</a> -
+                    pornBB</span>
+                <span><a title=" porn  sex " href="https://www.iafd.com/" target="_blank">iafd.com</a> -
+                    Internet Adult Film Database</span>
+                <span><a title=" porn  sex " href="https://theporndude.com/" target="_blank">theporndude.com</a> -
+                    a big list of porn sites</span>
+                <span><a title=" All  Free  Porn  Videos  Celebs  Vintage  Classic  Porn  Pornstars  Models  Kinky  Fetish  BDSM  Gay  Ethnic  Gay  Bi-Sexual  Shemale  Ladyboy  Hentai  Anime  Amateur  Softcore  Hardcore  Men. " href="http://www.planetsuzy.org/" target="_blank">planetsuzy.org</a> -
+                    Porn Forum with a lot of niche categories.</span>
+                <span><a title=" Rule34  imageboard  1boy  anal  anal  sex  areolae  bar  censor  bed  sheet  black  hair  black  legwear  blush  breasts  censored  closed  eyes  cum  female  futa  on  male  futadom  futanari  heart  intersex  kagari  ayaka  large  breasts  long  hair  looking  at  another  lying  male  messy  hair  moaning  nipples  nude  on  back  open  mouth  panties  partially  undressed  penis  saliva  sex  short  hair  socks  straight  sweat  takamiya  honoka  tarakoutibiru  tears  thighhighs  toe  scrunch  translation  request  underwear  witch  craft  works " href="https://rule34.xxx/index.php?page=post&amp;s=random" target="_blank">rule34.xxx/index.php?page=post&amp;s;=random</a> -
+                    If it exists there is porn of it.</span>
+                <span><a title="" href="https://daftsex.com/" target="_blank">daftsex.com</a> -
+                    Millions of free porn videos</span>
+                <span><a title="" href="https://hqporner.com/" target="_blank">hqporner.com</a> -
+                    Free full length high definition porn</span>
+                <span><a title="" href="http://sxyprn.net/" target="_blank">sxyprn.net</a> -
+                    Good porn site with no bullshit</span>
+                <h3 class="sticky cat">Image boards and related sites:</h3>
+                <span><a title=" ib  imageboard  chan " href="https://bvffalo.land/" target="_blank">bvffalo.land</a> -
+                    A list of image boards.</span>
+                <span><a title=" anonymous  chan  textboard  text  board  message  board " href="https://ratwires.space/" target="_blank">ratwires.space</a> -
+                    Looks like a purple reddit.</span>
+                <span><a title=" ib  imageboard  chan " href="http://bunbunmaru.com/wakaba" target="_blank">bunbunmaru.com/wakaba</a> -
+                    Weeb chan.</span>
+                <span><a title=" ib  imageboard  chan " href="https://wipp.info/" target="_blank">wipp.info</a> -
+                    tl;dr.</span>
+                <span><a title=" ib  imageboard  chan " href="https://postbox.garden/" target="_blank">postbox.garden</a> -
+                    the post box "image board"</span>
+                <span><a title=" ib  imageboard  chan " href="https://bus-stop.net/" target="_blank">bus-stop.net</a> -
+                    The comfiest little board in the world</span>
+                <span><a title=" ib  imageboard  chan " href="https://4stats.io/" target="_blank">4stats.io</a> -
+                    4chan board stats</span>
+                <span><a title=" ib  imageboard  chan " href="https://illegal.pics/" target="_blank">illegal.pics</a> -
+                    4chan image scraper, very well made.</span>
+                <span><a title=" ib  imageboard  chan " href="https://info.stylee32.net/" target="_blank">info.stylee32.net</a> -
+                    some old 4chan infographics, I think mostly from the Information Library from 2010.</span>
+                <span><a title=" ib  imageboard  chan " href="https://namelessrumia.heliohost.org/w/doku.php" target="_blank">namelessrumia.heliohost.org/w/doku</a> -
+                    Articles about weeb stuff and chans.</span>
+                <span><a title=" ib  imageboard  chan " href="https://alogs.theguntretort.com/robowaifu/" target="_blank">alogs.theguntretort.com/robowaifu</a> -
+                    imageboard where they talk about DIY robo waifus</span>
+                <span><a title=" ib  imageboard  chan  4chan  &#x2F;g&#x2F;  catalog  catalogue  threads  list  stats  statistics " href="https://catalog.neet.tv/g/" target="_blank">catalog.neet.tv/g</a> -
+                    original catalog</span>
+                <span><a title=" ib  imageboard  chan " href="https://desuarchive.org/" target="_blank">desuarchive.org</a> -
+                    Archives of many 4chan boards</span>
+                <span><a title=" ib  imageboard  chan " href="https://rbt.asia/g/" target="_blank">rbt.asia/g</a> -
+                    /g/ archives (the only one currently running afaik)</span>
+                <span><a title=" ib  imageboard  chan " href="https://4museum-v.neocities.org/" target="_blank">4museum-v.neocities.org</a> -
+                    static 4chan archive from 2006 to 2008</span>
+                <span><a title=" ib  imageboard  chan " href="https://orph.link/tripgen" target="_blank">orph.link/tripgen</a> -
+                    Online tripcode generator</span>
+                <span><a title=" ib  imageboard  chan  meguca  tv  co  kr  jp  board " href="https://2chen.moe/" target="_blank">2chen.moe</a> -
+                    A meguca-based imageboard for tiktok zoomers</span>
+                <h3 class="sticky cat">Data compression sites:</h3>
+                <span><a title=" data  compression " href="https://encode.su/forum.php" target="_blank">encode.su/forum</a> -
+                    Encode's Forum (one of the best websites to talk about data compression)</span>
+                <span><a title=" data  compression " href="https://krinkels.org/" target="_blank">krinkels.org</a> -
+                    Krinkels (where game repackers get and share their compression tools)</span>
+                <span><a title=" data  compression " href="http://www.data-compression.info/index.html" target="_blank">data-compression.info/index</a> -
+                    The Data Compression Resource</span>
+                <span><a title=" data  compression " href="https://www.compression.ru/index_en.htm" target="_blank">compression.ru/index_en</a> -
+                    Compression.ru (Russian data compression website)</span>
+                <span><a title=" data  compression " href="https://ethw.org/History_of_Lossless_Data_Compression_Algorithms" target="_blank">ethw.org/History_of_Lossless_Data_Compression_Algorithms</a> -
+                    History of Lossless Data Compression Algorithms</span>
+                <span><a title=" data  compression " href="https://quixdb.github.io/squash-benchmark/" target="_blank">quixdb.github.io/squash-benchmark</a> -
+                    Squash Compression Benchmark</span>
+                <span><a title=" data  compression " href="http://mattmahoney.net/dc/text.html" target="_blank">mattmahoney.net/dc/text</a> -
+                    (Large Text Compression Benchmark)</span>
+                <span><a title=" data  compression " href="http://mattmahoney.net/dc/10gb.html" target="_blank">mattmahoney.net/dc/10gb</a> -
+                    (10 GB Compression Benchmark)</span>
+                <span><a title=" data  compression " href="http://mattmahoney.net/dc/uiq/index.html" target="_blank">mattmahoney.net/dc/uiq/index</a> -
+                    (Generic Compression Benchmark)</span>
+                <span><a title=" data  compression " href="https://github.com/inikep/lzbench" target="_blank">github.com/inikep/lzbench</a> -
+                    lzbench (in-memory benchmark of open source LZ77/LZSS/LZMA compressors)</span>
+                <span><a title=" data  compression " href="https://github.com/powturbo/TurboBench" target="_blank">github.com/powturbo/TurboBench</a> -
+                    TurboBench (benchmark for LZ77, BWT, context mixing and entropy coders)</span>
+                <h3 class="sticky cat">Text tools and related sites:</h3>
+                <span><a title=" text " href="http://www.eeemo.net/" target="_blank">eeemo.net</a> -
+                    Zalgo</span>
+                <span><a title=" text " href="https://onlinetexttools.com/" target="_blank">onlinetexttools.com</a> -
+                    Useful text tools.</span>
+                <span><a title=" text " href="https://www.ascii-art-generator.org/" target="_blank">ascii-art-generator.org</a> -
+                    Ascii Art creator, allows you to convert images to color or monochrome Ascii Art.</span>
+                <span><a title=" text " href="https://asciiart.club/" target="_blank">asciiart.club</a> -
+                    ASCII Art Generator</span>
+                <span><a title=" text " href="https://www.rhymezone.com/" target="_blank">rhymezone.com</a> -
+                    Helps you find rhymes for words</span>
+                <span><a title=" text " href="https://www.vulgarlang.com/" target="_blank">vulgarlang.com</a> -
+                    Builds a constructed language based on vowels and consonants you choose</span>
+                <span><a title=" text " href="https://www.calligraphr.com/en/" target="_blank">calligraphr.com/en</a> -
+                    Turns your handwriting into a font</span>
+                <span><a title=" text " href="http://texteditors.org/" target="_blank">texteditors.org</a> -
+                    A wiki about the various text editors out there.</span>
+                <span><a title=" text " href="https://pad.riseup.net/" target="_blank">pad.riseup.net</a> -
+                    collaborative word processor online.</span>
+                <span><a title=" text " href="https://www.protectedtext.com/" target="_blank">protectedtext.com</a> -
+                    a really great place to keep text</span>
+                <span><a title=" text  pastebin  markdown  publishing  markdown  pastebin  markdown  from  command  line " href="https://rentry.co/" target="_blank">rentry.co</a> -
+                    another really great place to keep text</span>
+                <span><a title=" text  typography  readability " href="https://practicaltypography.com/" target="_blank">practicaltypography.com</a> -
+                    How to make your text readable</span>
+                <h3 class="sticky cat">Video &#x2F; TV &#x2F; Movie &#x2F; Anime sites:</h3>
+                <span><a title="" href="https://azm.to/" target="_blank">azm.to</a> -
+                    Movie streams</span>
+                <span><a title=" documentary  documentaries  bbc  documentaries  online  documentaries  astronomy  brain  creativity  design  economics  environment  nature  documentaries  physics  science  technology  documentary " href="https://ihavenotv.com/" target="_blank">ihavenotv.com</a> -
+                    Curated list of documentaries</span>
+                <span><a title="" href="https://ww2.batflix.org/" target="_blank">ww2.batflix.org</a> -
+                    Another tv show / movie site.</span>
+                <span><a title=" video  search  video  search  engine  private  search  unbiased  search  online  privacy  uncensored  search " href="https://www.peteyvid.com/" target="_blank">peteyvid.com</a> -
+                    Search Videos from 70+ Platforms.</span>
+                <span><a title=" io  movie  website  watchmovie  ag  look  movie  streaming  popular  movies  trending  movies  latest  episodes  tv  shows  shows  movies  for  free " href="https://lookmovie.io/" target="_blank">lookmovie.io</a> -
+                    Another movie site.</span>
+                <span><a title=" watch  free  movies  watch  free  series  watch  free  tv  shows  free  movies  streaming  free  tv  shows  streaming  free  series  streaming " href="https://www1.ev01.net/" target="_blank">ev01.net</a> -
+                    Another movie site.</span>
+                <span><a title=" 90&#39;s  nostalgia  TV  music  commercials  retro  flashback " href="https://www.my90stv.com/" target="_blank">my90stv.com</a> -
+                    a 90s tv simulator that lines up youtube videos of shows and commercials to simulate watching random tv channels.</span>
+                <span><a title="" href="https://www.wimp.com/archives" target="_blank">wimp.com/archives</a> -
+                    Random videos every day since 2008</span>
+                <span><a title="" href="https://subsplease.org/" target="_blank">subsplease.org</a> -
+                    One stop shop for new anime</span>
+                <span><a title=" aq  stream  live  streams  live  tv  internet  tv  iptv  free  entertainment  world  news  international " href="http://aqstream.com/jp" target="_blank">aqstream.com/jp</a> -
+                    streams live japanese tv</span>
+                <span><a title="" href="https://animetosho.org/" target="_blank">animetosho.org</a> -
+                    Mirrors latest English subbed anime from Nyaa, Anidex, TokyoTosho, through DDL. Also has NZB for Usenet users.</span>
+                <span><a title="" href="https://nibl.co.uk/bots" target="_blank">nibl.co.uk/bots</a> -
+                    Download a bunch of anime through XDCC</span>
+                <span><a title="" href="https://vidsrc.me/" target="_blank">vidsrc.me</a> -
+                    A database of movies and tv shows which u can use via API.</span>
+                <span><a title="" href="https://www.kitsunekko.net/" target="_blank">kitsunekko.net</a> -
+                    Subtitles for your Chinese cartoons</span>
+                <span><a title=" youtube  video  small " href="https://petittube.com/" target="_blank">petittube.com</a> -
+                    Random Youtube videos with less than 10 views</span>
+                <span><a title="" href="https://app.kosmi.io/" target="_blank">app.kosmi.io</a> -
+                    Watch videos (from your pc or online) &amp; play games with friends.</span>
+                <span><a title="" href="https://cytu.be/" target="_blank">cytu.be</a> -
+                    Free, open source synchtube.</span>
+                <span><a title="" href="https://piracy.moe/" target="_blank">piracy.moe</a> -
+                    anime/manga sources</span>
+                <span><a title="" href="https://github.com/kaervin/subserv-mpv-plugin" target="_blank">github.com/kaervin/subserv-mpv-plugin</a> -
+                    Send subtitles displayed by mpv to your web-browser.</span>
+                <span><a title="" href="http://www.streamlord.com/" target="_blank">streamlord.com</a> -
+                    Good for streaming movies.</span>
+                <span><a title="" href="http://crocovid.com/" target="_blank">crocovid.com</a> -
+                    Search what you like, then watch it.</span>
+                <span><a title="" href="https://vidlink.org/" target="_blank">vidlink.org</a> -
+                    A collection of videos to watch NSFW.</span>
+                <span><a title="" href="https://trailers.to/" target="_blank">trailers.to</a> -
+                    Another good movie/tv show streaming site.</span>
+                <span><a title="" href="https://soapgate.org/" target="_blank">soapgate.org</a> -
+                    Another good movie/tv show streaming site.</span>
+                <span><a title="" href="https://www3.himovies.to/" target="_blank">himovies.to</a> -
+                    Another good movie/tv show streaming site.</span>
+                <span><a title="" href="https://hdbest.net/" target="_blank">hdbest.net</a> -
+                    Another good movie/tv show streaming site.</span>
+                <span><a title="" href="https://yesmovies.ag/" target="_blank">yesmovies.ag</a> -
+                    Another good movie/tv show streaming site.</span>
+                <span><a title="" href="https://databasegdriveplayer.co/movie.php" target="_blank">databasegdriveplayer.co/movie.php</a> -
+                    GDrivePlayer Movie Database.</span>
+                <h3 class="sticky cat">Gaymen related sites:</h3>
+                <span><a title=" search  game  retro " href="http://www.oldgamesfinder.com/" target="_blank">Gaymen related sites</a> -
+                    Search engine for older games</span>
+                <span><a title=" game " href="http://l4cs.jpn.org/gikopoi/flash/gikopoi141_for/flash_gikopoi.html" target="_blank">l4cs.jpn.org/gikopoi/flash/gikopoi141_for/flash_gikopoi</a> -
+                    Cat Mario game in which you roam around an isometric city repecting Asians.</span>
+                <span><a title=" game " href="https://www.legendsworld.net/main/legendsworld" target="_blank">legendsworld.net/main/legendsworld</a> -
+                    Hosts information and download links for hundreds of games in the shooter and adventure genres.</span>
+                <span><a title=" game " href="https://www.magipack.games/" target="_blank">magipack.games</a> -
+                    Full game repacks of old, classic &amp; retro games. Compatible with Windows 10!</span>
+                <span><a title=" game " href="https://bluemaxima.org/flashpoint/" target="_blank">bluemaxima.org/flashpoint</a> -
+                    webgame preservation project</span>
+                <span><a title=" game " href="https://candybox2.github.io/" target="_blank">candybox2.github.io</a> -
+                    idle game</span>
+                <span><a title=" game " href="https://www.conwaylife.com/wiki/Main_Page" target="_blank">conwaylife.com/wiki/Main_Page</a> -
+                    Conway's Game of Life wiki, talks about the weird behaviours of cetain patterns inside the game.</span>
+                <span><a title=" game " href="http://androidarts.com/" target="_blank">androidarts.com</a> -
+                    Guy does some cool retro console and pc art</span>
+                <span><a title=" game " href="https://vimm.net/" target="_blank">vimm.net</a> -
+                    Dedicated to nostalgia for many of the greatest game consoles ever.</span>
+                <span><a title=" game " href="https://www.nintendo.co.jp/n01/index.html" target="_blank">nintendo.co.jp/n01/index</a> -
+                    Old nintendo 64 game websites.</span>
+                <span><a title=" game " href="https://noclip.website/" target="_blank">noclip.website</a> -
+                    Use only with a reliable GPU. You can load up maps from various 3D games and roam around them on your browser.</span>
+                <span><a title=" game " href="https://www.pidgi.net/wiki/Special:NewFiles" target="_blank">pidgi.net/wiki/Special:NewFiles</a> -
+                    Official artwork in their source size, generally for Nintendo releases.</span>
+                <span><a title=" game " href="https://www.suppermariobroth.com/" target="_blank">suppermariobroth.com</a> -
+                    Contains lots of niche and obscure content from the Super Mario Bros. franchise</span>
+                <span><a title=" game " href="https://davidwonn.kontek.net/" target="_blank">davidwonn.kontek.net</a> -
+                    An archive of obscure video game glitches related to 90s/early 2000s nintendo games</span>
+                <span><a title=" game " href="https://gamepad-tester.com/" target="_blank">gamepad-tester.com</a> -
+                    Test the functions of your controller straight from your browser.</span>
+                <span><a title=" game " href="https://jits.cc/" target="_blank">jits.cc</a> -
+                    Something about the Switch, either homebrew(s) or rom(s)</span>
+                <span><a title=" game " href="https://unrealarchive.org/index.html" target="_blank">unrealarchive.org/index</a> -
+                    Maintaining availability of user-created content for the Unreal / Unreal Tournament series of games.</span>
+                <span><a title=" game " href="https://freegames-online.info/" target="_blank">freegames-online.info</a> -
+                    game website</span>
+                <span><a title=" game " href="https://fivedots.coe.psu.ac.th/~ad/kinect/installation.html" target="_blank">fivedots.coe.psu.ac.th/~ad/kinect/installation</a> -
+                    Cool stuff to do with your old Xbox Kinect on PC</span>
+                <span><a title=" game " href="https://gamesmountain.com/" target="_blank">gamesmountain.com</a> -
+                    Roms</span>
+                <span><a title=" game " href="https://theromdepot.com/" target="_blank">theromdepot.com</a> -
+                    Roms</span>
+                <span><a title=" game " href="http://lemmykoopa.com/lkmain.html" target="_blank">lemmykoopa.com/lkmain</a> -
+                    Mario fanfic and trivia. Still screams ancient web</span>
+                <span><a title=" game " href="https://fantasyanime.com/" target="_blank">fantasyanime.com</a> -
+                    Lot's of fan pages to plenty of old jrpgs with guides, screenshots, etc.</span>
+                <span><a title=" game " href="https://fitgirl-repacks.site/" target="_blank">fitgirl-repacks.site</a> -
+                    Cracked, compressed games to download.</span>
+                <span><a title=" game " href="http://sullla.com/" target="_blank">sullla.com</a> -
+                    A bunch of experimental autism with some older vidya.</span>
+                <span><a title=" game " href="https://nopaystation.com/" target="_blank">nopaystation.com</a> -
+                    A superior way of acquiring VITA, PSM, PSP, PSX, PS3, PS4 Games, DLCs, Themes and Updates</span>
+                <span><a title=" game " href="http://www.mqp.com/fun/" target="_blank">mqp.com/fun</a> -
+                    Mostly Gameboy related stuff &amp; GameBoy Book Reader that allows you to make e-books for the system</span>
+                <span><a title=" game  CS  1.6  play  online  play  free  Counter-Strike  1.6  CS  Online  with  friends  with  bots  CS " href="https://play-cs.com/" target="_blank">play-cs.com</a> -
+                    Play Counter Strike 1.6 in your browser</span>
+                <span><a title="" href="https://steamdb.info/" target="_blank">steamdb.info</a> -
+                    Enormous steam database site, useful for buying games on steam sale or showing new games with good ratings</span>
+                <span><a title=" games  old  retro " href="http://pica-pic.com/" target="_blank">pica-pic.com</a> -
+                    digitalised collection of handheld electronic games</span>
+                <span><a title=" game " href="https://www.haxball.com/" target="_blank">haxball.com</a> -
+                    free, top-down, easy to learn, hard to master multiplayer football (as in played with foot and ball) game</span>
+                <span><a title=" Roms  Retro  Old  games  play  online " href="https://www.myabandonware.com/" target="_blank">myabandonware.com</a> -
+                    Download or play abandonware games, from 1978 to 2010</span>
+                <span><a title=" Roms  Retro  Old  games  play  online " href="https://www.playretrogames.com/" target="_blank">playretrogames.com</a> -
+                    Download or play retro games</span>
+                <span><a title=" Roms  Retro  Old  games  play  online " href="https://www.retrogames.cz/" target="_blank">retrogames.cz</a> -
+                    Download or play retro games</span>
+                <span><a title=" Roms  Retro  Old  games  play  online " href="https://classicreload.com/" target="_blank">classicreload.com</a> -
+                    Download or play retro games</span>
+                <span><a title=" Roms  Retro  Old  games  play  online " href="https://www.free80sarcade.com/" target="_blank">free80sarcade.com</a> -
+                    Download or play retro games</span>
+                <span><a title=" Roms  Retro  Old  games  play  online " href="https://playclassic.games/" target="_blank">playclassic.games</a> -
+                    Download or play retro games</span>
+                <span><a title=" Roms  Retro  Old  games  play  online " href="https://emulator.games/" target="_blank">emulator.games</a> -
+                    Download or play retro games</span>
+                <span><a title=" Roms  Retro  Old  games  play  online " href="https://www.gameshaha.net/" target="_blank">gameshaha.net</a> -
+                    Download or play retro games</span>
+                <span><a title=" Roms  Retro  Old  games  play  online " href="https://www.gamulator.com/roms" target="_blank">gamulator.com/roms</a> -
+                    Download or play retro games</span>
+                <span><a title=" Roms  Retro  Old  games  play  online " href="http://emulator.online/" target="_blank">emulator.online</a> -
+                    Download or play retro games</span>
+                <span><a title=" Roms  Retro  Old  games  play  online " href="http://www.ps1fun.com/" target="_blank">ps1fun.com</a> -
+                    Download or play PS1 games</span>
+                <span><a title=" browser  games " href="https://archive.org/details/softwarelibrary_flash" target="_blank">archive.org/details/softwarelibrary_flash</a> -
+                    Flash Game Archive</span>
+                <span><a title=" browser  games " href="https://www.sticksports.com/web-games/" target="_blank">sticksports.com/web-games</a> -
+                    Sports Games</span>
+                <span><a title=" browser  games " href="https://www.airconsole.com/" target="_blank">airconsole.com</a> -
+                    Play Games on TV with your Phone as a Controller</span>
+                <span><a title=" browser  games " href="https://github.com/leereilly/games" target="_blank">github.com/leereilly/games</a> -
+                    GitHub Hosted Games</span>
+                <span><a title=" browser  games " href="http://www.arcadeprehacks.com/" target="_blank">arcadeprehacks.com</a> -
+                    Hacked Flash Games</span>
+                <span><a title=" browser  games " href="https://bluemaxima.org/flashpoint/" target="_blank">bluemaxima.org/flashpoint</a> -
+                    Flash Games Archive</span>
+                <span><a title=" browser  games " href="https://iogames.space/" target="_blank">iogames.space</a> -
+                    .io games list</span>
+                <span><a title=" browser  games " href="https://www.kfchess.com/" target="_blank">kfchess.com</a> -
+                    Kung Fu Chess, chess without turns.</span>
+                <span><a title=" browser  games " href="https://www.247freepoker.com/" target="_blank">247freepoker.com</a> -
+                    simple texas holdem.</span>
+                <span><a title=" games  pictures  food " href="http://www.gamerdinner.su/" target="_blank">gamerdinner.su</a> -
+                    What do gamers eat for dinner?</span>
+                <span><a title=" retro  games  gaming " href="https://theretrosaga.com/" target="_blank">The Retro Saga</a> -
+                    Play retro games online in your browser</span>
+                <h3 class="sticky cat">Alternative &#x2F; Paranormal &#x2F; Conspiracy &#x2F; Bizarre sites:</h3>
+                <span><a title="" href="https://www.ufocasebook.com/" target="_blank">ufocasebook.com</a> -
+                    A website that lists details of UFO sightings</span>
+                <span><a title="" href="http://www.dagonbytes.com/" target="_blank">dagonbytes.com</a> -
+                    "A page dedicated to everything gothic"</span>
+                <span><a title=" Halloween  Entertainment  Ghost  Stories  Virtual  Haunts  Old  Inn  Dark  House  Spookinite  Darkness  Haunting  Frightening  Ominous  Dark  Woods  Novels  Short-Stories  Gothic  Gothic  Literature  Ghouls  Ghoulish  Pumpkins  Halloween  All  Hallows  Eve  Something  Wicked  Wickedness  Ghosts  Wraiths  Spectres  Spirits  Madness  Morbid  Sinister  Malevolent  Graveyards  Coffins  Mortuary  Mortuaries  Morticians  Candles  Black  Cats  Witches  Vampires  Valley  October  Harvest  Autumn  Creatures " href="http://spookinite.com/" target="_blank">spookinite.com</a> -
+                    Spooky stories</span>
+                <span><a title=" ghosts  haunted  UFO  bigfoot  sea  serpents  cryptozoology  mysteries  monsters  nessie  aliens " href="http://theshadowlands.net/" target="_blank">theshadowlands.net</a> -
+                    Website about the paranormal</span>
+                <span><a title="" href="http://www.lindashauntedhalloween.us/" target="_blank">lindashauntedhalloween.us</a> -
+                    Fun halloween website</span>
+                <span><a title="" href="https://www.mulholland-drive.net/studies/theories.htm" target="_blank">mulholland-drive.net/studies/theories</a> -
+                    A website with a ton of theories related to the movie 'Mulholland Drive'</span>
+                <span><a title="" href="https://archive.is/kyiWM" target="_blank">archive.is/kyiWM</a> -
+                    Anti Semitism</span>
+                <span><a title="" href="http://www.softpanorama.org/" target="_blank">softpanorama.org</a> -
+                    This site advocates skepticism as an approach to study of both technical and social phenomena.</span>
+                <span><a title="" href="http://alexchiu.com/" target="_blank">alexchiu.com</a> -
+                    Alex Chiu's immortality rings</span>
+                <span><a title="" href="https://www.futuretimeline.net/index.htm" target="_blank">futuretimeline.net/index</a> -
+                    Some kind of doomer future prediction site.</span>
+                <span><a title="" href="http://planecrashinfo.com/lastwords.htm" target="_blank">planecrashinfo.com/lastwords</a> -
+                    Pretty much explained in the url, warning: sad.</span>
+                <span><a title="" href="http://www.exitmundi.nl/exitmundi.htm" target="_blank">exitmundi.nl/exitmundi</a> -
+                    Dooms day scenarios</span>
+                <span><a title="" href="http://cat-v.org/" target="_blank">cat-v.org</a> -
+                    anti-culture technology community</span>
+                <span><a title="" href="https://timecube.2enp.com/" target="_blank">timecube.2enp.com</a> -
+                    Time Cube was a personal web page, founded in 1997 by the "wisest man on earth", Gene Ray. RIP</span>
+                <span><a title="" href="https://nwowatch.neocities.org/" target="_blank">nwowatch.neocities.org</a> -
+                    Some guy keeping an eye on the NWO for us.</span>
+                <span><a title="" href="https://cubertown.neocities.org/" target="_blank">cubertown.neocities.org</a> -
+                    A rabbithole of its own kind. Filled with strange imagery and hatred of consumerism, cool looking though.</span>
+                <span><a title="" href="http://www.hessdalen.org/index_e.shtml" target="_blank">hessdalen.org/index_e.</a> -
+                    a town in norway that keeps seeing lights in the sky that frequently it decided to document them</span>
+                <span><a title="" href="http://whale.to/" target="_blank">whale.to</a> -
+                    Conspiracy theories</span>
+                <span><a title="" href="https://www.bfro.net/" target="_blank">bfro.net</a> -
+                    Bigfoot Field Researchers Organization</span>
+                <span><a title="" href="https://www.abelard.org/choose/choose.htm" target="_blank">abelard.org/choose/choose</a> -
+                    something about some mythical thing in Mongolia.</span>
+                <span><a title="" href="http://sentimentalcorp.org/" target="_blank">sentimentalcorp.org</a> -
+                    Bizarre website</span>
+                <span><a title="" href="https://www.richplanet.net/" target="_blank">richplanet.net</a> -
+                    Professional conspiracy theorist from the UK, lots of content.</span>
+                <span><a title=" spirit  parasites  predators  emotions  consciousness  npc " href="https://montalk.net/matrix/" target="_blank">montalk.net/matrix/</a> -
+                    Spiritual warfare with non-physical parasites</span>
+                <span><a title=" history  conspiracy  tartaria  star forts  architecture  resets " href="    https://stolenhistory.net/" target="_blank">stolenhistory.net</a> -
+                    An investigation into historical anomalies</span>
+                <h3 class="sticky cat">Niche interest sites:</h3>
+                <span><a title="" href="https://manuscriptminiatures.com/" target="_blank">manuscriptminiatures.com</a> -
+                    An image collection of miniatures depicting armoured figures from the medieval period.</span>
+                <span><a title="" href="https://hvartial.kapsi.fi/" target="_blank">hvartial.kapsi.fi</a> -
+                    DIY boats, also vintage site design.</span>
+                <span><a title="" href="http://www.worlddreambank.org/" target="_blank">worlddreambank.org</a> -
+                    dream database</span>
+                <span><a title="" href="https://www.posemaniacs.com/" target="_blank">posemaniacs.com</a> -
+                    Hundreds of pictures of various cgi poses</span>
+                <span><a title="" href="https://roadcurvature.com/" target="_blank">roadcurvature.com</a> -
+                    For car guy anons (Find twisty roads)</span>
+                <span><a title="" href="https://hackmd.io/@Patchboi/PatchThread" target="_blank">hackmd.io/@Patchboi/PatchThread</a> -
+                    /k/'s patch websites</span>
+                <span><a title="" href="https://yahoo.aleado.com/about_yahoo_en.htm" target="_blank">yahoo.aleado.com/about_yahoo_en</a> -
+                    Japanese auctions for non japanese people.</span>
+                <span><a title="" href="https://unspokencinema.blogspot.com/" target="_blank">unspokencinema.blogspot.com</a> -
+                    blog about Contemporary Contemplative Cinema</span>
+                <span><a title="" href="https://ourworldindata.org/" target="_blank">ourworldindata.org</a> -
+                    objective viewpoints on world change</span>
+                <span><a title="" href="https://hedgehogreview.com/" target="_blank">hedgehogreview.com</a> -
+                    contemporary culture discussion</span>
+                <span><a title="" href="https://metamoderna.org/" target="_blank">metamoderna.org</a> -
+                    contemporary culture discussion</span>
+                <span><a title="" href="https://publicdomainreview.org/" target="_blank">publicdomainreview.org</a> -
+                    contemporary culture discussion</span>
+                <span><a title="" href="https://track044.neocities.org/" target="_blank">track044.neocities.org</a> -
+                    some sort of photographer's personal site, really a wip but cool aesthetic.</span>
+                <span><a title="" href="https://whereareyou.neocities.org/" target="_blank">whereareyou.neocities.org</a> -
+                    seems to just be a cryptic website for an artist, pretty cool looking though.</span>
+                <span><a title="" href="https://collections.royalarmouries.org/" target="_blank">collections.royalarmouries.org</a> -
+                    something about armour</span>
+                <span><a title="" href="https://wiktenauer.com/" target="_blank">wiktenauer.com</a> -
+                    Historical european martial arts. many scanned combat treatises with transcriptions and translations.</span>
+                <span><a title="" href="http://mrblinky.net/tama/go/ezgotchi/" target="_blank">mrblinky.net/tama/go/ezgotchi</a> -
+                    Tamagotchi Tama-go points generator</span>
+                <span><a title="" href="http://mrblinky.net/tama/friends/ezgotchi/" target="_blank">mrblinky.net/tama/friends/ezgotchi/?</a> -
+                    Same as above but for Tamagotchi Friends</span>
+                <span><a title=" Ukagaka  Nanika  Ghost  Center " href="http://ukagaka.firma-erichpache.de/intro.html" target="_blank">ukagaka.firma-erichpache.de/intro.html</a> -
+                    English resources for Ukagaka, a desktop mascot program with a very autistic userbase</span>
+                <span><a title=" food  cooking " href="https://based.cooking/" target="_blank">based.cooking</a> -
+                    Food recipes curated by Luke Smith</span>
+                <h3 class="sticky cat">File conversion sites:</h3>
+                <span><a title="" href="https://cloudconvert.com/" target="_blank">cloudconvert.com</a> -
+                    Nearly all audio, video, document, ebook, archive, image, spreadsheet, formats.</span>
+                <span><a title="" href="https://www.ofoct.com/" target="_blank">ofoct.com</a> -
+                    convert office documents, audio, video, image etc. Plus useful tools.</span>
+                <span><a title="" href="https://www.freeconvert.com/" target="_blank">freeconvert.com</a> -
+                    image, video, document, and music + File Compressors and video tools.</span>
+                <span><a title="" href="https://www.online-convert.com/" target="_blank">online-convert.com</a> -
+                    All the normal stuff + Webservice converter.</span>
+                <span><a title="" href="https://convertio.co/" target="_blank">convertio.co</a> -
+                    Another great online converter.</span>
+                <span><a title="" href="https://www.zamzar.com/" target="_blank">zamzar.com</a> -
+                    Another great online converter.</span>
+                <span><a title="" href="https://www.onlineconverter.com/" target="_blank">onlineconverter.com</a> -
+                    Another great online converter.</span>
+                <h3 class="sticky cat">Conversational Chatbots:</h3>
+                <span><a title="" href="https://replika.ai/" target="_blank">replika.ai</a> -
+                    Replika</span>
+                <span><a title="" href="https://www.pandorabots.com/mitsuku/" target="_blank">pandorabots.com/mitsuku</a> -
+                    Mitsuku</span>
+                <span><a title="" href="https://www.cleverbot.com/" target="_blank">cleverbot.com</a> -
+                    cleverbot</span>
+                <span><a title="" href="https://www.eviebot.com/en/" target="_blank">eviebot.com/en</a> -
+                    eviebot</span>
+                <span><a title="" href="http://www.jabberwacky.com/" target="_blank">jabberwacky.com</a> -
+                    jabberwacky</span>
+                <h3 class="sticky cat">SMS verification sites:</h3>
+                <span><a title=" sms  message " href="https://www.receiveasms.com/" target="_blank">receiveasms.com</a> -
+                    </span>
+                <span><a title=" sms  message " href="https://sms-online.co/receive-free-sms" target="_blank">sms-online.co/receive-free-sms</a> -
+                    </span>
+                <span><a title=" sms  message " href="https://getfreesmsnumber.com/" target="_blank">getfreesmsnumber.com</a> -
+                    </span>
+                <span><a title=" sms  message " href="https://tempophone.com/" target="_blank">tempophone.com</a> -
+                    </span>
+                <span><a title=" sms  message " href="http://sms-receive.net/" target="_blank">sms-receive.net</a> -
+                    </span>
+                <span><a title=" sms  message " href="https://www.receivesmsonline.net/" target="_blank">receivesmsonline.net</a> -
+                    </span>
+                <span><a title=" sms  message " href="http://7sim.net/" target="_blank">7sim.net</a> -
+                    </span>
+                <span><a title=" sms  message " href="https://hs3x.com/" target="_blank">hs3x.com</a> -
+                    </span>
+                <span><a title=" sms  message " href="https://onlinesim.ru/" target="_blank">onlinesim.ru</a> -
+                    </span>
+                <span><a title=" sms  message " href="https://silent.link/" target="_blank">silent.link</a> -
+                    </span>
+                <span><a title=" sms  message " href="http://receivefreesms.com/" target="_blank">receivefreesms.com</a> -
+                    </span>
+                <span><a title=" sms  message " href="https://receivesmsonline.in/" target="_blank">receivesmsonline.in</a> -
+                    </span>
+                <span><a title=" sms  message " href="http://sms.sellaite.com/" target="_blank">sms.sellaite.com</a> -
+                    </span>
+                <span><a title=" sms  message " href="https://www.freeonlinephone.org/" target="_blank">freeonlinephone.org</a> -
+                    </span>
+                <span><a title=" sms  message " href="https://www.freeonlinephone.org/" target="_blank">freeonlinephone.org</a> -
+                    </span>
+                <span><a title=" sms  message " href="http://freereceivesmsonline.com/" target="_blank">freereceivesmsonline.com</a> -
+                    </span>
+                <span><a title=" sms  message " href="https://es.mytrashmobile.com/numeros/" target="_blank">es.mytrashmobile.com/numeros</a> -
+                    </span>
+                <h3 class="sticky cat">Torrenting sites:</h3>
+                <span><a title=" torrents  torrenting " href="https://zbigz.com/" target="_blank">zbigz.com</a> -
+                    Online torrent client.</span>
+                <span><a title=" torrents  torrenting " href="https://newtrackon.com/list" target="_blank">newtrackon.com/list</a> -
+                    List of stable trackers.</span>
+                <span><a title=" torrents  torrenting " href="https://www.acgnx.se/" target="_blank">acgnx.se</a> -
+                    Project AcgnX Torrent (anime tracker)</span>
+                <span><a title=" torrents  torrenting " href="https://www.anix.moe/" target="_blank">anix.moe</a> -
+                    AniX.Moe (the "Sukebei" of AcgnX)</span>
+                <span><a title=" torrents  torrenting " href="https://www.anirena.com/" target="_blank">anirena.com</a> -
+                    AniRena (anime tracker)</span>
+                <span><a title=" torrents  torrenting " href="http://kinozal.tv/" target="_blank">kinozal.tv</a> -
+                    Kinozal (Russian torrent tracker with a focus on films)</span>
+                <span><a title=" torrents  torrenting " href="https://nnmclub.to/" target="_blank">nnmclub.to</a> -
+                    NNM-Club (Russian tracker)</span>
+                <span><a title=" torrents  torrenting " href="https://pornolab.net/forum/index.php" target="_blank">pornolab.net/forum/index</a> -
+                    Pornolab (Russian porn tracker)</span>
+                <span><a title=" torrents  torrenting " href="http://rustorka.com/" target="_blank">rustorka.com</a> -
+                    Rustorka (Russian tracker)</span>
+                <span><a title=" torrents  torrenting " href="https://forum.touki.ru/open.php" target="_blank">forum.touki.ru/open</a> -
+                    Touki (Russian anime tracker)</span>
+                <span><a title=" torrents  torrenting " href="http://www.publicdomaintorrents.info/" target="_blank">publicdomaintorrents.info</a> -
+                    Public Domain Movie Torrents</span>
+                <span><a title=" torrents  torrenting " href="https://bt.etree.org/" target="_blank">bt.etree.org</a> -
+                    etree.org Community Bittorrent Tracker (free live convert recordings)</span>
+                <span><a title=" torrents  torrenting " href="https://nyaa.si/" target="_blank">nyaa.si</a> -
+                    Best place to torrent your animes from</span>
+                <span><a title=" torrents  torrenting " href="https://1337x.to/" target="_blank">1337x.to</a> -
+                    torrents</span>
+                <span><a title=" torrents  torrenting " href="http://rarbg.to/" target="_blank">rarbg.to</a> -
+                    torrents</span>
+                <span><a title=" torrents  torrenting " href="https://rutracker.net/" target="_blank">rutracker.net</a> -
+                    torrents</span>
+                <span><a title=" torrents  torrenting " href="https://academictorrents.com/" target="_blank">academictorrents.com</a> -
+                    torrents</span>
+                <span><a title=" torrents  torrenting " href="https://down.ali213.net/" target="_blank">down.ali213.net</a> -
+                    torrents</span>
+                <span><a title=" torrents  torrenting " href="http://anidex.info/" target="_blank">anidex.info</a> -
+                    torrents</span>
+                <span><a title=" torrents  torrenting " href="https://cpasbien.to/" target="_blank">cpasbien.to</a> -
+                    torrents</span>
+                <span><a title=" torrents  torrenting " href="https://share.dmhy.org/" target="_blank">share.dmhy.org</a> -
+                    torrents</span>
+                <span><a title=" torrents  torrenting " href="https://www.elitetorrent.com/" target="_blank">elitetorrent.com</a> -
+                    torrents</span>
+                <span><a title=" torrents  torrenting " href="https://ilcorsaroblu.org/" target="_blank">ilcorsaroblu.org</a> -
+                    torrents</span>
+                <span><a title=" torrents  torrenting " href="https://linuxtracker.org/" target="_blank">linuxtracker.org</a> -
+                    torrents</span>
+                <span><a title=" torrents  torrenting " href="https://www.magnetdl.com/" target="_blank">magnetdl.com</a> -
+                    torrents</span>
+                <span><a title=" torrents  torrenting " href="https://rawkbawx.rocks/" target="_blank">rawkbawx.rocks</a> -
+                    torrents</span>
+                <span><a title=" torrents  torrenting " href="http://rutor.info/" target="_blank">rutor.info</a> -
+                    torrents</span>
+                <span><a title=" torrents  torrenting " href="https://small-games.info/" target="_blank">small-games.info</a> -
+                    torrents</span>
+                <span><a title=" torrents  torrenting " href="https://sukebei.nyaa.si/" target="_blank">sukebei.nyaa.si</a> -
+                    torrents</span>
+                <span><a title=" torrents  torrenting " href="https://sukebei.nyaa.net/" target="_blank">sukebei.nyaa.net</a> -
+                    torrents</span>
+                <span><a title=" torrents  torrenting " href="https://www.tokyotosho.info/index.php" target="_blank">tokyotosho.info/index</a> -
+                    torrents</span>
+                <span><a title=" torrents  torrenting " href="https://www.oxtorrent.cc/" target="_blank">oxtorrent.cc</a> -
+                    torrents</span>
+                <span><a title=" torrents  torrenting " href="https://www.torrentfunk.com/" target="_blank">torrentfunk.com</a> -
+                    torrents</span>
+                <span><a title=" torrents  torrenting " href="https://torrentgalaxy.to/" target="_blank">torrentgalaxy.to</a> -
+                    torrents</span>
+                <span><a title=" torrents  torrenting " href="https://torrentproject2.com/" target="_blank">torrentproject2.com</a> -
+                    torrents</span>
+                <span><a title=" torrents  torrenting " href="http://uniondht.org/" target="_blank">uniondht.org</a> -
+                    torrents</span>
+                <span><a title=" torrents  torrenting " href="https://yts.mx/" target="_blank">yts.mx</a> -
+                    torrents</span>
+                <span><a title=" torrents  torrenting  crawler  database " href="https://btdig.com/" target="_blank">btdig.com</a> -
+                    Torrent magnet link search engine.</span>
+                <span><a title=" torrents  torrenting  crawler  database " href="https://bt4g.org/" target="_blank">bt4g.org</a> -
+                    Torrent magnet link search engine.</span>
+                <span><a title=" torrents  torrenting " href="https://yourbittorrent.com/" target="_blank">yourbittorrent.com</a> -
+                    torrents</span>
+                <span><a title=" torrents  torrenting  crawler  database " href="https://knaben.eu/" target="_blank">knaben.eu</a> -
+                    Torrent magnet link search engine.</span>
+                <h3 class="sticky cat">Uncategorized sites (will sort soon):</h3>
+                <span><a title=" software " href="https://www.bcuninstaller.com/" target="_blank">bcuninstaller.com</a> -
+                    FOSS app for windows that allows you to easily uninstall apps in bulk.</span>
+                <span><a title=" software " href="https://nomacs.org/" target="_blank">nomacs.org</a> -
+                    FOSS, mimalistic image viewer Windows or GNU/Linux</span>
+                <span><a title=" software " href="https://www.bleachbit.org/" target="_blank">bleachbit.org</a> -
+                    FOSS app used to clear unused disk space, like CCleaner but open source.</span>
+                <span><a title=" software " href="https://github.com/Tyrrrz/LightBulb" target="_blank">github.com/Tyrrrz/LightBulb</a> -
+                    FOSS alternative to f.lux for Windows</span>
+                <span><a title=" software " href="https://windirstat.net/" target="_blank">windirstat.net</a> -
+                    FOSS, lightweight app for windows that shows you graphically which files and folders occupy most space on your disk</span>
+                <span><a title=" software " href="https://github.com/shundhammer/qdirstat" target="_blank">github.com/shundhammer/qdirstat</a> -
+                    windirstat but for GNU/Linux, also FOSS</span>
+                <span><a title=" software " href="http://www.angusj.com/pdftkb/" target="_blank">angusj.com/pdftkb</a> -
+                    FOSS, GUI for pdftk it enables all the elements from pdftk that are normally paywalled.</span>
+                <span><a title=" software " href="https://mupdf.com/" target="_blank">mupdf.com</a> -
+                    FOSS, minimalistic pdf viewer.</span>
+                <span><a title=" &#x2F;g&#x2F;  hentai  manga  anime  porn  sex " href="https://coom.tech/" target="_blank">coom.tech</a> -
+                    Official /cumg/ Website</span>
+                <span><a title=" images  templates " href="https://psddd.co/" target="_blank">psddd.co</a> -
+                    Free Photoshop &amp; Sketch UI Templates</span>
+                <span><a title=" free  learn " href="https://toptechpal.com/" target="_blank">toptechpal.com</a> -
+                    Looks like clickbait but some useful stuff</span>
+                <span><a title=" temporary  accounts  identity " href="https://fake-it.ws/" target="_blank">fake-it.ws</a> -
+                    Fake Name &amp; Identity Generator</span>
+                <span><a title=" coupons  cracked " href="https://freesoff.com/top/weekly" target="_blank">freesoff.com/top/weekly</a> -
+                    some maybe useful free stuff</span>
+                <span><a title=" software " href="https://www.downloadpirate.com/" target="_blank">downloadpirate.com</a> -
+                    Cracked stuff</span>
+                <span><a title=" hosting " href="http://www.fanspace.com/" target="_blank">fanspace.com</a> -
+                    Free hosting</span>
+                <span><a title=" hosting " href="https://x10hosting.com/" target="_blank">x10hosting.com</a> -
+                    Cloud hosting that's free and unlimited</span>
+                <span><a title=" hosting " href="https://googiehost.com/freehosting.html" target="_blank">googiehost.com/freehosting</a> -
+                    Free hosting, No ads</span>
+                <span><a title=" hosting " href="https://www.000webhost.com/" target="_blank">000webhost.com</a> -
+                    Zero cost website hosting with PHP, MySQL, cPanel &amp; no ads!</span>
+                <span><a title=" hosting " href="http://olab.in/?i=1" target="_blank">olab.in</a> -
+                    "Completely free hosting for life"</span>
+                <span><a title=" hosting " href="https://www.freehosting.com/" target="_blank">freehosting.com</a> -
+                    Another free hosting site</span>
+                <span><a title=" hosting " href="https://freeupload.net/" target="_blank">freeupload.net</a> -
+                    Free cPanel Hosting | No Ads | Free SSL</span>
+                <span><a title=" TV  watch  random " href="https://neave.tv/" target="_blank">neave.tv</a> -
+                    simulated channel hopping</span>
+                <span><a title=" NSA  privacy  security  botnet " href="https://divergentdave.github.io/nsa-o-matic/" target="_blank">divergentdave.github.io/nsa-o-matic</a> -
+                    Excerpts of NSA spy programs</span>
+                <span><a title=" images " href="https://9-eyes.com/" target="_blank">9-eyes.com</a> -
+                    A big list of mildly interesting google streetview images</span>
+                <span><a title=" funny  cool " href="http://cachemonet.com/" target="_blank">cachemonet.com</a> -
+                    The best random single serving site</span>
+                <span><a title=" funny  cool " href="https://pointerpointer.com/" target="_blank">pointerpointer.com</a> -
+                    Points at your pointer</span>
+                <span><a title=" funny  cool " href="https://unforgettable.dk/" target="_blank">unforgettable.dk</a> -
+                    Do you have enough diskspace to extract a 42 byte .zip?</span>
+                <span><a title=" news  women  simp " href="https://appreciationofbootednewswomen.blogspot.com/" target="_blank">appreciationofbootednewswomen.blogspot.com</a> -
+                    A long-running blog simping for American newswomen wearing boots</span>
+                <h3 class="sticky cat">Mirrors:</h3>
+                <span><a title=" mirror  links  good-sites  goodsites  waifu " href="https://based.coom.tech/" target="_blank">based.coom.tech</a> -
+                    ...</span>
+                <span><a title=" mirror  links  good-sites  goodsites  waifu " href="https://sites.lainx.org/" target="_blank">sites.lainx.org</a> -
+                    ...</span>
+                <span><a title=" mirror  links  good-sites  goodsites  markdown " href="https://rentry.org/good-sites" target="_blank">rentry.org/good-sites</a> -
+                    A markdown version of these links</span>
+                <span><a title=" mirror  links  good-sites  goodsites  git " href="https://git.coom.tech/g/good-sites" target="_blank">git.coom.tech/g/good-sites</a> -
+                    The git respository for these links</span>
+                <span><a title=" mirror  links  good-sites  goodsites  waifu " href="https://g.justalecu.ro/" target="_blank">g.justalecu.ro</a> -
+                    -</span>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="js">
+        <input class="antiwaifu" type="checkbox" store="nowaifu4u">
+        <span class="waifusvg">
+            <svg class="antiwaifu2" version="1.1" id="svg2" sodipodi:docname="noanime.svg"
+                inkscape:version="0.91 r13725" xmlns:dc="http://purl.org/dc/elements/1.1/"
+                xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                xmlns:svg="http://www.w3.org/2000/svg"
+                xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40"
+                enable-background="new 0 0 993.192 196.141" xml:space="preserve" viewBox="0.03 0.10 40.57 41.00">
+                <g id="layer1" transform="translate(275.33002,-116.37377)" inkscape:groupmode="layer"
+                    inkscape:label="Layer 1">
+                    <g id="g4368" transform="translate(588.57146,-22.223358)">
+                        <ellipse id="ellipse4358" inkscape:export-xdpi="90" inkscape:export-ydpi="90" fill="#D40000"
+                            cx="-843.59" cy="159.191" rx="20.263" ry="20.49"> </ellipse>
+                        <ellipse id="ellipse4360" inkscape:export-xdpi="90" inkscape:export-ydpi="90" fill="#FFFFFF"
+                            cx="-843.59" cy="159.191" rx="17.469" ry="17.663"> </ellipse>
+                        <path id="path4362" inkscape:connector-curvature="0" display="none" fill="#FFFFFF"
+                            d="M-854.716,145.579l24.71,24.706			c-0.736,0.922-1.56,1.764-2.461,2.515l-24.704-24.706C-856.438,147.176-855.614,146.333-854.716,145.579z">
+                        </path>
+                        <g>
+                            <path
+                                d="M-829.873,147.274c-0.437-0.699-1.321-0.891-1.979-0.424l-4.404,3.102c0.185-1.947-1.3-3.72-2.446-3.72				c-0.628,0-1.167,0.391-1.419,0.959c-0.472-1.444-1.762-2.478-3.281-2.478c-1.521,0-2.813,1.034-3.287,2.478				c-0.251-0.568-0.791-0.959-1.418-0.959c-1.142,0-2.632,1.772-2.447,3.72l-4.404-3.102c-0.653-0.466-1.542-0.275-1.977,0.424				c-0.437,0.695-0.256,1.635,0.402,2.097l9.561,6.742l-2.143,12.555c-0.083,0.516,0.289,0.99,0.782,0.99c0.225,0,0.512,0,0.849,0				l-0.156,0.849l-6.016-1.252c-0.926-0.195-1.829,0.452-2.007,1.434c-0.185,0.984,0.42,1.943,1.348,2.138				c8.302,1.731,7.789,1.635,8.023,1.635c0.339,0,0.674-0.108,0.957-0.308c0.378-0.271,0.639-0.689,0.724-1.159l0.618-3.336				c0.168,0,1.007,0,1.178,0l0.615,3.336c0.085,0.47,0.35,0.889,0.727,1.159c0.285,0.2,0.616,0.308,0.955,0.308				c0.237,0-0.274,0.096,8.028-1.635c0.928-0.195,1.529-1.154,1.351-2.138c-0.181-0.982-1.084-1.629-2.012-1.434l-6.015,1.252				l-0.16-0.849c0.337,0,0.628,0,0.853,0c0.489,0,0.866-0.475,0.782-0.99l-2.143-12.555l9.561-6.742				C-829.615,148.909-829.438,147.969-829.873,147.274z M-841.1,153.374c-0.917,0-3.688,0-4.606,0l-4.177-2.948				c0.508-0.805,1.074-0.861,1.777-0.861c0.516,0,0.972-0.268,1.256-0.674c0.223,1.808,1.681,3.208,3.449,3.208				c1.762,0,3.22-1.4,3.447-3.208c0.281,0.406,0.74,0.674,1.256,0.674c0.699,0,1.267,0.057,1.774,0.861L-841.1,153.374z">
+                            </path>
+                        </g>
+                        <rect id="rect4364" x="-844.962" y="140.09" inkscape:export-xdpi="90" inkscape:export-ydpi="90"
+                            transform="matrix(0.7067 -0.7076 0.7076 0.7067 -360.0932 -550.187)" fill="#D40000"
+                            width="2.743" height="38.202"> </rect>
+                    </g>
+                </g>
+            </svg>
+        </span>
+        <label id="switch" class="switch">
+            <input type="checkbox" store="themes">
+            <span onclick="toggleTheme()" class="slider round"></span>
+        </label>
+    </div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"aa7254e3604441df8a0d6603e35d589f","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99ba4a1eb9560825',t:'MTc2MjY1OTYzNA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+
+</html>
