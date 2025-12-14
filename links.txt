@@ -19,7 +19,7 @@ book of shaders https://thebookofshaders.com/
 https://archive.org/details/IsaacAsimovAudioBookCollection
 
 https://bbycroft.net/llm
-
+https://wholeearth.info/
 https://screening-tools.com/about
 https://eotarchive.org/data/data-2020/
 https://freegovinfo.info/node/14744/#comment-68185
@@ -115,3 +115,17 @@ https://jvns.ca/blog/2022/04/12/a-list-of-new-ish--command-line-tools/
 https://grep.app
 
 https://roadmap.sh/
+
+https://systemsarchitect.io/
+
+https://www.gijskaerts.com/wordpress/?p=112
+https://alain.xyz/blog/raw-webgpu#adapter
+
+https://openrouter.ai/rankings
+
+https://github.com/perkeep/perkeep/tree/master/
+https://theinternetisshit.xyz/
+
+https://pagedout.institute/
+
+https://conwaylife.com/book/

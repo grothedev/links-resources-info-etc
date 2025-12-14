@@ -58,7 +58,7 @@ def parseArgs():
 
     parser_repl = cmds.add_parser('repl', aliases=['r','REPL', 'R'], help='use REPL mode') 
 
-    parser.add_argument('--tag', '-t', type='append', help='tags to associate with the url')
+    parser.add_argument('--tag', '-t',action='append', help='tags to associate with the url')
     parser.add_argument('--description', '--desc', '-d', help='description of the link')
     parser.add_argument('--id', '-i', help='select by id')
     
