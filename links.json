@@ -42,12 +42,6 @@
     "description": "It seems that the scrubbing of public information and communication from Federal government websites has begun."
   },
   {
-    "url": "https://mundraub.org/map#z=11&lat=50.10274427610123&lng=10.25779724121094",
-    "label": "mundraub.org Karte | mundraub.org",
-    "tags": [],
-    "description": ""
-  },
-  {
     "url": "https://www.freecodecamp.org/news/laravel-reverb-realtime-chat-app/",
     "label": "How to Build a Real-Time Chat App with Laravel Reverb",
     "tags": [],
@@ -109,7 +103,7 @@
     "tags": [
       "dev"
     ],
-    "description": ""
+    "description": "�\f%[<�P&h\rֈ��'\u0000�>W���\u0017�)��\u0007�-��\u0004�H\tYl&\u0018\u000f��aڲ�/�A\u0017��\n\ta2l���8��ȸZ��ϦAF�}\u0004�>��#W��W�\u0005�z@1/J\")\u00149�*��\u0013\u0017z�C��&�).��W��\u0013mE�\t�\u0000��h$f\u001a�����֮G�����\b����\u0013����z$\u0002�ղV \u000bl��\u000f���EbG��I��r��P\u000bH\u0004\u0016'��h�C�Q�\u000e��ayj\"ӌ��ˌ��ˌ��ˌ��ˌ��ˌ�n�4a\u0001��\u001a-l��,��XO\r��w�� \f!�\u0002t��\u0013�}6\\ge�vD#4���\u0017\u0019�q��\u0019�q��\u0019�q��\u0019�q��\u0019�q��\u0019�q��\u0019�q��\u0019�q��\u0019�q��\u0019�q��\u0019�q���\u0011k2�P�\u0000\u0001��d��ˌ��ˌ��ˌ����\u001f�ȃ ��\u0015�\bڙ�\u0003��\u0004�s\u0000�p��\u0019�q��\u0019�q��\u0019�q��\u0019�q��\u0019�\u0010��c0�W\u0019�q��\u0019�q��\u0019�q��\u0019�q��\u0019�q���\u001eCeA\u0005�~�$�\u0010��T�,�d\u0002�Ge�v\\ge�v\\ge�v\\gdE\u0000�(^3��;.3��;.3��;.3��;.3��;.3��;.3�y\u0007�#\u000f�l��"
   },
   {
     "url": "https://iopscience.iop.org/article/10.1088/0953-2048/26/11/113001/pdf",
@@ -595,5 +589,108 @@
     "label": "https://conwaylife.com/book/",
     "tags": [],
     "description": ""
+  },
+  {
+    "url": "https://noclip.website",
+    "label": "noclip videogame maps",
+    "tags": [
+      "cs",
+      "game"
+    ],
+    "description": "allows navigation of classic video game maps from various consoles"
+  },
+  {
+    "url": "https://design.syntonikka.xyz/info",
+    "description": "an interesting programmer/designer i found who was making a permaculture sim",
+    "label": "syntonikka"
+  },
+  {
+    "url": "https://agartha1.substack.com/",
+    "label": "Solarpunk communities with compassionate connection, regenerative living, and ethical technology.",
+    "description": "Incubating a new world: Solarpunk communities with compassionate connection, regenerative living, and ethical technology. Click to read Agartha.One, a Substack publication with hundreds of subscribers."
+  },
+  {
+    "url": "https://www.deeplearningbook.org/",
+    "label": ": The Deep Learning textbook is a resource intended to help students and practitioners enter the field of machine learning in general and deep learning in particular. The online version of the book is now complete and will remain available online for free.",
+    "tags": [],
+    "description": "The Deep Learning textbook is a resource intended to help students\nand practitioners enter the field of machine learning in general\nand deep learning in particular.\nThe online version of the book is now complete and will remain\navailable online for free."
+  },
+  {
+    "url": "https://tiptap.dev/docs",
+    "label": ": web browser fancy text editor",
+    "tags": [],
+    "description": "Tiptap provides a framework to create custom content editors. Explore countless extensible features and handy cloud services."
+  },
+  {
+    "url": "https://docs.partykit.io/",
+    "label": ":  convient websocket app lib",
+    "tags": [],
+    "description": "PartyKit simplifies developing multiplayer applications"
+  },
+  {
+    "url": "https://brainscale.net/app/dual-n-back/training",
+    "label": ":  good for brain. make regular practice",
+    "tags": [],
+    "description": "Dual N-Back exercise online with top results rating and progress statistics. It is scientifically proven that the N-Back task improves working memory and fluid intelligence."
+  },
+  {
+    "url": "https://www.brainturk.com/games",
+    "label": ":  more potentially good brain games",
+    "tags": [],
+    "description": ""
+  },
+  {
+    "url": "https://datatracker.ietf.org/doc/html/rfc9000#name-overview-of-security-proper",
+    "label": ":  QUIC spec",
+    "tags": [],
+    "description": "QUIC: A UDP-Based Multiplexed and Secure Transport (RFC 9000, )"
+  },
+  {
+    "url": "https://datatracker.ietf.org/",
+    "label": ":  The IETF Datatracker is the day-to-day front-end to the IETF database for people who work on IETF standards.",
+    "tags": [],
+    "description": "The IETF Datatracker is the day-to-day front-end to the IETF database for people\n                    who work on IETF standards.\n                    \n                    It contains data about the documents, working groups,\n                    meetings, agendas, minutes, presentations, and more, of the IETF."
+  },
+  {
+    "url": "https://gertjanvandenburg.com/blog/autoencoder/",
+    "label": ": Simple MNIST Autoencoder in TensorFlow",
+    "tags": [],
+    "description": "Learning TensorFlow by reimplementing known architectures"
+  },
+  {
+    "url": "https://gist.github.com/dmnsgn/76878ba6903cf15789b712464875cfdc",
+    "label": "A collection of WebGL and WebGPU frameworks and libraries · GitHub",
+    "tags": [],
+    "description": "A collection of WebGL and WebGPU frameworks and libraries - WebGL-WebGPU-frameworks-libraries.md"
+  },
+  {
+    "url": "https://arctic-shift.photon-reddit.com/",
+    "label": "constant reddit archive",
+    "tags": [],
+    "description": "Documentation and tools for the Arctic Shift project. Search or download archived reddit data."
+  },
+  {
+    "url": "https://jax-ml.github.io/scaling-book/tpus/",
+    "label": "How to Think About TPUs | How To Scale Your Model",
+    "tags": [],
+    "description": "This section is all about how TPUs work, how they're networked together to enable multi-chip training and inference, and how this affects the performance of our favorite algorithms. There's even some good stuff for GPU users too!"
+  },
+  {
+    "url": "https://www.grug.design/",
+    "label": "grug.design",
+    "tags": [],
+    "description": "The Grug Brained Designer"
+  },
+  {
+    "url": "https://www.kodeco.com/books/advanced-git/v1.0/chapters/1-how-does-git-actually-work",
+    "label": "Advanced Git, Chapter 1: How Does Git Actually Work? | Kodeco",
+    "tags": [],
+    "description": "If you've been using Git for a while, you might be wondering how it actually works. Discover how Git is built on top of a simple key-value store-based file system, and what power this provides to you."
+  },
+  {
+    "url": "https://www.loc.gov/item/2021666735/?",
+    "label": "The Nuremberg Chronicle.  | Library of Congress",
+    "tags": [],
+    "description": "The Liber chronicarum, a universal history compiled from older and contemporary sources by the Nuremberg doctor, humanist, and bibliophile Hartmann Schedel (1440--1514), is one of the most densely illustrated and technically advanced works of early printing. It contains 1809 woodcuts produced from 645 blocks. The Nuremberg entrepreneur Sebald Schreyer and his brother-in-law, Sebastian Kammermeister, financed the production of the book. Michael Wolgemut and his son-in-law Wilhelm Pleydenwurff executed the illustrations in around 1490, a time when their workshop was at its artistic peak and the young Albrecht Dürer was just completing his apprenticeship there. The views of towns, some authentic, some invented or copied from older models, are of both artistic and topographical interest. This brilliantly colored copy, owned by Schedel, contains valuable additional matter, such as Erhard Etzlaub's map of the road to Rome. Along with the rest of Schedel's library, the book became part of the library of Johann Jacob Fugger, which in 1571 came into the possession of Duke Albrecht V of Bavaria."
   }
 ]

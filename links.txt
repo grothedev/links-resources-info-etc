@@ -129,3 +129,36 @@ https://theinternetisshit.xyz/
 https://pagedout.institute/
 
 https://conwaylife.com/book/
+
+https://noclip.website
+
+https://www.deeplearningbook.org/ : The Deep Learning textbook is a resource intended to help students and practitioners enter the field of machine learning in general and deep learning in particular. The online version of the book is now complete and will remain available online for free.
+
+https://tiptap.dev/docs : web browser fancy text editor
+
+https://docs.partykit.io/  :  convient websocket app lib
+
+https://brainscale.net/app/dual-n-back/training  :  good for brain. make regular practice
+
+https://www.brainturk.com/games  :  more potentially good brain games
+
+https://datatracker.ietf.org/doc/html/rfc9000#name-overview-of-security-proper  :  QUIC spec
+
+https://datatracker.ietf.org/  :  The IETF Datatracker is the day-to-day front-end to the IETF database for people who work on IETF standards.
+It contains data about the documents, working groups, meetings, agendas, minutes, presentations, and more, of the IETF.
+
+https://cs231n.github.io/assignments2025/assignment1/ : supposedly good course for ML.
+
+https://gertjanvandenburg.com/blog/autoencoder/ : Simple MNIST Autoencoder in TensorFlow
+
+https://gist.github.com/dmnsgn/76878ba6903cf15789b712464875cfdc
+
+https://arctic-shift.photon-reddit.com/ : constant reddit archive
+
+https://jax-ml.github.io/scaling-book/tpus/
+
+https://www.grug.design/
+
+https://www.kodeco.com/books/advanced-git/v1.0/chapters/1-how-does-git-actually-work
+
+https://www.loc.gov/item/2021666735/?__cf_chl_tk=wmJVe4qhQrgSu5Tt3pb_1F7IKlRC6px7ULcYKy.ybMo-1757086028-1.0.1.1-RvAOemM5aDQxVfXd.yb6wt0o.a2mYyEheM3aZqTesY8
