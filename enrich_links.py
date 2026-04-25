@@ -206,7 +206,7 @@ def enrich_link(link, delay=1.0):
 
 
 def main():
-    json_file = 'links.json'
+    json_file = 'data/links.json'
 
     print("Loading links...")
     links = load_links(json_file)

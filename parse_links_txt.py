@@ -132,8 +132,8 @@ def save_links(json_file, links):
 
 
 def main():
-    txt_file = 'links.txt'
-    json_file = 'links.json'
+    txt_file = 'data/links.txt'
+    json_file = 'data/links.json'
 
     print(f"Parsing {txt_file}...")
     new_links = parse_links_txt(txt_file)

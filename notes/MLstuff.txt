@@ -12,6 +12,6 @@ training LLM:
   https://huggingface.co/docs/transformers/run_scripts
   https://colab.research.google.com/github/neelnanda-io/Easy-Transformer/blob/clean-transformer-demo/Clean_Transformer_Demo_Template.ipynb#scrollTo=mva6DQ7mCUdO
 
-https://github.com/KindXiaomi+++ng/pykan
+https://github.com/KindXiaoming/pykan
 
 https://rentry.org/LocalModelsLinks
