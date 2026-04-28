@@ -1,5 +1,40 @@
 # links-resources-info-etc
-finally making a git repo for my collection of useful links and information that i've accumulated
+a collection of useful links, resources, and notes, with tools to manage them.
 
+## repository structure
 
-made this because i stumbled upon another interesting website that i want to save for later and can't access my server. i figure this is a good place to store my bookmarks, and other things. i'll add more stuff when i get home. then i'll write a script that will automatically pull things from it so my laptop and any other relevant devices can be synced. 
+```
+data/           - link data files (links.txt, links.json)
+notes/          - reference notes (ML resources, server security notes)
+docs/           - project documentation and specs (DataCluster spec)
+web/            - web UI prototypes and assets
+bookmarktool/   - main bookmark management tool (Python)
+scripts:
+  parse_links_txt.py    - parse links.txt and merge into links.json
+  import_links_to_db.py - import links.json into SQLite or PostgreSQL
+  enrich_links.py       - fetch and fill missing labels/descriptions from URLs
+  yt-to-rss.py          - convert YouTube playlist/channel URLs to RSS feeds
+```
+
+## usage
+
+**parse links from text file into json:**
+```
+python parse_links_txt.py
+```
+
+**import links into a database:**
+```
+python import_links_to_db.py --db-type sqlite
+python import_links_to_db.py --db-type postgres
+```
+
+**enrich link metadata by fetching pages:**
+```
+python enrich_links.py
+```
+
+**convert youtube url to rss:**
+```
+python yt-to-rss.py "https://www.youtube.com/@username"
+```

@@ -66,7 +66,7 @@ games to learn algorithms: https://www.redblobgames.com/ :edu
 
 edu LSTM: https://wiki.pathmind.com/lstm :edu, ml
 training LLM:
-  https://huggingface .co/blog/how-to-train :ml
+  https://huggingface.co/blog/how-to-train :ml
   https://colab.research.google.com/github/neelnanda-io/Easy-Transformer/blob/clean-transformer-demo/Clean_Transformer_Demo_Template.ipynb#scrollTo=mva6DQ7mCUdO
 what is a transformer: https://www.youtube.com/watch?v=bOYE6E8JrtU
 ML course: https://karpathy.ai/zero-to-hero.html :edu
@@ -95,7 +95,7 @@ http://taotajima.jp/works/the-9d-project/
 
 https://physicsbaseddeeplearning.org/intro-teaser.html
 
-https://cs231n.github.io/assignments2025/assignment1/
+https://cs231n.github.io/assignments2025/assignment1/ : supposedly good course for ML.
 
 https://dosmaps.com/posters
 
@@ -146,8 +146,6 @@ https://datatracker.ietf.org/doc/html/rfc9000#name-overview-of-security-proper  
 
 https://datatracker.ietf.org/  :  The IETF Datatracker is the day-to-day front-end to the IETF database for people who work on IETF standards.
 It contains data about the documents, working groups, meetings, agendas, minutes, presentations, and more, of the IETF.
-
-https://cs231n.github.io/assignments2025/assignment1/ : supposedly good course for ML.
 
 https://gertjanvandenburg.com/blog/autoencoder/ : Simple MNIST Autoencoder in TensorFlow
 

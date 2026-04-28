@@ -179,8 +179,8 @@ def main():
     )
     parser.add_argument(
         '--json-file',
-        default='links.json',
-        help='Path to JSON file containing links (default: links.json)'
+        default='data/links.json',
+        help='Path to JSON file containing links (default: data/links.json)'
     )
 
     args = parser.parse_args()
