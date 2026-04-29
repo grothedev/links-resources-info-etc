@@ -27,6 +27,9 @@ def init():
     #prepare auth 
     #establish connection to storage
     stor.init()
+    bookmarks = stor.get('bookmarks')
+    if bookmarks == None:
+        stor.put('bookmarks', bookmarks)
 
 
 def add(url, title, tags, description):

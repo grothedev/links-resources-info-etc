@@ -1,0 +1,47 @@
+Distributed Operating Systems research and curriculum:
+
+Books:
+	- Andrew S. Tanenbaum & Maarten van Steen -- Distributed Systems: Principles and Paradigms (4th Edition, 2023)
+	- Martin Kleppmann & Chris Riccomini -- Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems
+	- 
+	
+Papers:
+	- Leslie Lamport -- Time, Clocks, and the Ordering of Events in a Distributed System (1978)
+	- Leslie Lamport -- The Part-Time Parliament (1998) (Original Paxos Paper)
+	- Leslie Lamport -- Paxos Made Simple (2001)
+	- Diego Ongaro & John Ousterhout -- In Search of an Understandable Consensus Algorithm (Raft) (2013)
+	- Fischer, Lynch, Patterson -- Impossibility of Distributed Consensus with One Faulty Process (FLP) (1985)
+	- Castro & Liskov -- Practical Byzantine Fault Tolerance (PBFT) (1999)
+	- Gilbert & Lynch -- Brewer's Conjecture and the Feasibility of Consistent, Available, Partition-Tolerant Web Services (2002)
+	- Consistency Tradeoffs in Modern Distributed Database System Design (PACELC)
+	- Andrew S. Tanenbaum & Robbert van Renesse -- Distributed Operating Systems (1985) - Survey Paper
+	- Tanenbaum, van Renesse, et al. -- Amoeba: A Distributed Operating System for the 1990s (1990)
+	- Klein et al. -- seL4: Formal Verification of an OS Kernel (2009)
+	- Baumann et al. -- The Multikernel: A New OS Architecture for Scalable Multicore Systems (2009)
+	- Google -- The Chubby Lock Service for Loosely-Coupled Distributed Systems (2006)
+	- etcd Documentation
+	
+Courses:
+	- MIT 6.824: Distributed Systems (Free) https://pdos.csail.mit.edu/6.824/
+	- Martin Kleppmann's Distributed Systems Lecture Series
+
+
+suggested curriculum? 
+Phase 1 - Foundations
+	Start with Tanenbaum & van Steen chapters 1-5 (architecture, processes, communication)
+	Read Lamport's "Time, Clocks..." paper
+	Skim Kleppmann chapters 1-4 (foundations, data models, storage)
+Phase 2 - Core Distributed Concepts
+	Tanenbaum chapters 6-8 (synchronization, consistency, fault tolerance)
+	Kleppmann chapters 5-9 (replication, partitioning, transactions, consistency)
+	FLP and CAP theorem papers
+	Raft paper + visualization
+Phase 3 - Distributed OS Specifics
+	Amoeba papers (all three listed above)
+	Mach paper + comparison paper
+	Tanenbaum's DOS survey paper
+	Study microkernel vs monolithic debates
+Phase 4 - Modern Systems
+	Kleppmann chapters 10-12 (batch/stream processing)
+	Chubby, ZooKeeper, Spanner papers
+	MIT 6.824 labs (hands-on implementation)
