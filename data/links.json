@@ -692,5 +692,34 @@
     "label": "The Nuremberg Chronicle.  | Library of Congress",
     "tags": [],
     "description": "The Liber chronicarum, a universal history compiled from older and contemporary sources by the Nuremberg doctor, humanist, and bibliophile Hartmann Schedel (1440--1514), is one of the most densely illustrated and technically advanced works of early printing. It contains 1809 woodcuts produced from 645 blocks. The Nuremberg entrepreneur Sebald Schreyer and his brother-in-law, Sebastian Kammermeister, financed the production of the book. Michael Wolgemut and his son-in-law Wilhelm Pleydenwurff executed the illustrations in around 1490, a time when their workshop was at its artistic peak and the young Albrecht Dürer was just completing his apprenticeship there. The views of towns, some authentic, some invented or copied from older models, are of both artistic and topographical interest. This brilliantly colored copy, owned by Schedel, contains valuable additional matter, such as Erhard Etzlaub's map of the road to Rome. Along with the rest of Schedel's library, the book became part of the library of Johann Jacob Fugger, which in 1571 came into the possession of Duke Albrecht V of Bavaria."
+  },
+  {
+    "url": "https://sumguy.com/incident-response-self-hosters/",
+    "label": "good security blog",
+    "tags": [
+      "cs",
+      "security"
+    ],
+    "description": "good info about encryption, server stuff, cyber security, related tools, etc."
+  },
+  {
+    "url": "https://mundraub.org/map",
+    "label": "crowd-sourced fruit tree map",
+    "tags": [],
+    "description": ""
+  },
+  {
+    "url": "https://huggingface.co/blog/how-to-train",
+    "label": "https://huggingface.co/blog/how-to-train",
+    "tags": [
+      "ml"
+    ],
+    "description": ""
+  },
+  {
+    "url": "https://colah.github.io/",
+    "label": "great blog/journal about ML",
+    "tags": [],
+    "description": ""
   }
 ]
