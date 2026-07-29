@@ -429,12 +429,6 @@
     "description": ""
   },
   {
-    "url": "https://www.reddit.com/r/linux_gaming/comments/teffuv/windows_vm_for_gaming/",
-    "label": "Reddit - The heart of the internet",
-    "tags": [],
-    "description": "So, I'm sick and tired of windows, but I still need it to play a lot of games since linux doesn't have native compatibility and proton doesn't work with all games."
-  },
-  {
     "url": "https://lisyarus.github.io/blog/posts/particle-life-simulation-in-browser-using-webgpu.html",
     "label": "Particle Life simulation in browser using WebGPU | lisyarus blog",
     "tags": [],
@@ -605,11 +599,6 @@
     "label": "syntonikka"
   },
   {
-    "url": "https://agartha1.substack.com/",
-    "label": "Solarpunk communities with compassionate connection, regenerative living, and ethical technology.",
-    "description": "Incubating a new world: Solarpunk communities with compassionate connection, regenerative living, and ethical technology. Click to read Agartha.One, a Substack publication with hundreds of subscribers."
-  },
-  {
     "url": "https://www.deeplearningbook.org/",
     "label": ": The Deep Learning textbook is a resource intended to help students and practitioners enter the field of machine learning in general and deep learning in particular. The online version of the book is now complete and will remain available online for free.",
     "tags": [],
@@ -721,5 +710,17 @@
     "label": "great blog/journal about ML",
     "tags": [],
     "description": ""
+  },
+  {
+    "url": "https://ikrima.dev/dev-notes/",
+    "label": "Dev Notes",
+    "tags": ["cs", "programming"],
+    "description": "ikrima wrote some good notes"
+  },
+  {
+    "url": "https://jvns.ca/",
+    "label": "Julia Evans",
+    "tags": ["cs", "programming", "blog"],
+    "description": "Another great blog"
   }
 ]
