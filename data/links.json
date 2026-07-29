@@ -219,19 +219,11 @@
   },
   {
     "url": "https://wiki.pathmind.com/lstm",
-    "label": "A Beginner's Guide to LSTMs and Recurrent Neural Networks | Pathmind",
+    "label": "A Beginner's Guide to LSTMs and Recurrent Neural Networks",
     "tags": [
       "edu"
     ],
-    "description": "edu LSTM:  ml"
-  },
-  {
-    "url": "https://huggingface",
-    "label": "huggingface",
-    "tags": [
-      "ml"
-    ],
-    "description": ".co/blog/how-to-train"
+    "description": ""
   },
   {
     "url": "https://colab.research.google.com/github/neelnanda-io/Easy-Transformer/blob/clean-transformer-demo/Clean_Transformer_Demo_Template.ipynb#scrollTo=mva6DQ7mCUdO",
