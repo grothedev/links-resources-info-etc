@@ -706,13 +706,62 @@
   {
     "url": "https://ikrima.dev/dev-notes/",
     "label": "Dev Notes",
-    "tags": ["cs", "programming"],
+    "tags": [
+      "cs",
+      "programming"
+    ],
     "description": "ikrima wrote some good notes"
   },
   {
     "url": "https://jvns.ca/",
     "label": "Julia Evans",
-    "tags": ["cs", "programming", "blog"],
+    "tags": [
+      "cs",
+      "programming",
+      "blog"
+    ],
     "description": "Another great blog"
+  },
+  {
+    "url": "https://www.reddit.com/r/linux_gaming/comments/teffuv/windows_vm_for_gaming/",
+    "label": "https://www.reddit.com/r/linux_gaming/comments/teffuv/windows_vm_for_gaming/",
+    "tags": [],
+    "description": ""
+  },
+  {
+    "url": "https://mundraub.org/map#z=11&lat=50.10274427610123&lng=10.25779724121094",
+    "label": "https://mundraub.org/map#z=11&lat=50.10274427610123&lng=10.25779724121094",
+    "tags": [],
+    "description": ""
+  },
+  {
+    "url": "https://www.loc.gov/item/2021666735/?__cf_chl_tk=wmJVe4qhQrgSu5Tt3pb_1F7IKlRC6px7ULcYKy.ybMo-1757086028-1.0.1.1-RvAOemM5aDQxVfXd.yb6wt0o.a2mYyEheM3aZqTesY8",
+    "label": "https://www.loc.gov/item/2021666735/?__cf_chl_tk=wmJVe4qhQrgSu5Tt3pb_1F7IKlRC6px7ULcYKy.ybMo-1757086028-1.0.1.1-RvAOemM5aDQxVfXd.yb6wt0o.a2mYyEheM3aZqTesY8",
+    "tags": [],
+    "description": ""
+  },
+  {
+    "url": "https://kennethreitz.org/essays/2026-03-06-the_coworking_space_saved_my_life",
+    "label": "https://kennethreitz.org/essays/2026-03-06-the_coworking_space_saved_my_life",
+    "tags": [],
+    "description": ""
+  },
+  {
+    "url": "https://cs.ossu.dev/",
+    "label": "https://cs.ossu.dev/",
+    "tags": [],
+    "description": ""
+  },
+  {
+    "url": "https://nvartolomei.com/dist-sys-classics/",
+    "label": "https://nvartolomei.com/dist-sys-classics/",
+    "tags": [],
+    "description": ""
+  },
+  {
+    "url": "https://gist.github.com/macintux/6227368",
+    "label": "https://gist.github.com/macintux/6227368",
+    "tags": [],
+    "description": ""
   }
 ]
